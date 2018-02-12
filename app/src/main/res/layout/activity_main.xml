@@ -42,7 +42,7 @@
             android:layout_alignStart="@+id/textView2"
             android:layout_marginBottom="25dp"
             android:onClick="lanzarPrincipalActivity"
-            android:text="Entrar como invitado" />
+            android:text="_Entrar como invitado_" />
 
         <TextView
             android:id="@+id/textView2"
