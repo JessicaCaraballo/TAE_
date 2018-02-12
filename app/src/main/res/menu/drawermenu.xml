@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/historia" android:title="Historia" android:icon="@drawable/ic_menu_camera" />
-<item android:id="@+id/event" android:title="events" android:icon="@drawable/ic_menu_gallery" />
-<item android:id="@+id/search" android:title="search" android:icon="@drawable/ic_menu_manage" />
-<item android:id="@+id/settings" android:title="settings" android:icon="@drawable/ic_menu_send" />
-<item android:id="@+id/activities" android:title="activities" android:icon="@drawable/ic_menu_share" />
-<item android:id="@+id/logout" android:title="logout" android:icon="@drawable/ic_menu_slideshow" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/inicio" android:title="Inicio">
+        <menu>
+            <item android:id="@+id/historia" android:title="Historia" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/saludo" android:title="Saludo" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/ponercinturon" android:title="Ponerse un cinturón" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/nivelescinturon" android:title="Niveles de cinturón" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/clasificacion" android:title="Clasificación" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/frases" android:title="Frases motivadoras" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/federaciones" android:title="Federaciones" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/reglamento" android:title="Reglamento y arbitraje" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/partescuerpo" android:title="Partes del cuerpo" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/terminologia" android:title="Terminología" android:icon="@drawable/ic_menu_camera" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/tecnicas" android:title="Técnicas">
+            <menu>
+                <item android:id="@+id/pumset" android:title="Pumset" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/patadas" android:title="Patadas" android:icon="@drawable/ic_menu_camera" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:id="@+id/ejercicios" android:title="Ejercícios" >
+            <menu>
+                <item android:id="@+id/velocidad" android:title="Velocidad" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/fuerza" android:title="Fuerza" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/resistencia" android:title="Resistencia" android:icon="@drawable/ic_menu_camera" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:id="@+id/galeria" android:title="Galería" >
+            <menu>
+                <item android:id="@+id/fotos" android:title="Fotos" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/videos" android:title="Videos" android:icon="@drawable/ic_menu_camera" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:id="@+id/gimnasiosclubs" android:title="Gimnasions y clubs">
+            <menu>
+                <item android:id="@+id/buscar" android:title="Buscar gimnasio/club" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/alta" android:title="Solicitar alta" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/gimnasiodia" android:title="Gimnasio/club del día" android:icon="@drawable/ic_menu_camera" />
+            </menu>
+        </item>
+    </group>
+    <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery" />
+    <item android:id="@+id/about" android:title="Sobre nosotros" android:icon="@drawable/ic_menu_manage" />
+    <item android:id="@+id/configuracion" android:title="Configuración" android:icon="@drawable/ic_menu_send" />
+    <item android:id="@+id/salir" android:title="salir" android:icon="@drawable/ic_menu_slideshow" />
 </menu>
