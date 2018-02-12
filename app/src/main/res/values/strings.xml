@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TAE</string>
+    <string name="title_activity_landing">landingActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="abrir">Abrir</string>
+    <string name="cerrar">Cerrar</string>
 </resources>

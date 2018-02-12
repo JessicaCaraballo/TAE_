@@ -5,7 +5,7 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jessi.tae.principalActivity">
+    tools:context="com.example.jessi.tae.historiaActivity">
 
     <LinearLayout
         android:background="@drawable/chicatae"
@@ -24,5 +24,13 @@
         app:menu="@menu/drawermenu"
         android:layout_gravity="start">
     </android.support.design.widget.NavigationView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historia"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="191dp" />
 
 </android.support.v4.widget.DrawerLayout>
