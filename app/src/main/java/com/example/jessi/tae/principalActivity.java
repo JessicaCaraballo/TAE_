@@ -1,34 +1,38 @@
 package com.example.jessi.tae;
 
-import android.app.FragmentManager;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class principalActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
-    //private Menu mMenu;
+    private String email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setHasOptionsMenu(true);
+        Bundle bundle = getIntent().getExtras();
+        email = bundle.getString("email");
         setContentView(R.layout.activity_principal);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.principal);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navPrincipal);
+        View headerView = navigationView.getHeaderView(0);
+        TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
+        _email.setText(email);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
@@ -36,7 +40,12 @@ public class principalActivity extends AppCompatActivity {
                     case R.id.historia:
                         //showOverflowMenu(true);
                         Intent historia = new Intent(getApplicationContext(), historiaActivity.class);
+                        historia.putExtra("email", email.toString());
                         startActivity(historia);
+                        break;
+                    case R.id.salir:
+                        finish();
+                        System.exit(0);
                         break;
                 }
                 return true;
@@ -50,6 +59,14 @@ public class principalActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.drawermenu, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (mToogle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 /*
     @Override
@@ -84,14 +101,7 @@ public boolean onCreateOptionsMenu(Menu menu)
             menu.getItem(i).setVisible(false);
     }
 }
-     */
+*/
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (mToogle.onOptionsItemSelected(item)) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
 

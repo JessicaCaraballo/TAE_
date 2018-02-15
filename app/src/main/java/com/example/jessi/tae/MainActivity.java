@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     {
         String email = ((EditText)findViewById(R.id.editText)).getText().toString();
         String password = ((EditText)findViewById(R.id.editText2)).getText().toString();
-        //Log.i("logLogin", "!"+email+"!"+password);
         if(email.equals("d@d.com") && password.equals("d")){
             Intent principal = new Intent(getApplicationContext(), principalActivity.class);
+            principal.putExtra("email", email.toString());
             startActivity(principal);
             TextView textErrorLogin = (TextView)findViewById(R.id.textErrorLogin);
             textErrorLogin.setVisibility(View.INVISIBLE);

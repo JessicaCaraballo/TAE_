@@ -15,7 +15,7 @@
             <item android:id="@+id/terminologia" android:title="Terminología" android:icon="@drawable/ic_menu_camera" />
         </menu>
     </item>
-    <group android:checkableBehavior="single">
+    <group>
         <item android:id="@+id/tecnicas" android:title="Técnicas">
             <menu>
                 <item android:id="@+id/pumset" android:title="Pumset" android:icon="@drawable/ic_menu_camera" />
