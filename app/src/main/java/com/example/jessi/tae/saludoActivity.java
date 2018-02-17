@@ -1,34 +1,36 @@
 package com.example.jessi.tae;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.util.Log;
 
-public class historiaActivity extends AppCompatActivity {
+public class saludoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private String email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("e","e");
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         email = bundle.getString("email");
-        setContentView(R.layout.activity_historia);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.historia);
+        setContentView(R.layout.activity_saludo);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.saludo);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navHistoria);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navSaludo);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(email);

@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void lanzarPrincipalActivity(View view)
     {
         Intent principal = new Intent(getApplicationContext(), principalActivity.class);
+        principal.putExtra("email", "Invitado");
         startActivity(principal);
     }
     /*

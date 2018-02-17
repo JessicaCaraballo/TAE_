@@ -43,6 +43,15 @@ public class principalActivity extends AppCompatActivity {
                         historia.putExtra("email", email.toString());
                         startActivity(historia);
                         break;
+                    case R.id.saludo:
+                        Log.i("a","a");
+                        Intent saludo = new Intent(getApplicationContext(), saludoActivity.class);
+                        Log.i("b","b");
+                        saludo.putExtra("email", email.toString());
+                        Log.i("c","c");
+                        startActivity(saludo);
+                        Log.i("d","d");
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);
