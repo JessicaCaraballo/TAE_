@@ -22,7 +22,7 @@
             android:layout_marginLeft="108dp"
             android:layout_marginStart="108dp"
             android:layout_marginTop="46dp"
-            android:text="Saludo"
+            android:text="_Saludo_"
             android:textColor="@color/colortitulo"
             android:fontFamily="@string/fuentetitulo"
             android:textSize="@dimen/tamanotitulo" />
