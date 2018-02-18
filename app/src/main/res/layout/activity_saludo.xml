@@ -7,19 +7,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.saludoActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:background="@drawable/chicatae"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="108dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="46dp"
             android:text="Saludo"
-            tools:layout_editor_absoluteX="138dp"
-            tools:layout_editor_absoluteY="191dp" />
-    </LinearLayout>
+            android:textColor="@color/colortitulo"
+            android:fontFamily="@string/fuentetitulo"
+            android:textSize="@dimen/tamanotitulo" />
+    </RelativeLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navSaludo"
