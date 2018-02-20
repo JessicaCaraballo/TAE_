@@ -7,37 +7,83 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.saludoActivity">
 
-    <RelativeLayout
-        android:background="@drawable/chicatae"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="108dp"
-            android:layout_marginStart="108dp"
-            android:layout_marginTop="46dp"
-            android:text="_Saludo_"
-            android:textColor="@color/colortitulo"
-            android:fontFamily="@string/fuentetitulo"
-            android:textSize="@dimen/tamanotitulo" />
-    </RelativeLayout>
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chicatae">
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@string/fuentetitulo"
+                    android:text="Saludo"
+                    android:textColor="@color/colortitulo"
+                    android:textSize="@dimen/tamanotitulo" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView5"
+                    android:text="El saludo es una demostración de respeto al maestro y al resto de nuestros compañeros. El saludo no debe ser solo un gesto vacío. A fuerza de repetirlo una y otra vez esta manifestación de respeto se convierte en un gesto espontáneo y sincero que se expresa de corazón y que enriquece la vida tanto de quién lo da como de quien lo recibe." />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:src="@drawable/saludo_opt" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_centerHorizontal="true"
+                    android:text="Es tal la importancia del saludo y su significado, que en el curso de una sola clase, este ritual se repite un gran número de veces:\r\n
+    - Antes de entrar al Dojang. Se pide permiso para entrar al Maestro o cinturón de mayor grado, y se saluda.\r\n
+    - Al comenzar la clase. El alumno de mayor grado dirije el protocolo correspondiente.\r\n
+    - Durante la clase. Cuando se recibe un material de entrenamiento y al finalizar el entrenamiento con un compañero.\r\n
+    - Al finalizar la clase. El alumno de mayor grado dirije el protocolo correspondiente.\r\n
+    - Antes de salir del Dojang. Se saluda mirando al Dojang." />
+
+            </RelativeLayout>
+        </ScrollView>
+
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navSaludo"
-        app:headerLayout="@layout/header"
-        android:layout_height="match_parent"
         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
         android:background="@color/colorAccent"
+        app:headerLayout="@layout/header"
         app:itemTextColor="@color/colorPrimary"
-        app:menu="@menu/drawermenu"
-        android:layout_gravity="start">
-    </android.support.design.widget.NavigationView>
+        app:menu="@menu/drawermenu"></android.support.design.widget.NavigationView>
 
 
 </android.support.v4.widget.DrawerLayout>
