@@ -5,7 +5,7 @@
         <menu>
             <item android:id="@+id/historia" android:title="Historia" android:icon="@drawable/ic_menu_camera" />
             <item android:id="@+id/saludo" android:title="Saludo" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/ponercinturon" android:title="Ponerse un cinturón" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/ponercinturon" android:title="Colocarse el cinturón" android:icon="@drawable/ic_menu_camera" />
             <item android:id="@+id/nivelescinturon" android:title="Niveles de cinturón" android:icon="@drawable/ic_menu_camera" />
             <item android:id="@+id/clasificacion" android:title="Clasificación" android:icon="@drawable/ic_menu_camera" />
             <item android:id="@+id/frases" android:title="Frases motivadoras" android:icon="@drawable/ic_menu_camera" />

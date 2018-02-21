@@ -52,6 +52,16 @@ public class principalActivity extends AppCompatActivity {
                         startActivity(saludo);
                         Log.i("d","d");
                         break;
+                    case R.id.ponercinturon:
+                        Intent ponercinturon = new Intent(getApplicationContext(), ponercinturonActivity.class);
+                        ponercinturon.putExtra("email", email.toString());
+                        startActivity(ponercinturon);
+                        break;
+                    case R.id.nivelescinturon:
+                        Intent nivelescinturon = new Intent(getApplicationContext(),nivelescinturonActivity.class);
+                        nivelescinturon.putExtra("email", email.toString());
+                        startActivity(nivelescinturon);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);

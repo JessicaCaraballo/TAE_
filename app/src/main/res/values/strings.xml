@@ -1,12 +1,45 @@
 <resources>
-    <string name="app_name">TAE</string>
+    <string name="app_name">Taekwondo</string>
     <string name="title_activity_landing">landingActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Ajustes</string>
     <string name="abrir">Abrir</string>
     <string name="cerrar">Cerrar</string>
     <string name="fuentetitulo">Arial</string>
+
+    <!-- Textos -->
+    <!--Historia-->
+    <string name="historia"></string>
+
+    <!--Saludo-->
+    <string name="saludo1">El saludo es una demostración de respeto al maestro y al resto de nuestros compañeros. El saludo no debe ser solo un gesto vacío. A fuerza de repetirlo una y otra vez esta
+     manifestación de respeto se convierte en un gesto espontáneo y sincero que se expresa de corazón y que enriquece la vida tanto de quién lo da como de quien lo recibe.</string>
+    <string name="saludo2">Es tal la importancia del saludo y su significado, que en el curso de una sola clase, este ritual se repite un gran número de veces:\n
+    - Antes de entrar al Dojang. Se pide permiso para entrar al Maestro o cinturón de mayor grado, y se saluda.\n
+    - Al comenzar la clase. El alumno de mayor grado dirije el protocolo correspondiente.\n
+    - Durante la clase. Cuando se recibe un material de entrenamiento y al finalizar el entrenamiento con un compañero.\n
+    - Al finalizar la clase. El alumno de mayor grado dirije el protocolo correspondiente.\n
+    - Antes de salir del Dojang. Se saluda mirando al Dojang.\n</string>
+
+    <!--PonerCinturon-->
+    <string name="ponercinturon">1- Coloque sobre el ombligo una lado de la punta del cinturon.\n
+2- Agarre dicha punta del cinturón a nivel del ombligo, y de la vuelta con el otro lado del cinturón alrededor de su cadera.\n
+3- Con el cinturon sobrante, envuelvalo alrededor de su cintura.\n
+4- Paselo por encima el primer extremo.\n
+5- La punta del cinturón que queda hacia fuera, la colocamos hacia dentro, por debajo del doblez del cinturón y luego hacia arriba. \n
+6- Preparamos dobleada la punta inferior del cintron.\n
+7- Colocamos doblada hacia abajo la punta superior del cinturón.\n
+8- Con las dos puntas del cinturon, realizamos un nudo, en direccion de arriba hacia abajo. Lo ajustamos.\n
+9- Coprobamos que las partes que quedas de las puntas son iguales de largas a ambos lados.\n</string>
+
+    <!--NivelCinturon-->
+    <string name="nivelcituron1">Los grados en Taekwondo se dividen en KUP, PUM y DAN. En España, existen 11 grados KUP, los más básicos. Siguen una numeración inversa al nivel del alumno,
+        cada grado está representado por un color de cinturón -Ti- con un significado simbólico. \n
+    En el caso del KUP, los cinturones son blanco (10º KUP), blanco-amarillo (9º KUP), amarillo (8º KUP), amarillo-verde (7º KUP), verde (6º KUP), verde-azul (5º KUP), azul (4º KUP),
+        azul-rojo (3º KUP), marrón (2º KUP) y rojo-negro (1º KUP).\n
+        Los grados intermedios (de dos colores) sólo se otorgan a practicantes menores de 14 años.</string>
+
 </resources>

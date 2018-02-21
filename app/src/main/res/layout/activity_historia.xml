@@ -8,7 +8,7 @@
     tools:context="com.example.jessi.tae.historiaActivity">
 
     <RelativeLayout
-        android:background="@drawable/chicatae"
+        android:background="@drawable/fondo2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

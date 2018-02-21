@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\Load\AndroidStudioProjects\TAE_\TAE.iml" filepath="C:\Users\Load\AndroidStudioProjects\TAE_\TAE.iml" />
       <module fileurl="file://$PROJECT_DIR$/TAE_.iml" filepath="$PROJECT_DIR$/TAE_.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
