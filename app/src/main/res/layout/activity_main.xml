@@ -106,6 +106,14 @@
             android:layout_marginTop="24dp"
             android:text="Email o contraseña incorrecto"
             android:visibility="invisible" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loadingProgress"
+            android:indeterminate="true"
+            android:visibility="invisible"/>
+
     </RelativeLayout>
 
 

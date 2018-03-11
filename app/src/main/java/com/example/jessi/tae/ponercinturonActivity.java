@@ -13,17 +13,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import java.io.Serializable;
+
 public class ponercinturonActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
-    private String email;
+    private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("e","e");
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        email = bundle.getString("email");
+        usuario = (Usuario)bundle.getSerializable("usuario");
         setContentView(R.layout.activity_ponercinturon);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.ponercinturon);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
@@ -33,29 +35,29 @@ public class ponercinturonActivity extends AppCompatActivity {
         NavigationView navigationView = (NavigationView) findViewById(R.id.navPonercinturon);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
-        _email.setText(email);
+        _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.historia:
                         Intent historia = new Intent(getApplicationContext(), historiaActivity.class);
-                        historia.putExtra("email", email.toString());
+                        historia.putExtra("usuario", (Serializable) usuario);
                         startActivity(historia);
                         break;
                     case R.id.saludo:
-                        Intent saludo = new Intent(getApplicationContext(), ponercinturonActivity.class);
-                        saludo.putExtra("email", email.toString());
+                        Intent saludo = new Intent(getApplicationContext(), saludoActivity.class);
+                        saludo.putExtra("usuario", (Serializable) usuario);
                         startActivity(saludo);
                         break;
                     case R.id.ponercinturon:
                         Intent ponercinturon = new Intent(getApplicationContext(), ponercinturonActivity.class);
-                        ponercinturon.putExtra("email", email.toString());
+                        ponercinturon.putExtra("usuario", (Serializable) usuario);
                         startActivity(ponercinturon);
                         break;
                     case R.id.nivelescinturon:
                         Intent nivelescinturon = new Intent(getApplicationContext(),nivelescinturonActivity.class);
-                        nivelescinturon.putExtra("email", email.toString());
+                        nivelescinturon.putExtra("usuario", (Serializable) usuario);
                         startActivity(nivelescinturon);
                         break;
                     case R.id.salir:
