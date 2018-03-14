@@ -21,7 +21,8 @@ public class RetrofitAdapter {
         OkHttpClient client = new OkHttpClient();
         Gson gson = new GsonBuilder().setLenient().create();
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2/TAE_WS/")//.baseUrl("http://10.0.2.2:3492/")//http://localhost:3492/WS_TAE_JSON.ashx/
+                //.baseUrl("http://10.0.2.2/TAE_WS/")
+                .baseUrl("http://wstae.000webhostapp.com/")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();

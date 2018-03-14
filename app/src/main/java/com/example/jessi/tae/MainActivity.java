@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         try
         {
-            Thread.sleep(5000);
+            //Thread.sleep(5000);
             final String email = ((EditText) findViewById(R.id.editText)).getText().toString();
             final String password = ((EditText) findViewById(R.id.editText2)).getText().toString();
 
@@ -48,26 +49,36 @@ public class MainActivity extends AppCompatActivity {
             RetrofitService service = retrofit.create(RetrofitService.class);
 
             //Call<TimeFromWeb> call = service.loadTime();
-            Call<Usuario> call = service.getLogin(email, password);
-            call.enqueue(new Callback<Usuario>() {
+            Call<RespuestaLogin> call = service.getLogin(email, password);
+            call.enqueue(new Callback<RespuestaLogin>() {
                 @Override
-                public void onResponse(Call<Usuario> call, Response<Usuario> response) {
-                    //System.out.println(response.body().getEmail());
-                    if(response != null) {
-                        Usuario usuario = new Usuario(response.body().getId(), response.body().getEmail(), response.body().getPassword(), response.body().getActivo());
-                        if (!usuario.getEmail().equalsIgnoreCase("") && !usuario.getPassword().equalsIgnoreCase("")) {
-                            if (usuario.getEmail().equalsIgnoreCase(email) && usuario.getPassword().equalsIgnoreCase(password)) {
+                public void onResponse(Call<RespuestaLogin> call, Response<RespuestaLogin> response) {
+                    RespuestaLogin respuestaLogin = new RespuestaLogin();
+                    respuestaLogin.setRespuesta(new Respuesta(response.body().respuesta.codigo, response.body().respuesta.mensaje, response.body().respuesta.funcion, response.body().respuesta.fecha));
+                    switch (respuestaLogin.respuesta.codigo){
+                        case 1:
+                            respuestaLogin.usuario.setId(response.body().usuario.getId());
+                            respuestaLogin.usuario.setEmail(response.body().usuario.getEmail());
+                            respuestaLogin.usuario.setPassword(response.body().usuario.getPassword());
+                            respuestaLogin.usuario.setActivo(response.body().usuario.getActivo());
+
+                            if(respuestaLogin.usuario.getActivo() == 1) {
                                 Intent principal = new Intent(getApplicationContext(), principalActivity.class);
-                                principal.putExtra("usuario", (Serializable) usuario);
+                                principal.putExtra("usuario", (Serializable) respuestaLogin.usuario);
                                 startActivity(principal);
+                            }else{
+                                // no activo
                             }
-                        }
+                        break;
+                        default:
+                            // no existe
+                        break;
                     }
                 }
 
                 @Override
-                public void onFailure(Call<Usuario> call, Throwable t) {
-                    System.out.println(t.getCause().toString());
+                public void onFailure(Call<RespuestaLogin> call, Throwable t) {
+                    // Hubo un error
                 }
             });
         }catch(Exception ex) {

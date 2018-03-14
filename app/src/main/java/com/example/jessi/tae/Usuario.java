@@ -12,12 +12,12 @@ public class Usuario implements Serializable {
     private int id;
     private String email;
     private String password;
-    private boolean activo;
+    private byte activo;
 
     public Usuario(){
     }
 
-    public Usuario(int id, String email, String password, boolean activo){
+    public Usuario(int id, String email, String password, byte activo){
         this.id = id;
         this.email = email;
         this.password = password;
@@ -33,7 +33,7 @@ public class Usuario implements Serializable {
     public String getPassword() {
         return this.password;
     }
-    public boolean getActivo() {
+    public byte getActivo() {
         return this.activo;
     }
 
@@ -46,5 +46,5 @@ public class Usuario implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-    public void setActivo(boolean activo) { this.activo = activo; }
+    public void setActivo(byte activo) { this.activo = activo; }
 }

@@ -14,5 +14,5 @@ public interface RetrofitService {
     @GET("usuarios/id/1/")
     Call<Usuario> getLogin2();
     @GET("usuarios/login/{email}/{pass}/")
-    Call<Usuario> getLogin(@Path("email") String email, @Path("pass") String pass);
+    Call<RespuestaLogin> getLogin(@Path("email") String email, @Path("pass") String pass);
 }
