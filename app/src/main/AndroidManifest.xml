@@ -27,6 +27,10 @@
         <activity android:name=".nivelescinturonActivity" />
         <activity android:name=".amarilloActivity" />
         <activity android:name=".amarilloposicionesActivity" />
+        <activity android:name=".amarilloataquesActivity" />
+        <activity android:name=".amarillodefensasActivity" />
+        <activity android:name=".amarillopatadasActivity" />
+        <activity android:name=".amarillopoomseActivity" />
     </application>
 
 </manifest>

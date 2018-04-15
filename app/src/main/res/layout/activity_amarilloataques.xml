@@ -2,10 +2,10 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/amarilloposiciones"
+    android:id="@+id/amarilloataques"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jessi.tae.amarilloposicionesActivity">
+    tools:context="com.example.jessi.tae.amarilloataquesActivity">
 
     <RelativeLayout
         android:background="@drawable/fondo2"
@@ -19,7 +19,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@drawable/fondo2"
-            android:text="Amarillo posiciones"
+            android:text="Amarillo ataques"
             android:textColor="@color/colorsubtitulo"
             android:textSize="@dimen/tamanosubtitulo"
             tools:layout_editor_absoluteX="138dp"
@@ -48,7 +48,6 @@
             android:onClick="Volver"
             app:srcCompat="@drawable/apsogui_m"
             android:text="Volver a amarillo" />
-
     </RelativeLayout>
 
     <android.support.design.widget.NavigationView

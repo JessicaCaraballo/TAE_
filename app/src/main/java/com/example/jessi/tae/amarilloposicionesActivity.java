@@ -25,7 +25,7 @@ public class amarilloposicionesActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
         setContentView(R.layout.activity_amarilloposiciones);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloPosiciones);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloposiciones);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
@@ -87,5 +87,11 @@ public class amarilloposicionesActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void Volver(View view) {
+        Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
+        amarillo.putExtra("usuario", (Serializable) usuario);
+        startActivity(amarillo);
     }
 }
