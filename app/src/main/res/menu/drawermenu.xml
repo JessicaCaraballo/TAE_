@@ -16,10 +16,14 @@
         </menu>
     </item>
     <group>
-        <item android:id="@+id/tecnicas" android:title="Técnicas">
+        <item android:id="@+id/tecnicas" android:title="Cinturones">
             <menu>
-                <item android:id="@+id/pumset" android:title="Pumset" android:icon="@drawable/ic_menu_camera" />
-                <item android:id="@+id/patadas" android:title="Patadas" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/amarillo" android:title="Amarillo" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/naranja" android:title="Naranja" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/verde" android:title="Verde" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/azul" android:title="Azul" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/marron" android:title="Marron" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/negro" android:title="Negro" android:icon="@drawable/ic_menu_camera" />
             </menu>
         </item>
     </group>

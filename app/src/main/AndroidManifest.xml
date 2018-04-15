@@ -25,6 +25,8 @@
         <activity android:name=".saludoActivity" />
         <activity android:name=".ponercinturonActivity" />
         <activity android:name=".nivelescinturonActivity" />
+        <activity android:name=".amarilloActivity" />
+        <activity android:name=".amarilloposicionesActivity" />
     </application>
 
 </manifest>

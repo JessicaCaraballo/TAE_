@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.util.Log;
 
+import java.io.Serializable;
+
 public class saludoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
@@ -57,6 +59,11 @@ public class saludoActivity extends AppCompatActivity {
                         Intent nivelescinturon = new Intent(getApplicationContext(),nivelescinturonActivity.class);
                         nivelescinturon.putExtra("email", email.toString());
                         startActivity(nivelescinturon);
+                        break;
+                    case R.id.amarillo:
+                        Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
+                        amarillo.putExtra("email", email.toString());//.putExtra("usuario", (Serializable) usuario);
+                        startActivity(amarillo);
                         break;
                     case R.id.salir:
                         finish();

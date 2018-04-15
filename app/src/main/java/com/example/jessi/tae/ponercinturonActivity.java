@@ -60,6 +60,11 @@ public class ponercinturonActivity extends AppCompatActivity {
                         nivelescinturon.putExtra("usuario", (Serializable) usuario);
                         startActivity(nivelescinturon);
                         break;
+                    case R.id.amarillo:
+                        Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
+                        amarillo.putExtra("usuario", (Serializable) usuario);
+                        startActivity(amarillo);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);

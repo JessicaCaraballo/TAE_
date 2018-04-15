@@ -6,7 +6,6 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,24 +14,23 @@ import android.widget.TextView;
 
 import java.io.Serializable;
 
-public class nivelescinturonActivity extends AppCompatActivity {
+public class amarilloposicionesActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.i("e","e");
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_nivelescinturon);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.nivelescinturon);
+        setContentView(R.layout.activity_amarilloposiciones);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloPosiciones);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navNivelescinturon);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navAmarillo);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
@@ -46,7 +44,7 @@ public class nivelescinturonActivity extends AppCompatActivity {
                         startActivity(historia);
                         break;
                     case R.id.saludo:
-                        Intent saludo = new Intent(getApplicationContext(), nivelescinturonActivity.class);
+                        Intent saludo = new Intent(getApplicationContext(), saludoActivity.class);
                         saludo.putExtra("usuario", (Serializable) usuario);
                         startActivity(saludo);
                         break;
