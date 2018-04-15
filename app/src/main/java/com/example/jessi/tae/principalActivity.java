@@ -64,6 +64,11 @@ public class principalActivity extends AppCompatActivity {
                         amarillo.putExtra("usuario", (Serializable) usuario);
                         startActivity(amarillo);
                         break;
+                    case R.id.naranja:
+                        Intent naranja = new Intent(getApplicationContext(),naranjaActivity.class);
+                        naranja.putExtra("usuario", (Serializable) usuario);
+                        startActivity(naranja);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);

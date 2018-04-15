@@ -31,6 +31,12 @@
         <activity android:name=".amarillodefensasActivity" />
         <activity android:name=".amarillopatadasActivity" />
         <activity android:name=".amarillopoomseActivity" />
+        <activity android:name=".naranjaActivity" />
+        <activity android:name=".naranjaposicionesActivity" />
+        <activity android:name=".naranjaataquesActivity" />
+        <activity android:name=".naranjadefensasActivity" />
+        <activity android:name=".naranjapatadasActivity" />
+        <activity android:name=".naranjapoomseActivity" />
     </application>
 
 </manifest>
