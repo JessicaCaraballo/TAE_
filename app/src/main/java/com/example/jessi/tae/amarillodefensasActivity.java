@@ -63,6 +63,31 @@ public class amarillodefensasActivity extends AppCompatActivity {
                         amarillo.putExtra("usuario", (Serializable) usuario);
                         startActivity(amarillo);
                         break;
+                    case R.id.naranja:
+                        Intent naranja = new Intent(getApplicationContext(),naranjaActivity.class);
+                        naranja.putExtra("usuario", (Serializable) usuario);
+                        startActivity(naranja);
+                        break;
+                    case R.id.verde:
+                        Intent verde = new Intent(getApplicationContext(),verdeActivity.class);
+                        verde.putExtra("usuario", (Serializable) usuario);
+                        startActivity(verde);
+                        break;
+                    case R.id.azul:
+                        Intent azul = new Intent(getApplicationContext(),azulActivity.class);
+                        azul.putExtra("usuario", (Serializable) usuario);
+                        startActivity(azul);
+                        break;
+                    case R.id.marron:
+                        Intent marron = new Intent(getApplicationContext(),marronActivity.class);
+                        marron.putExtra("usuario", (Serializable) usuario);
+                        startActivity(marron);
+                        break;
+                    case R.id.negro:
+                        Intent negro = new Intent(getApplicationContext(),negroActivity.class);
+                        negro.putExtra("usuario", (Serializable) usuario);
+                        startActivity(negro);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);

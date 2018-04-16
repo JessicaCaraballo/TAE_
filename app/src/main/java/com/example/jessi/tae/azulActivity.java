@@ -1,7 +1,10 @@
 package com.example.jessi.tae;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,28 +13,83 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.BaseAdapter;
+import android.widget.Gallery;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.File;
 import java.io.Serializable;
 
-public class amarilloataquesActivity extends AppCompatActivity {
+public class azulActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private ImageButton mImageButtonPosiciones;
+    private ImageButton mImageButtonAtaques;
+    private ImageButton mImageButtonDefensas;
+    private ImageButton mImageButtonPatadas;
+    private ImageButton mImageButtonPoomse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_amarilloataques);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloataques);
+        setContentView(R.layout.activity_azul);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.azul);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navAmarillo);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navazul);
         View headerView = navigationView.getHeaderView(0);
+        mImageButtonPosiciones = (ImageButton) findViewById(R.id.imageButton2);
+        mImageButtonPosiciones.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent azulPosiciones = new Intent(getApplicationContext(), azulposicionesActivity.class);
+                azulPosiciones.putExtra("usuario", (Serializable) usuario);
+                startActivity(azulPosiciones);
+            }
+        });
+        mImageButtonAtaques = (ImageButton) findViewById(R.id.imageButton1);
+        mImageButtonAtaques.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent azulAtaques = new Intent(getApplicationContext(), azulataquesActivity.class);
+                azulAtaques.putExtra("usuario", (Serializable) usuario);
+                startActivity(azulAtaques);
+            }
+        });
+        mImageButtonDefensas = (ImageButton) findViewById(R.id.imageButton3);
+        mImageButtonDefensas.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent azulDefensas = new Intent(getApplicationContext(), azuldefensasActivity.class);
+                azulDefensas.putExtra("usuario", (Serializable) usuario);
+                startActivity(azulDefensas);
+            }
+        });
+        mImageButtonPatadas = (ImageButton) findViewById(R.id.imageButton4);
+        mImageButtonPatadas.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent azulPatadas = new Intent(getApplicationContext(), azulpatadasActivity.class);
+                azulPatadas.putExtra("usuario", (Serializable) usuario);
+                startActivity(azulPatadas);
+            }
+        });
+        mImageButtonPoomse = (ImageButton) findViewById(R.id.imageButton5);
+        mImageButtonPoomse.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent azulPoomse = new Intent(getApplicationContext(), azulpoomseActivity.class);
+                azulPoomse.putExtra("usuario", (Serializable) usuario);
+                startActivity(azulPoomse);
+            }
+        });
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -112,11 +170,5 @@ public class amarilloataquesActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void Volver(View view) {
-        Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
-        amarillo.putExtra("usuario", (Serializable) usuario);
-        startActivity(amarillo);
     }
 }

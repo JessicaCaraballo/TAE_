@@ -1,7 +1,10 @@
 package com.example.jessi.tae;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,28 +13,83 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.BaseAdapter;
+import android.widget.Gallery;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.File;
 import java.io.Serializable;
 
-public class amarilloataquesActivity extends AppCompatActivity {
+public class marronActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private ImageButton mImageButtonPosiciones;
+    private ImageButton mImageButtonAtaques;
+    private ImageButton mImageButtonDefensas;
+    private ImageButton mImageButtonPatadas;
+    private ImageButton mImageButtonPoomse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_amarilloataques);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloataques);
+        setContentView(R.layout.activity_marron);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.marron);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navAmarillo);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navmarron);
         View headerView = navigationView.getHeaderView(0);
+        mImageButtonPosiciones = (ImageButton) findViewById(R.id.imageButton2);
+        mImageButtonPosiciones.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent marronPosiciones = new Intent(getApplicationContext(), marronposicionesActivity.class);
+                marronPosiciones.putExtra("usuario", (Serializable) usuario);
+                startActivity(marronPosiciones);
+            }
+        });
+        mImageButtonAtaques = (ImageButton) findViewById(R.id.imageButton1);
+        mImageButtonAtaques.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent marronAtaques = new Intent(getApplicationContext(), marronataquesActivity.class);
+                marronAtaques.putExtra("usuario", (Serializable) usuario);
+                startActivity(marronAtaques);
+            }
+        });
+        mImageButtonDefensas = (ImageButton) findViewById(R.id.imageButton3);
+        mImageButtonDefensas.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent marronDefensas = new Intent(getApplicationContext(), marrondefensasActivity.class);
+                marronDefensas.putExtra("usuario", (Serializable) usuario);
+                startActivity(marronDefensas);
+            }
+        });
+        mImageButtonPatadas = (ImageButton) findViewById(R.id.imageButton4);
+        mImageButtonPatadas.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent marronPatadas = new Intent(getApplicationContext(), marronpatadasActivity.class);
+                marronPatadas.putExtra("usuario", (Serializable) usuario);
+                startActivity(marronPatadas);
+            }
+        });
+        mImageButtonPoomse = (ImageButton) findViewById(R.id.imageButton5);
+        mImageButtonPoomse.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent marronPoomse = new Intent(getApplicationContext(), marronpoomseActivity.class);
+                marronPoomse.putExtra("usuario", (Serializable) usuario);
+                startActivity(marronPoomse);
+            }
+        });
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -112,11 +170,5 @@ public class amarilloataquesActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void Volver(View view) {
-        Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
-        amarillo.putExtra("usuario", (Serializable) usuario);
-        startActivity(amarillo);
     }
 }

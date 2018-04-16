@@ -37,6 +37,30 @@
         <activity android:name=".naranjadefensasActivity" />
         <activity android:name=".naranjapatadasActivity" />
         <activity android:name=".naranjapoomseActivity" />
+        <activity android:name=".verdeActivity" />
+        <activity android:name=".verdeposicionesActivity" />
+        <activity android:name=".verdeataquesActivity" />
+        <activity android:name=".verdedefensasActivity" />
+        <activity android:name=".verdepatadasActivity" />
+        <activity android:name=".verdepoomseActivity" />
+        <activity android:name=".azulActivity" />
+        <activity android:name=".azulposicionesActivity" />
+        <activity android:name=".azulataquesActivity" />
+        <activity android:name=".azuldefensasActivity" />
+        <activity android:name=".azulpatadasActivity" />
+        <activity android:name=".azulpoomseActivity" />
+        <activity android:name=".marronActivity" />
+        <activity android:name=".marronposicionesActivity" />
+        <activity android:name=".marronataquesActivity" />
+        <activity android:name=".marrondefensasActivity" />
+        <activity android:name=".marronpatadasActivity" />
+        <activity android:name=".marronpoomseActivity" />
+        <activity android:name=".negroActivity" />
+        <activity android:name=".negroposicionesActivity" />
+        <activity android:name=".negroataquesActivity" />
+        <activity android:name=".negrodefensasActivity" />
+        <activity android:name=".negropatadasActivity" />
+        <activity android:name=".negropoomseActivity" />
     </application>
 
 </manifest>

@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.io.Serializable;
 
-public class amarilloataquesActivity extends AppCompatActivity {
+public class verdeposicionesActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
@@ -24,13 +24,13 @@ public class amarilloataquesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_amarilloataques);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloataques);
+        setContentView(R.layout.activity_verdeposiciones);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.verdeposiciones);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navAmarillo);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navverde);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
@@ -115,8 +115,8 @@ public class amarilloataquesActivity extends AppCompatActivity {
     }
 
     public void Volver(View view) {
-        Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
-        amarillo.putExtra("usuario", (Serializable) usuario);
-        startActivity(amarillo);
+        Intent verde = new Intent(getApplicationContext(),verdeActivity.class);
+        verde.putExtra("usuario", (Serializable) usuario);
+        startActivity(verde);
     }
 }

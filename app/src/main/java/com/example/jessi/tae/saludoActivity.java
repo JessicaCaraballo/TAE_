@@ -18,14 +18,14 @@ import java.io.Serializable;
 public class saludoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
-    private String email;
+    private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("e","e");
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        email = bundle.getString("email");
+        usuario = (Usuario)bundle.getSerializable("usuario");
         setContentView(R.layout.activity_saludo);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.saludo);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
@@ -35,35 +35,60 @@ public class saludoActivity extends AppCompatActivity {
         NavigationView navigationView = (NavigationView) findViewById(R.id.navSaludo);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
-        _email.setText(email);
+        _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.historia:
                         Intent historia = new Intent(getApplicationContext(), historiaActivity.class);
-                        historia.putExtra("email", email.toString());
+                        historia.putExtra("usuario", (Serializable) usuario);
                         startActivity(historia);
                         break;
                     case R.id.saludo:
                         Intent saludo = new Intent(getApplicationContext(), saludoActivity.class);
-                        saludo.putExtra("email", email.toString());
+                        saludo.putExtra("usuario", (Serializable) usuario);
                         startActivity(saludo);
                         break;
                     case R.id.ponercinturon:
                         Intent ponercinturon = new Intent(getApplicationContext(), ponercinturonActivity.class);
-                        ponercinturon.putExtra("email", email.toString());
+                        ponercinturon.putExtra("usuario", (Serializable) usuario);
                         startActivity(ponercinturon);
                         break;
                     case R.id.nivelescinturon:
                         Intent nivelescinturon = new Intent(getApplicationContext(),nivelescinturonActivity.class);
-                        nivelescinturon.putExtra("email", email.toString());
+                        nivelescinturon.putExtra("usuario", (Serializable) usuario);
                         startActivity(nivelescinturon);
                         break;
                     case R.id.amarillo:
                         Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
-                        amarillo.putExtra("email", email.toString());//.putExtra("usuario", (Serializable) usuario);
+                        amarillo.putExtra("usuario", (Serializable) usuario);
                         startActivity(amarillo);
+                        break;
+                    case R.id.naranja:
+                        Intent naranja = new Intent(getApplicationContext(),naranjaActivity.class);
+                        naranja.putExtra("usuario", (Serializable) usuario);
+                        startActivity(naranja);
+                        break;
+                    case R.id.verde:
+                        Intent verde = new Intent(getApplicationContext(),verdeActivity.class);
+                        verde.putExtra("usuario", (Serializable) usuario);
+                        startActivity(verde);
+                        break;
+                    case R.id.azul:
+                        Intent azul = new Intent(getApplicationContext(),azulActivity.class);
+                        azul.putExtra("usuario", (Serializable) usuario);
+                        startActivity(azul);
+                        break;
+                    case R.id.marron:
+                        Intent marron = new Intent(getApplicationContext(),marronActivity.class);
+                        marron.putExtra("usuario", (Serializable) usuario);
+                        startActivity(marron);
+                        break;
+                    case R.id.negro:
+                        Intent negro = new Intent(getApplicationContext(),negroActivity.class);
+                        negro.putExtra("usuario", (Serializable) usuario);
+                        startActivity(negro);
                         break;
                     case R.id.salir:
                         finish();
