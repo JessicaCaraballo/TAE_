@@ -7,9 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.ponercinturonActivity">
 
-
-
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,10 +26,12 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:fontFamily="@string/fuentetitulo"
-                    android:text="Colocarse el cinturón"
+                    android:layout_margin="@dimen/margen1"
+                    android:fontFamily="@font/capture_it"
                     android:textColor="@color/colortitulo"
-                    android:textSize="@dimen/tamanotitulo" />
+                    android:textSize="@dimen/tamanotitulo"
+                    android:text="Colocar cinturón"/>
+
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -48,9 +47,11 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/imageView2"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
                     android:text="@string/ponercinturon" />
 
             </RelativeLayout>
