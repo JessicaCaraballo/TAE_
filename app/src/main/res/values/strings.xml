@@ -46,7 +46,7 @@
     <string name="significadoamarillo">Simboliza pequeños destellos de luz interior, la cual desea cubrir toda la tierra del mundo dentro del Taekwondo.</string>
 
     <!--Posiciones-->
-    <string name="tituloposicionamarillo">Posiciones de amarillo</string>
+    <string name="tituloposicionamarillo">Posiciones</string>
     <string name="nombreposicionamarillo1">Ap Sogui</string>
     <string name="posicionamarillo1">\n
             Paso corto, paso normal de andar.\n
@@ -75,7 +75,7 @@
 			La distancia entre los puños y el cinturon, es de un puño.</string>
 
     <!--Ataques-->
-    <string name="tituloataqueamarillo">Ataques de amarillo</string>
+    <string name="tituloataqueamarillo">Ataques</string>
     <string name="nombreataqueamarillo1">Jan Jirugui</string>
     <string name="ataqueamarillo1">\n
             Un puñetazo, un ataque con la parte frontal del puño.</string>
@@ -96,7 +96,7 @@
 			El primer puño que golpea es el correspondiente a la pierna trasera, y el siguiente puño el correspondiente a la pierna delantera.</string>
 
     <!--Defensas-->
-    <string name="titulodefensaamarillo">Defensas de amarillo</string>
+    <string name="titulodefensaamarillo">Defensas</string>
     <string name="nombredefensaamarillo1">Are Maki</string>
     <string name="defensaamarillo1">\n
             Defensa zona baja, desvía patadas y puñetazos. \n
@@ -124,7 +124,7 @@
 			Usa la parte exterior de la muñeca para defender hacia fuera. </string>
 
     <!--Patadas-->
-    <string name="titulopatadaamarillo">Patadas de amarillo</string>
+    <string name="titulopatadaamarillo">Patadas</string>
     <string name="nombrepatadaamarillo1">Ap Chagui</string>
     <string name="patadaamarillo1">\n
             Patada frontal, se carga levantando de modo frontal, y lo más alto posible, la rodilla retrasada.\n
@@ -144,6 +144,7 @@
 			Se carga elevando la pierna de modo frontal hacia delante.Se hace descender la pierna, golpeando con la planta del pie (Bal Badat)</string>
 
     <!--Pumse-->
+    <string name="titulopumseamarillo">Pumse</string>
     <string name="nombrepumseamarillo1">Taeguk Il Chang</string>
     <string name="pumseamarillo1">\n
             Representa el cielo y la luz.\n

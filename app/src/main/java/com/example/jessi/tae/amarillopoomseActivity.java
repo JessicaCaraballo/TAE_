@@ -1,6 +1,8 @@
 package com.example.jessi.tae;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -10,14 +12,20 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 public class amarillopoomseActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private VideoView mVideoView;
+    private String youtubeID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +41,7 @@ public class amarillopoomseActivity extends AppCompatActivity {
         NavigationView navigationView = (NavigationView) findViewById(R.id.navAmarillo);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
+        InsertarVideo();
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -94,6 +103,43 @@ public class amarillopoomseActivity extends AppCompatActivity {
                         break;
                 }
                 return true;
+            }
+        });
+    }
+
+    private void InsertarVideo() {
+        /*
+        youtubeID = "Wti0xSAE7eI";
+        mVideoView =(VideoView)findViewById(R.id.videoView4);
+        MediaController mediaController= new MediaController(this);
+        mediaController.setAnchorView(mVideoView);
+        //Uri uri=Uri.parse("rtsp://r2---sn-a5m7zu76.c.youtube.com/Ck0LENy73wIaRAnTmlo5oUgpQhMYESARFEgGUg5yZWNvbW1lbmRhdGlvbnIhAWL2kyn64K6aQtkZVJdTxRoO88HsQjpE1a8d1GxQnGDmDA==/0/0/0/video.3gp");
+
+        String ytInfoUrl= "";
+        try {
+            ytInfoUrl = "http://www.youtube.com/get_video_info?video_id=" + youtubeID + "&eurl="
+                    + URLEncoder.encode("https://youtube.googleapis.com/v/" + youtubeID, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        Uri uri=Uri.parse(ytInfoUrl);
+
+        //Uri uri=Uri.parse("https://www.youtube.com/embed/Wti0xSAE7eI");
+        mVideoView.setMediaController(mediaController);
+        mVideoView.setVideoURI(uri);
+        mVideoView.requestFocus();
+
+        mVideoView.start();
+*/
+        mVideoView =(VideoView)findViewById(R.id.videoView4);
+        MediaController mc = new MediaController(this);
+        mVideoView.setMediaController(mc);
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pumse1);
+        mVideoView.setVideoURI(uri);
+        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mVideoView.start();
             }
         });
     }
