@@ -18,12 +18,22 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@drawable/fondo2"
-            android:text="Cinturón azul"
-            android:textColor="@color/colorsubtitulo"
             android:textSize="@dimen/tamanosubtitulo"
-            tools:layout_editor_absoluteX="138dp"
-            tools:layout_editor_absoluteY="191dp" />
+            android:textColor="@color/colorsubtitulo"
+            android:background="@color/azul"
+            android:padding="@dimen/margen2"
+            android:layout_margin="@dimen/margen2"
+            android:text="Cinturón Azul" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_margin="@dimen/margen1"
+            android:text="@string/significadoazul" />
 
         <ImageButton
             android:id="@+id/imageButton1"

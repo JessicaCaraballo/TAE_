@@ -42,4 +42,246 @@
         azul-rojo (3º KUP), marrón (2º KUP) y rojo-negro (1º KUP).\n
         Los grados intermedios (de dos colores) sólo se otorgan a practicantes menores de 14 años.</string>
 
+    <!--AMARILLO-->
+    <string name="significadoamarillo">Simboliza pequeños destellos de luz interior, la cual desea cubrir toda la tierra del mundo dentro del Taekwondo.</string>
+
+    <!--Posiciones-->
+    <string name="nombreposicionamarillo1">Ap Sogui</string>
+    <string name="posicionamarillo1">Paso corto, paso normal de andar.\n
+			Los pies forman un ángulo interno de 15º a 30º.\n
+			El peso del cuerpo es proporcionado, el centro de gravedad cae entre los dos pies.</string>
+    <string name="nombreposicionamarillo2">Ap Kubi Sogui</string>
+    <string name="posicionamarillo2">Paso y medio, un paso largo.\n
+			La rodilla delantera debe estar doblada y la pierna trasera recta.\n
+			Los pies forman un ángulo interno de 30º.\n
+			El peso del cuerpo se distribuye 2/3 partes delante y 1/3 parte detrás.</string>
+    <string name="nombreposicionamarillo3">Chariot Sogui</string>
+    <string name="posicionamarillo3">Posición de firmes.\n
+			Los tobillos y talones deben estar en contacto, y las puntas de los pies separadas.\n
+			Ángulo entre los pies de 45º.</string>
+    <string name="nombreposicionamarillo4">Chum-Chum Sogui</string>
+    <string name="posicionamarillo4">Postura del jinete, sentados a caballo.\n
+			Separación entre los talones de 1 paso.\n
+			Ambas rodillas dobladas y pies paralelos entre sí.\n
+			El peso del cuerpo se distribuye al 50%.</string>
+    <string name="nombreposicionamarillo5">Kibon Chumbi Sogui</string>
+    <string name="posicionamarillo5">Posición de preparación.\n
+			La distancia entre los puños y el cinturon, es de un puño.</string>
+
+    <!--Ataques-->
+    <string name="nombreataqueamarillo1">Jan Jirugui</string>
+    <string name="ataqueamarillo1">Un puñetazo, un ataque con la parte frontal del puño.</string>
+    <string name="nombreataqueamarillo2">Dubon Jirugui</string>
+    <string name="ataqueamarillo2">Un puñetazo doble.</string>
+    <string name="nombreataqueamarillo3">Monton Bande Jirugui</string>
+    <string name="ataqueamarillo3">Puñetazo frontal a la zona media.\n
+			El puño que golpea es el correspondiente a la pierna delantera.</string>
+    <string name="nombreataqueamarillo4">Monton Baro Jirugui</string>
+    <string name="ataqueamarillo4">Puñetazo frontal a la zona media.\n
+			El puño que golpea es el correspondiente a la pierna trasera.</string>
+    <string name="nombreataqueamarillo5">Dubon Montong Jirugui</string>
+    <string name="ataqueamarillo5">Puñetazo frontal doble a la zona media.\n
+			El primer puño que golpea es el correspondiente a la pierna trasera, y el siguiente puño el correspondiente a la pierna delantera.</string>
+
+    <!--Defensas-->
+    <string name="nombredefensaamarillo1">Are Maki</string>
+    <string name="defensaamarillo1">Defensa zona baja.\n
+			Desvía patadas y puñetazos dirigidos a la parte inferior del cuerpo. \n
+			Carga la defensa colocando la base del puño sobre el hombro contrario. \n
+			El brazo se desliza de la zona del hombro hacia abajo, cubriendo la zona que apunta al frente</string>
+    <string name="nombredefensaamarillo2">Montong Maki</string>
+    <string name="defensaamarillo2">Defensa zona media, con el brazo correspondiente a la pierna adelantada.\n
+			Usa la parte exterior de la muñeca, desde fuera hacia dentro, en movimiento rotativo.\n
+			Carga la defensa colocando el puño al lado, con la palma de la mano orientada al frente. \n
+			Al bloquear, la muñeca gira para que la palma de la mano mire hacia dentro.</string>
+    <string name="nombredefensaamarillo3">Montong An Maki</string>
+    <string name="defensaamarillo3">Defensa parecida a Monton Maki. \n
+			El brazo que defiende es el correspondiente a la pierna atrasada. \n
+			Realiza el bloque desde el exterior hacia el interior. </string>
+    <string name="nombredefensaamarillo4">Olgul Maki</string>
+    <string name="defensaamarillo4">Defensa zona superior.\n
+			Desvía con el brazo ataques dirigidos a la zona superior del cuerpo.\n
+			Carga la defensa desde la zona de la cadera.\n
+			El brazo asciende de la zona de la cadera (zona baja) a la zona alta del cuerpo.</string>
+    <string name="nombredefensaamarillo5">Montong Bakat Maki</string>
+    <string name="defensaamarillo5">Defensa zona media.\n
+			Carga la defensa del mismo modo que Olgul Maki, desde la zona de la cadera.\n
+			Usa la parte exterior de la muñeca para defender hacia fuera. </string>
+
+    <!--Patadas-->
+    <string name="nombrepatadaamarillo1">Ap Chagui</string>
+    <string name="patadaamarillo1">Patada frontal, al frente.\n
+			Se carga levantando de modo frontal, y lo más alto posible, la rodilla retrasada.\n
+			Se lanza el pie hacia delante, golpeando con la almohadilla del pie (conocida como Ap Chuk)</string>
+    <string name="nombrepatadaamarillo2">Dolio Chagui</string>
+    <string name="patadaamarillo2">Patada circular rápida.\n
+			Se carga colocando la rodilla en un arco paralelo al suelo, girando el tronco en la dirección contraria.\n
+			Se lanza la patada en movimiento circular, girando levemente la cadera y pivotando el pie de apoyo.\n
+			Golpea con el empeine del pie (conocido como Bal Dung)</string>
+    <string name="nombrepatadaamarillo3">Yop Chagui</string>
+    <string name="patadaamarillo3">Patada lateral.\n
+			Se carga con el tobillo del pie que golpea flexionado hacia el interior, y el dedo gordo hacia abajo.\n
+			Se abre la pierna de lado.\n
+			Se pivota el pie de apoyo, golpeando a su vez con el borde del pie, clavando el talón (conocido como Ti Chuk)</string>
+    <string name="nombrepatadaamarillo4">Nerio Chagui</string>
+    <string name="patadaamarillo4">Patada en hacha, descendente.\n
+			Se carga elevando la pierna de modo frontal hacia delante.\n
+			Se hace descender la pierna, golpeando con la planta del pie (conocido como Bal Badat)</string>
+
+    <!--Pumse-->
+    <string name="nombrepumseamarillo1">Taeguk Il Chang</string>
+    <string name="pumseamarillo1">Representa el cielo y la luz.\n
+			Compuesto de 18 secuencias.</string>
+
+
+    <!--NARANJA-->
+    <string name="significadonaranja">Simboliza la tierra fértil, donde se plantará una nueva semilla que brotará como una futura planta.</string>
+    <!--Posiciones-->
+    <string name="nombreposicionnaranja1">Tuit Kubi Sogui</string>
+    <string name="posicionnaranja1">Paso medio, la separación entre talones es de un paso.\n
+			Talones en línea, formando los pies 90ºentre ellos.\n
+			Rodilla trasera doblada, centrando el centro de gravedad.\n
+			Pierna trasera soporta el 70% del peso, la pierna delantera soporta el 30% del peso.</string>
+    <!--Ataques-->
+    <string name="nombreataquenaranja1">Sebon Jirugui</string>
+    <string name="ataquenaranja1">Paso medio, la separación entre talones es de un paso.\n
+			Talones en línea, formando los pies 90ºentre ellos.\n
+			Rodilla trasera doblada, centrando el centro de gravedad.\n
+			Pierna trasera soporta el 70% del peso, la pierna delantera soporta el 30% del peso.</string>
+    <string name="nombreataquenaranja2">Du Sonnal Mok Chigui</string>
+    <string name="ataquenaranja2">Golpe a la zona del cuello, con las dos manos abiertas y las palmas hacia arriba.\n
+			Se carga con las manos abiertas, con los codos completamente dobladas, y las palmas de la mano mirando a la mejilla.\n
+			Se golpea con el canto de la mano, quedando estás mirando hacia arriba.</string>
+    <string name="nombreataquenaranja3">Seuo Jirugui</string>
+    <string name="ataquenaranja3">Lanzamiento con el puño en vertical y el pulgar hacia arriba.</string>
+    <string name="nombreataquenaranja4">Jan Sonnal An Mok Chigui</string>
+    <string name="ataquenaranja4">Ataque a la zona del cuello.\n
+			Se ataca con el canto de la de mano correspondiente al pie atrasado. \n
+			El ataque es en forma de arco, de fuera hacia dentro, con la palma de la mano mirando hacia arriba.</string>
+    <string name="nombreataquenaranja5">Jan Sonnal Bakat Mok Chigui</string>
+    <string name="ataquenaranja5">Ataque a la zona del cuello. \n
+			Se ataca con el canto de la mano,  de dentro hacia fuera, con la palma de la mano mirando hacia arriba.</string>
+    <!--Defensas-->
+    <string name="nombredefensanaranja1">Jan Sonnal Bakat Mok Chigui</string>
+    <string name="defensanaranja1">Defensa zona media.\n
+			La palma de la mano se situa mirando al oponente.\n
+			El bloqueo se realiza apoyando el dedo gordo junto al dedo índice. </string>
+    <!--Patadas   NO HAY  -->
+    <!-- Combinación Técnicas -->
+    <string name="combinaciontecnicasnaranja1">Are Maki - Monton An Maki - Monton Bande Jirugui (con diferente mano)</string>
+    <string name="combinaciontecnicasnaranja2">Are Maki - Olgul Maki (con misma mano) - Monton Baro Jirugui</string>
+    <string name="combinaciontecnicasnaranja3">Are Maki - Monton An Maki - Dubon Monton Jirugui</string>
+    <string name="combinaciontecnicasnaranja4">Ap Chagui - Mon Dolio Tuit Chagui (con diferente pie)</string>
+    <string name="combinaciontecnicasnaranja5">Ap Chagui - Yop Chagui (con diferente pie)</string>
+    <string name="combinaciontecnicasnaranja6">Dolio Chagui Monton -Yop Chagui Olgul (con diferente pie)</string>
+    <string name="combinaciontecnicasnaranja7">Bandal Chagui - Nerio Chagui</string>
+    <!--Pumse-->
+    <string name="nombrepumsenaranja1">Taeguk I Chang</string>
+    <string name="pumsepumsenaranja1">Representa la alegría, el júbilo.\n
+				Compuesto de 18 secuencias.</string>
+    <string name="nombrepumsenaranja2">Taeguk Sam Chang</string>
+    <string name="pumsepumsenaranja2">Lo que distingue al hombre del animal, es como debe usarse el fuego.\n
+				Compuesto de 20 secuencia.</string>
+
+
+    <!--VERDE-->
+    <string name="significadoverde">Simboliza la germinación de la semilla, como una nueva planta. </string>
+    <!--Posiciones   NO HAY  -->
+    <!--Ataques-->
+    <string name="nombreataqueverde1">Du Sonnal Monton Chigui</string>
+    <string name="ataqueverde1">Golpe a la zona media, con las dos manos abiertas y las palmas hacia arriba.\n
+				Técnica como Du Sonnal Mok Chigui, pero a la zona media del cuerpo.</string>
+    <string name="nombreataqueverde2">Du Checho Jirugui</string>
+    <string name="ataqueverde2">Ataque en corta distancia, a la base de las costillas.\n
+				Doble ataque en forma de gancho, con los puños hacia arriba.</string>
+    <string name="nombreataqueverde3">Pyon Sonkut Seou Chirigui</string>
+    <string name="ataqueverde3">Ataque a la zona de las costillas.\n
+				Se golpea con la punta de los dedos (conocidos como Pion Son Kut).
+				La plama de la mano queda en modo vertical al atacar.</string>
+    <string name="nombreataqueverde4">Dung Chumok Ape Chigui</string>
+    <string name="ataqueverde4">Ataque al labio superior o sien.\n
+				Se golpea con el reverso del puño (conocido como Son Dun).\n
+				El codo se encuentra en tensión, ligeramente doblado.</string>
+    <!--Defensas-->
+    <string name="nombredefensaverde1">Sonnal Monton Maki</string>
+    <string name="defensaverde1">Defensa de la zona media.\n
+				Se bloquea con el canto de la mano, con un movimiento lateral del interior al extaerior.\n
+				Una mano protege a la altura del esternón, la otra gira, terminando en una posición más superior.</string>
+    <!--Pum-->
+    <string name="nombrepumverde1">Chebi Pum Mok Chigui</string>
+    <string name="pumverde1"> Movimiento simultáneo de ataque y defensa.\n
+				El canto de la mano de la pierna adelantada defiende la cara.\n
+				El canto de la otra mano, ataca el cuello del oponente, desde fuera hacia dentro.\n
+				Una mano protege a la altura del esternón, la otra gira, terminando en una posición más superior.</string>
+
+    <!--Patadas-->
+    <string name="nombrepatadaverde1">Mon Dolio Nako Chagui</string>
+    <string name="patadaverde1">Es una patada giro, que simula un gancho.\n
+				El pie que golpea se lanza en arco paralelo al suelo.</string>
+    <string name="nombrepatadaverde2">Mon Dolio Yop Chagui</string>
+    <string name="patadaverde2">Patada Yop Chagui, pero con giro de cuerpo.</string>
+    <string name="nombrepatadaverde3">Bakat Dari Chagui</string>
+    <string name="patadaverde3">Patada circular hacia fuera.\n
+				Se golpea con la mitad interna de la planta del pie.</string>
+    <string name="nombrepatadaverde4">An Dari Chagui</string>
+    <string name="patadaverde4">Patada circular hacia dentro.\
+				Se golpea con el canto externo del pie.</string>
+    <!--Pumse-->
+    <string name="nombrepumseverde1">Taeguk Sa Chang</string>
+    <string name="pumseverde1">Simboliza el trueno, estimulando el miedo, el temor a lo desconocido, la tromenta.\n
+				Compuesto de 20 movimientos.</string>
+
+
+    <!--AZUL-->
+    <string name="significadoazul">Simboliza el cielo, hacia el cual va creciendo la planta hasta convertirse en un árbol maduro, a medida que los conocimientos en Taekwondo avanzan. </string>
+    <!--Posiciones-->
+    <string name="nombreposicionazul1">Moa Sogui</string>
+    <string name="posicionazul1">Posicion de pies juntos.\n
+		Pies paralelos, punto de contacto entre los talones y los dedos.\n</string>
+    <string name="nombreposicionazul2">Pionji Sogui</string>
+    <string name="posicionazul2">Posicion cómoda.\n
+		Distancia entre pies,la anchura de los hombros.\n
+		Ángulo entre pies de 45º.\n
+		Peso se distributye al 50% en cada pierna.\n</string>
+    <string name="nombreposicionazul3">Naranji Sogui</string>
+    <string name="posicionazul3">Posicion de los pies paralelos.
+		Separación entre pies, es la anchura de los hombros.\n</string>
+    <string name="nombreposicionazul4">Orun Sogui</string>
+    <string name="posicionazul4">Pies en L, mirando hacia la derecha.\n
+		Separación de un pie entre pies.\n</string>
+    <string name="nombreposicionazul5">Uen Sogui</string>
+    <string name="posicionazul5">Pies en L, mirando hacia la izquierda.\n
+		Separación de un pie entre pies.\n</string>
+    <!--Ataques-->
+    <!--Defensas-->
+    <!--Patadas-->
+    <!--Pumse-->
+    <string name="nombrepumseazul1">Taeguk Oh Chang</string>
+    <string name="pumseazul1"></string>
+    <string name="nombrepumseazul2">Taeguk Yuk Chang</string>
+    <string name="pumseazul2"></string>
+
+
+
+    <!--MARRON-->
+    <string name="significadomarron">Simboliza el peligro,  indica a sus oponentes que deben mantenerse alejados, debido a la madurez de sus conocimientos.\n
+        Es el fruto cosechado del árbol del Taekwondo.</string>
+    <!--Posiciones-->
+    <!--Ataques-->
+    <!--Defensas-->
+    <!--Patadas-->
+    <!--Pumse-->
+    <string name="nombrepumsemarron1">Taeguk Chil Chang</string>
+    <string name="pumsemarron1"></string>
+
+    <!--NEGRO-->
+    <string name="significadonegro">Simboliza la madurez del practicante en cuanto a su competencia para impartir enseñanza en el Taekwondo. Representa la impermeabilidad de su portador,
+        al miedo y la oscuridad.  Es completamente lo opuesto al color blanco.</string>
+    <!--Posiciones-->
+    <!--Ataques-->
+    <!--Defensas-->
+    <!--Patadas-->
+    <!--Pumse-->
+    <string name="nombrepumsenegro1">Taeguk Pal Chang</string>
+    <string name="pumsenegro1"></string>
 </resources>

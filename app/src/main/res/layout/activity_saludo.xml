@@ -29,19 +29,22 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:fontFamily="Arial"
-                    android:text="Saludo"
+                    android:layout_margin="@dimen/margen1"
+                    android:fontFamily="@font/capture_it"
                     android:textColor="@color/colortitulo"
-                    android:textSize="@dimen/tamanotitulo" />
+                    android:textSize="@dimen/tamanotitulo"
+                    android:text="Saludo" />
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/textView5"
-                    android:text="@string/saludo1" />
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    android:text="@string/saludo1"/>
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -58,8 +61,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imageView2"
-                    android:layout_centerHorizontal="true"
-                    android:text="@string/saludo2" />
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    android:text="@string/saludo2"/>
 
             </RelativeLayout>
         </ScrollView>
