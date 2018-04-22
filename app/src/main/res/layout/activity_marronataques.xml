@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -26,12 +26,12 @@
             tools:layout_editor_absoluteY="191dp" />
 
         <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/botonvolver1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView5"
+            android:layout_below="@+id/textViewTitulo"
             android:layout_marginTop="25dp"
             android:onClick="Volver"
             app:srcCompat="@drawable/apsogui_m"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView5"
+            android:layout_below="@+id/textViewTitulo"
             android:layout_marginTop="100dp"
             android:onClick="Volver"
             app:srcCompat="@drawable/apsogui_m"

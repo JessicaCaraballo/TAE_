@@ -46,91 +46,108 @@
     <string name="significadoamarillo">Simboliza pequeños destellos de luz interior, la cual desea cubrir toda la tierra del mundo dentro del Taekwondo.</string>
 
     <!--Posiciones-->
+    <string name="tituloposicionamarillo">Posiciones</string>
     <string name="nombreposicionamarillo1">Ap Sogui</string>
-    <string name="posicionamarillo1">Paso corto, paso normal de andar.\n
+    <string name="posicionamarillo1">\n
+            Paso corto, paso normal de andar.\n
 			Los pies forman un ángulo interno de 15º a 30º.\n
 			El peso del cuerpo es proporcionado, el centro de gravedad cae entre los dos pies.</string>
     <string name="nombreposicionamarillo2">Ap Kubi Sogui</string>
-    <string name="posicionamarillo2">Paso y medio, un paso largo.\n
+    <string name="posicionamarillo2">\n
+            Paso y medio, un paso largo.\n
 			La rodilla delantera debe estar doblada y la pierna trasera recta.\n
 			Los pies forman un ángulo interno de 30º.\n
 			El peso del cuerpo se distribuye 2/3 partes delante y 1/3 parte detrás.</string>
     <string name="nombreposicionamarillo3">Chariot Sogui</string>
-    <string name="posicionamarillo3">Posición de firmes.\n
+    <string name="posicionamarillo3">\n
+            Posición de firmes.\n
 			Los tobillos y talones deben estar en contacto, y las puntas de los pies separadas.\n
 			Ángulo entre los pies de 45º.</string>
     <string name="nombreposicionamarillo4">Chum-Chum Sogui</string>
-    <string name="posicionamarillo4">Postura del jinete, sentados a caballo.\n
+    <string name="posicionamarillo4">\n
+            Postura del jinete, sentados a caballo.\n
 			Separación entre los talones de 1 paso.\n
 			Ambas rodillas dobladas y pies paralelos entre sí.\n
 			El peso del cuerpo se distribuye al 50%.</string>
     <string name="nombreposicionamarillo5">Kibon Chumbi Sogui</string>
-    <string name="posicionamarillo5">Posición de preparación.\n
+    <string name="posicionamarillo5">\n
+            Posición de preparación.\n
 			La distancia entre los puños y el cinturon, es de un puño.</string>
 
     <!--Ataques-->
+    <string name="tituloataqueamarillo">Ataques</string>
     <string name="nombreataqueamarillo1">Jan Jirugui</string>
-    <string name="ataqueamarillo1">Un puñetazo, un ataque con la parte frontal del puño.</string>
+    <string name="ataqueamarillo1">\n
+            Un puñetazo, un ataque con la parte frontal del puño.</string>
     <string name="nombreataqueamarillo2">Dubon Jirugui</string>
-    <string name="ataqueamarillo2">Un puñetazo doble.</string>
+    <string name="ataqueamarillo2">\n
+            Un puñetazo doble.</string>
     <string name="nombreataqueamarillo3">Monton Bande Jirugui</string>
-    <string name="ataqueamarillo3">Puñetazo frontal a la zona media.\n
+    <string name="ataqueamarillo3">\n
+            Puñetazo frontal a la zona media.\n
 			El puño que golpea es el correspondiente a la pierna delantera.</string>
     <string name="nombreataqueamarillo4">Monton Baro Jirugui</string>
-    <string name="ataqueamarillo4">Puñetazo frontal a la zona media.\n
+    <string name="ataqueamarillo4">\n
+            Puñetazo frontal a la zona media.\n
 			El puño que golpea es el correspondiente a la pierna trasera.</string>
     <string name="nombreataqueamarillo5">Dubon Montong Jirugui</string>
-    <string name="ataqueamarillo5">Puñetazo frontal doble a la zona media.\n
+    <string name="ataqueamarillo5">\n
+            Puñetazo frontal doble a la zona media.\n
 			El primer puño que golpea es el correspondiente a la pierna trasera, y el siguiente puño el correspondiente a la pierna delantera.</string>
 
     <!--Defensas-->
+    <string name="titulodefensaamarillo">Defensas</string>
     <string name="nombredefensaamarillo1">Are Maki</string>
-    <string name="defensaamarillo1">Defensa zona baja.\n
-			Desvía patadas y puñetazos dirigidos a la parte inferior del cuerpo. \n
+    <string name="defensaamarillo1">\n
+            Defensa zona baja, desvía patadas y puñetazos. \n
 			Carga la defensa colocando la base del puño sobre el hombro contrario. \n
 			El brazo se desliza de la zona del hombro hacia abajo, cubriendo la zona que apunta al frente</string>
     <string name="nombredefensaamarillo2">Montong Maki</string>
-    <string name="defensaamarillo2">Defensa zona media, con el brazo correspondiente a la pierna adelantada.\n
-			Usa la parte exterior de la muñeca, desde fuera hacia dentro, en movimiento rotativo.\n
-			Carga la defensa colocando el puño al lado, con la palma de la mano orientada al frente. \n
+    <string name="defensaamarillo2">\n
+            Defensa zona media, con el brazo de la pierna adelantada.\n
+			Carga la defensa colocando el puño con la palma de la mano orientada al frente. \n
 			Al bloquear, la muñeca gira para que la palma de la mano mire hacia dentro.</string>
     <string name="nombredefensaamarillo3">Montong An Maki</string>
-    <string name="defensaamarillo3">Defensa parecida a Monton Maki. \n
+    <string name="defensaamarillo3">\n
+            Defensa parecida a Monton Maki. \n
 			El brazo que defiende es el correspondiente a la pierna atrasada. \n
 			Realiza el bloque desde el exterior hacia el interior. </string>
     <string name="nombredefensaamarillo4">Olgul Maki</string>
-    <string name="defensaamarillo4">Defensa zona superior.\n
-			Desvía con el brazo ataques dirigidos a la zona superior del cuerpo.\n
+    <string name="defensaamarillo4">\n
+            Defensa zona superior\n
 			Carga la defensa desde la zona de la cadera.\n
 			El brazo asciende de la zona de la cadera (zona baja) a la zona alta del cuerpo.</string>
     <string name="nombredefensaamarillo5">Montong Bakat Maki</string>
-    <string name="defensaamarillo5">Defensa zona media.\n
+    <string name="defensaamarillo5">\n
+            Defensa zona media.\n
 			Carga la defensa del mismo modo que Olgul Maki, desde la zona de la cadera.\n
 			Usa la parte exterior de la muñeca para defender hacia fuera. </string>
 
     <!--Patadas-->
+    <string name="titulopatadaamarillo">Patadas</string>
     <string name="nombrepatadaamarillo1">Ap Chagui</string>
-    <string name="patadaamarillo1">Patada frontal, al frente.\n
-			Se carga levantando de modo frontal, y lo más alto posible, la rodilla retrasada.\n
-			Se lanza el pie hacia delante, golpeando con la almohadilla del pie (conocida como Ap Chuk)</string>
+    <string name="patadaamarillo1">\n
+            Patada frontal, se carga levantando de modo frontal, y lo más alto posible, la rodilla retrasada.\n
+			Se golpea con la almohadilla del pie (Ap Chuk)</string>
     <string name="nombrepatadaamarillo2">Dolio Chagui</string>
-    <string name="patadaamarillo2">Patada circular rápida.\n
-			Se carga colocando la rodilla en un arco paralelo al suelo, girando el tronco en la dirección contraria.\n
-			Se lanza la patada en movimiento circular, girando levemente la cadera y pivotando el pie de apoyo.\n
-			Golpea con el empeine del pie (conocido como Bal Dung)</string>
+    <string name="patadaamarillo2">\n
+            Patada circular rápida.\n
+			Se carga colocando la rodilla en un arco paralelo al suelo. Se lanza en movimiento circular\n
+			Golpea con el empeine del pie (Bal Dung)</string>
     <string name="nombrepatadaamarillo3">Yop Chagui</string>
-    <string name="patadaamarillo3">Patada lateral.\n
-			Se carga con el tobillo del pie que golpea flexionado hacia el interior, y el dedo gordo hacia abajo.\n
-			Se abre la pierna de lado.\n
-			Se pivota el pie de apoyo, golpeando a su vez con el borde del pie, clavando el talón (conocido como Ti Chuk)</string>
+    <string name="patadaamarillo3">\n
+            Patada lateral.\n
+			Se pivota el pie de apoyo, golpeando a su vez con el borde del pie, clavando el talón (Ti Chuk), con el pulgar hacia abajo </string>
     <string name="nombrepatadaamarillo4">Nerio Chagui</string>
-    <string name="patadaamarillo4">Patada en hacha, descendente.\n
-			Se carga elevando la pierna de modo frontal hacia delante.\n
-			Se hace descender la pierna, golpeando con la planta del pie (conocido como Bal Badat)</string>
+    <string name="patadaamarillo4">\n
+            Patada en hacha, descendente.\n
+			Se carga elevando la pierna de modo frontal hacia delante.Se hace descender la pierna, golpeando con la planta del pie (Bal Badat)</string>
 
     <!--Pumse-->
+    <string name="titulopumseamarillo">Pumse</string>
     <string name="nombrepumseamarillo1">Taeguk Il Chang</string>
-    <string name="pumseamarillo1">Representa el cielo y la luz.\n
+    <string name="pumseamarillo1">\n
+            Representa el cielo y la luz.\n
 			Compuesto de 18 secuencias.</string>
 
 
