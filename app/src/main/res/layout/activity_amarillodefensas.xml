@@ -49,42 +49,6 @@
                 android:textSize="@dimen/tamanosubtitulo" />
 
             <!-- 01 -->
-            <!--<ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginStart="@dimen/margen2"
-                android:layout_marginTop="@dimen/margen6"
-                app:srcCompat="@drawable/defensaamarillo1" />
-
-            <TextView
-                android:id="@+id/textViewSubtitulo1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/botonvolver1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView1"
-                android:layout_toRightOf="@+id/imageView1"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo1"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textViewSubtitulo1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView1"
-                android:layout_toRightOf="@+id/imageView1"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo1"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
@@ -122,46 +86,7 @@
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />
 
-            <!-- 02 -->
-            <!--<ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView1"
-                android:layout_alignStart="@+id/imageView1"
-                android:layout_below="@+id/imageView1"
-                android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/defensaamarillo2" />
-
-            <TextView
-                android:id="@+id/textViewSubtitulo2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_marginTop="@dimen/margen3"
-                android:layout_toEndOf="@+id/imageView2"
-                android:layout_toRightOf="@+id/imageView2"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo2"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_marginTop="31dp"
-                android:layout_toEndOf="@+id/imageView2"
-                android:layout_toRightOf="@+id/imageView2"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo2"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
+           <!-- 02 -->
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
@@ -202,46 +127,6 @@
                 android:textSize="@dimen/base" />
 
             <!-- 03 -->
-            <!--<ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView2"
-                android:layout_alignStart="@+id/imageView2"
-                android:layout_below="@+id/imageView2"
-                android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/defensaamarillo3" />
-
-            <TextView
-                android:id="@+id/textViewSubtitulo3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView3"
-                    android:layout_below="@+id/textView2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView3"
-                android:layout_toRightOf="@+id/imageView3"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo3"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView3"
-                    android:layout_marginBottom="@dimen/margen2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_marginTop="31dp"
-                android:layout_toEndOf="@+id/imageView3"
-                android:layout_toRightOf="@+id/imageView3"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo3"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
@@ -282,46 +167,6 @@
                 android:textSize="@dimen/base" />
 
             <!-- 04 -->
-           <!-- <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView3"
-                android:layout_alignStart="@+id/imageView3"
-                android:layout_below="@+id/imageView3"
-                android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/defensaamarillo4" />
-
-            <TextView
-                android:id="@+id/textViewSubtitulo4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView4"
-                    android:layout_below="@+id/textView2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView4"
-                android:layout_toRightOf="@+id/imageView3"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo4"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView4"
-                    android:layout_marginBottom="@dimen/margen2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_marginTop="31dp"
-                android:layout_toEndOf="@+id/imageView4"
-                android:layout_toRightOf="@+id/imageView4"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo4"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"

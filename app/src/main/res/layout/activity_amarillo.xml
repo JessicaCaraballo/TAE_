@@ -95,7 +95,7 @@
                 android:layout_marginEnd="18dp"
                 android:layout_marginRight="18dp"
                 android:fontFamily="@font/turtles"
-                android:text="Posiciones" />
+                android:text="@string/tituloposicionamarillo" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -107,7 +107,7 @@
                 android:layout_marginEnd="30dp"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/turtles"
-                android:text="Ataques" />
+                android:text="@string/tituloataqueamarillo" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -117,7 +117,7 @@
                 android:layout_alignRight="@+id/textView8"
                 android:layout_below="@+id/imageButton3"
                 android:fontFamily="@font/turtles"
-                android:text="Defensas" />
+                android:text="@string/titulodefensaamarillo" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -127,7 +127,7 @@
                 android:layout_alignEnd="@+id/textView9"
                 android:layout_alignRight="@+id/textView9"
                 android:fontFamily="@font/turtles"
-                android:text="Patadas" />
+                android:text="@string/titulopatadaamarillo" />
 
             <ImageButton
                 android:id="@+id/imageButton5"
@@ -147,7 +147,7 @@
                 android:layout_below="@+id/imageButton5"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/turtles"
-                android:text="Poomse" />
+                android:text="@string/titulopumseamarillo" />
         </RelativeLayout>
     </ScrollView>
 

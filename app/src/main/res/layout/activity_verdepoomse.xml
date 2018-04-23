@@ -7,49 +7,87 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.verdepoomseActivity">
 
-    <RelativeLayout
-        android:background="@drawable/fondo2"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
-        <TextView
-            android:id="@+id/textViewTitulo"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@drawable/fondo2"
-            android:text="verde poomse"
-            android:textColor="@color/colorsubtitulo"
-            android:textSize="@dimen/tamanosubtitulo"
-            tools:layout_editor_absoluteX="138dp"
-            tools:layout_editor_absoluteY="191dp" />
+            android:background="@drawable/fondo2">
 
-        <ImageButton
-            android:id="@+id/botonvolver1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewTitulo"
-            android:layout_marginTop="25dp"
-            android:onClick="Volver"
-            app:srcCompat="@drawable/apsogui_m"
-            android:text="Volver a verde" />
+            <!--boton volver superior -->
+            <ImageButton
+                android:id="@+id/botonvolver1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textViewTitulo"
+                android:onClick="Volver"
+                android:text="Volver a verde"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
 
-        <ImageButton
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewTitulo"
-            android:layout_marginTop="100dp"
-            android:onClick="Volver"
-            app:srcCompat="@drawable/apsogui_m"
-            android:text="Volver a verde" />
+            <!--pumse-->
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/imageView1"
+                android:background="@color/verde"
+                android:fontFamily="@font/turtles"
+                android:layout_marginTop="@dimen/margen1"
+                android:paddingLeft="@dimen/margen4"
+                android:paddingRight="@dimen/margen4"
+                android:text="@string/titulopumseverde"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanosubtitulo" />
 
-    </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewSubtitulo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonvolver1"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_toEndOf="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:fontFamily="@font/turtles"
+                android:text="@string/nombrepumseverde1"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewSubtitulo1"
+                android:layout_alignStart="@+id/textViewSubtitulo1"
+                android:layout_below="@+id/textViewSubtitulo1"
+                android:fontFamily="@font/courier"
+                android:text="@string/pumseverde1"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+
+            <VideoView
+                android:id="@+id/videoView4"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="20dp"
+                android:clickable="false"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navverde"
