@@ -143,4 +143,11 @@ public class MainActivity extends AppCompatActivity {
         principal.putExtra("usuario", (Serializable) usuario);
         startActivity(principal);
     }
+    public void registrarse(View view) {
+        Intent registrarse = new Intent(getApplicationContext(), registrarseActivity.class);
+        Usuario usuario = new Usuario();
+        usuario.setEmail("Invitado");
+        registrarse.putExtra("usuario", (Serializable) usuario);
+        startActivity(registrarse);
+    }
 }

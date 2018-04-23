@@ -116,6 +116,17 @@
             android:layout_centerVertical="true"
             android:visibility="gone" />
 
+        <Button
+            android:id="@+id/buttonRegistrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="22dp"
+            android:onClick="registrarse"
+            android:text="Registrarse" />
+
     </RelativeLayout>
 
 
