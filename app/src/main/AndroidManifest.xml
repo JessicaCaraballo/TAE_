@@ -21,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".registrarseActivity" />
         <activity android:name=".principalActivity" />
         <activity android:name=".historiaActivity" />
         <activity android:name=".saludoActivity" />
@@ -44,12 +45,14 @@
         <activity android:name=".verdedefensasActivity" />
         <activity android:name=".verdepatadasActivity" />
         <activity android:name=".verdepoomseActivity" />
+        <activity android:name=".verdepumActivity" />
         <activity android:name=".azulActivity" />
         <activity android:name=".azulposicionesActivity" />
         <activity android:name=".azulataquesActivity" />
         <activity android:name=".azuldefensasActivity" />
         <activity android:name=".azulpatadasActivity" />
         <activity android:name=".azulpoomseActivity" />
+        <activity android:name=".azulpumActivity" />
         <activity android:name=".marronActivity" />
         <activity android:name=".marronposicionesActivity" />
         <activity android:name=".marronataquesActivity" />

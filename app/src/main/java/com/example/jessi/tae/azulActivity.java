@@ -31,6 +31,7 @@ public class azulActivity extends AppCompatActivity {
     private ImageButton mImageButtonDefensas;
     private ImageButton mImageButtonPatadas;
     private ImageButton mImageButtonPoomse;
+    private ImageButton mImageButtonPum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +82,15 @@ public class azulActivity extends AppCompatActivity {
                 startActivity(azulPatadas);
             }
         });
+        mImageButtonPum = (ImageButton) findViewById(R.id.imageButton6);
+        mImageButtonPum.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent azulPum = new Intent(getApplicationContext(), azulpumActivity.class);
+                azulPum.putExtra("usuario", (Serializable) usuario);
+                startActivity(azulPum);
+            }
+        });
         mImageButtonPoomse = (ImageButton) findViewById(R.id.imageButton5);
         mImageButtonPoomse.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -90,6 +100,7 @@ public class azulActivity extends AppCompatActivity {
                 startActivity(azulPoomse);
             }
         });
+
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

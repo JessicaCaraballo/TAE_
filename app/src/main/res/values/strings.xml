@@ -272,7 +272,9 @@
             Defensa de la zona media.\n
 			Se bloquea con el canto de la mano, con un movimiento lateral del interior al extaerior.\n
 			Una mano protege a la altura del esternón, la otra gira, terminando en una posición más superior.</string>
+
     <!--Pum-->
+    <string name="titulopumverde">Mov. Especiales</string>
     <string name="nombrepumverde1">Chebi Pum Mok Chigui</string>
     <string name="pumverde1"> \n
             Movimiento simultáneo de ataque y defensa.\n
@@ -289,6 +291,13 @@
     <string name="nombrepatadaverde2">Mon Dolio Yop Chagui</string>
     <string name="patadaverde2">\n
             Patada Yop Chagui, pero con giro de cuerpo.</string>
+
+    <!-- Combinación Técnicas -->
+    <string name="nombrecombinaciontecnicasverde">Combinación de técnicas</string>
+    <string name="combinaciontecnicasverde1">\n
+                                               Bandal Chagui - Mon Dolio Nako Chagui (con diferente pie) \n
+                                               Yop Chagui - Mon Dolio Yop Chagui - Yop Chagui (con diferente pie)\n
+                                               Mon Dolio Nako Chagui (en 360 grados) - Colio Chagui (mismo pie)</string>
 
     <!--Pumse-->
     <string name="titulopumseverde">Pumse</string>
@@ -320,12 +329,60 @@
 
     <!--Ataques-->
     <string name="tituloataqueazul">Ataques</string>
+    <string name="nombreataqueazul1">Du Bang Chumok</string>
+    <string name="ataqueazul1">\n
+            Ataque de la castaña.\n
+		    Parecido a Checho Jirugui, pero golpeando con los nudillos (Bang Chumok) del dedo corazón.</string>
 
     <!--Defensas-->
     <string name="titulodefensaazul">Defensas</string>
+    <string name="nombredefensaazul1">Jan Sonnal Yop Montong Bakat Maki</string>
+    <string name="defensaazul1">\n
+            Defensa realizada con el canto de la mano, del interior al exterior./n
+            Se bloquea lateralmente.</string>
+    <string name="nombredefensaazul2">Jan Sonnal Yop Mok Chigui</string>
+    <string name="defensaazul2">\n
+            Defensa lateral con el canto de la mano.</string>
+
+    <!--Pum-->
+    <string name="titulopumazul">Mov. Especial</string>
+    <string name="nombrepumazul1">Chagun Dol Chogui</string>
+    <string name="pumazul1"> \n
+            La bisagra.</string>
+
+    <string name="nombrepumazul2">Chagun Dol Chogui</string>
+    <string name="pumazul2"> \n
+            La mano bloquea de modo cortante.\n
+            Se usa el canto exterior de la mano.\n
+            El codo a la altura del hombro, el brazo en diagonal al cuerpo.</string>
 
     <!--Patadas-->
     <string name="titulopatadaazul">Patadas</string>
+    <string name="nombrepatadaazul1">Nako Chagui</string>
+    <string name="patadaazul1">\n
+            Patada en gancho.\n
+            Lanza el pie que golpea en arco, paralelo al suelo. Golpe con el talón del pie. </string>
+    <string name="nombrepatadaazul2">Furio Chagui</string>
+    <string name="patadaazul2">\n
+            Se realiza del interior al exterior.\n
+            Golpea con la plata del pie.</string>
+    <string name="nombrepatadaazul3">Tuio Ap Chagui</string>
+    <string name="patadaazul3">\n
+            Ap Chagui en salto.</string>
+    <string name="nombrepatadaazul4">Tuio Yop Chagui</string>
+    <string name="patadaazul4">\n
+            Yoo Chagui en salto.</string>
+    <string name="nombrepatadaazul5">Tuio Dolio Chagui</string>
+    <string name="patadaazul5">\n
+            Dolio Chagui en salto.</string>
+
+    <!-- Combinación Técnicas -->
+    <string name="nombrecombinaciontecnicasazul">Combinación de técnicas (con la misma pierna)</string>
+    <string name="combinaciontecnicasazul1"> \n
+                                                Dolio Chagui - Culo Nako Chagui \n
+                                                Culo Dolio Chagui Doble (Monton y Olgul)\n
+                                                Culo Yop Chagui Olgul\n
+                                                PAp Chagui - Yop Chagui Monton</string>
 
     <!--Pumse-->
     <string name="titulopumseazul">Pumse</string>
@@ -335,8 +392,6 @@
     <string name="nombrepumseazul2">Taeguk Yuk Chang</string>
     <string name="pumseazul2">\n
             Simboliza el agua, mostrando que podemos superar las dificultades y penas siguiendo hacia delante.</string>
-
-
     <!--MARRON-->
     <string name="significadomarron">Simboliza el peligro,  indica a sus oponentes que deben mantenerse alejados, debido a la madurez de sus conocimientos.\n
         Es el fruto cosechado del árbol del Taekwondo.</string>

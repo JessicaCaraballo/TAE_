@@ -23,9 +23,8 @@ public class naranjapoomseActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
-
     private VideoView mVideoView;
-    private String youtubeID;
+    private VideoView mVideoView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,6 +115,19 @@ public class naranjapoomseActivity extends AppCompatActivity {
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pumse2);
         mVideoView.setVideoURI(uri);
         mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mVideoView.start();
+            }
+        });
+
+
+        mVideoView2 =(VideoView)findViewById(R.id.videoView5);
+        MediaController mc2 = new MediaController(this);
+        mVideoView2.setMediaController(mc2);
+        Uri uri2 = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pumse6);
+        mVideoView2.setVideoURI(uri2);
+        mVideoView2.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
                 mVideoView.start();

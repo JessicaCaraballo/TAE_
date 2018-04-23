@@ -133,11 +133,9 @@
                 android:id="@+id/imageButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView10"
-                android:layout_alignStart="@+id/textView10"
+                android:layout_alignLeft="@+id/imageButton3"
+                android:layout_alignStart="@+id/imageButton3"
                 android:layout_below="@+id/textView10"
-                android:layout_marginLeft="27dp"
-                android:layout_marginStart="27dp"
                 app:srcCompat="@drawable/botonpumse" />
 
             <TextView
@@ -146,8 +144,59 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageButton5"
                 android:layout_centerHorizontal="true"
+                android:visibility="invisible"
                 android:fontFamily="@font/turtles"
                 android:text="@string/titulopumseverde" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton5"
+                android:layout_toLeftOf="@+id/textView12"
+                android:layout_toStartOf="@+id/textView12"
+                android:fontFamily="@font/turtles"
+                android:text="@string/titulopumseverde" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageButton6"
+                android:layout_alignRight="@+id/imageButton6"
+                android:layout_below="@+id/imageButton6"
+                android:fontFamily="@font/turtles"
+                android:text="@string/titulopumverde" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView12"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/turtles"
+                android:text="@string/nombrecombinaciontecnicasverde" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView13"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/courier"
+                android:text="@string/combinaciontecnicasverde1" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView11"
+                android:layout_toEndOf="@+id/textView12"
+                android:layout_toRightOf="@+id/textView12"
+                android:src="@drawable/botonpum" />
         </RelativeLayout>
     </ScrollView>
 
