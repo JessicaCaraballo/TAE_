@@ -83,12 +83,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView1"
-                android:layout_marginLeft="@dimen/margen4"
+                android:layout_marginLeft="@dimen/margen3"
                 android:padding="@dimen/margen2"
                 android:fontFamily="@font/courier"
                 android:text="@string/nombreataquenegro"
                 android:textColor="@color/base"
-                android:textSize="@dimen/tamanotecnica" />
+                android:textSize="@dimen/tamanotecnica2" />
 
             <!--boton volver inferior
             <ImageButton

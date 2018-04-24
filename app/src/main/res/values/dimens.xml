@@ -10,6 +10,7 @@
     <dimen name="tamanotitulo">36dp</dimen>
     <dimen name="tamanosubtitulo">24dp</dimen>
     <dimen name="tamanotecnica">18dp</dimen>
+    <dimen name="tamanotecnica2">16dp</dimen>
     <dimen name="margen1">5dp</dimen>
     <dimen name="margen2">10dp</dimen>
     <dimen name="margen3">20dp</dimen>

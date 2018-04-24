@@ -15,6 +15,15 @@
     <!--Historia-->
     <string name="historia"></string>
 
+    <!--Sobre nosotros-->
+    <string name="sobrenosotros">Si estás leyendo esto, es porque eres tan entusiasta como nosotros de este arte marcia... :)\n
+        Somos Jessi y David, dos estudiantes de 2º grado superior, Desarrollo de Aplicaciones Multiplataformar, también conocido como DAM.\n
+        Este proyecto ha sido creado sin ánimo de lucro, con material propio, tanto imágenes y textos, basados en conocimientos adquiridos como deportista desde el año xxxx.\n
+        Nos hemos dedicido a crear está APP tras encuentrar un agujero en la falta de aplicaciones de este arte marcial, el Taekwondo.
+        Esperemos que os guste, y os sirva de utildad. Tenéis una comunidad a vuestra disposición para poder mejorarla.</string>
+
+    Amantes del taekwondo y p-->
+
     <!--Saludo-->
     <string name="saludo1">El saludo es una demostración de respeto al maestro y al resto de nuestros compañeros. El saludo no debe ser solo un gesto vacío. A fuerza de repetirlo una y otra vez esta
      manifestación de respeto se convierte en un gesto espontáneo y sincero que se expresa de corazón y que enriquece la vida tanto de quién lo da como de quien lo recibe.</string>
@@ -128,7 +137,7 @@
     <string name="titulopatadaamarillo">Patadas</string>
     <string name="nombrepatadaamarillo1">Ap Chagui</string>
     <string name="patadaamarillo1">\n
-            Patada frontal, se carga levantando de modo frontal, y lo más alto posible, la rodilla retrasada.\n
+            Patada frontal levantando lo más alto posible, la rodilla retrasada.\n
 			Se golpea con la almohadilla del pie (Ap Chuk)</string>
     <string name="nombrepatadaamarillo2">Dollyo Chagui</string>
     <string name="patadaamarillo2">\n
@@ -219,11 +228,11 @@
     <!-- Combinación Técnicas -->
     <string name="nombrecombinaciontecnicasnaranja">Combinación de técnicas</string>
     <string name="combinaciontecnicasnaranja1"> \n
-                                                Are Maki - Monton An Maki - Monton Bande Jirugui (con diferente mano)\n
-                                                Are Maki - Olgul Maki (con misma mano) - Monton Baro Jirugui\n
-                                                Ap Chagui - Mon Dolio Tuit Chagui (con diferente pie)\n
-                                                Ap Chagui - Yop Chagui (con diferente pie)\n
-                                                Dolio Chagui Monton -Yop Chagui Olgul (con diferente pie)\n
+                                                Are Maki - Monton An Maki - Monton Bande Jirugui (con diferente mano)\n\n
+                                                Are Maki - Olgul Maki (con misma mano) - Monton Baro Jirugui\n\n
+                                                Ap Chagui - Mon Dolio Tuit Chagui (con diferente pie)\n\n
+                                                Ap Chagui - Yop Chagui (con diferente pie)\n\n
+                                                Dolio Chagui Monton -Yop Chagui Olgul (con diferente pie)\n\n
                                                 Bandal Chagui - Nerio Chagui</string>
 
     <!--Pumse-->
@@ -307,8 +316,8 @@
     <!-- Combinación Técnicas -->
     <string name="nombrecombinaciontecnicasverde">Combinación de técnicas</string>
     <string name="combinaciontecnicasverde1">\n
-                                               Bandal Chagui - Mon Dolio Nako Chagui (con diferente pie) \n
-                                               Yop Chagui - Mon Dolio Yop Chagui - Yop Chagui (con diferente pie)\n
+                                               Bandal Chagui - Mon Dolio Nako Chagui (con diferente pie) \n\n
+                                               Yop Chagui - Mon Dolio Yop Chagui - Yop Chagui (con diferente pie)\n\n
                                                Mon Dolio Nako Chagui (en 360 grados) - Colio Chagui (mismo pie)</string>
 
     <!--Pumse-->
@@ -418,9 +427,9 @@
     <!-- Combinación Técnicas -->
     <string name="nombrecombinaciontecnicasazul">Combinación de técnicas (con la misma pierna)</string>
     <string name="combinaciontecnicasazul1"> \n
-                                                Dolio Chagui - Culo Nako Chagui \n
-                                                Culo Dolio Chagui Doble (Monton y Olgul)\n
-                                                Culo Yop Chagui Olgul\n
+                                                Dolio Chagui - Culo Nako Chagui \n\n
+                                                Culo Dolio Chagui Doble (Monton y Olgul)\n\n
+                                                Culo Yop Chagui Olgul\n\n
                                                 PAp Chagui - Yop Chagui Monton</string>
 
     <!--Pumse-->
@@ -475,7 +484,7 @@
     <string name="defensamarron4">\n
             Defensa zon baja.\n
             Se cruzan las muñecas, el brazo de la pierna delantera está sobre la otra.\n
-            Girando, se extienden los brazos, quedando la muñeca de la pierna delantera, cruzada por debajo de la otra. .</string>
+            Girando, se extienden los brazos, quedando la muñeca de la pierna delantera, cruzada por debajo de la otra.</string>
     <string name="nombredefensamarron5">Jansonnal Momtong Yop Maki</string>
     <string name="defensamarron5">\n
             Defensa zona media.\n
@@ -550,7 +559,7 @@
     <string name="titulopumnegro">Mov. Especial</string>
     <string name="titulopumnegrocoreano">Pum</string>
     <string name="textopumnegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
-    <string name="nombrepumnegro">\n Kibon Chumbi Sogui\n Chebipum Mok Chigui\n Momtong Piochok Palkup Chicgui\n Bituro Jansonnal Olgul Bakat Maki\n Bo Chumok Chumbi\n Gawi Maki\n Dangkio Ollyo Murup Chigui\n
+    <string name="nombrepumnegro">\n Kibon Chumbi Sogui\n Chebipum Mok Chigui\n Momtong Piochok Palkup Chicgui\n Bituro Olgul Bakat Maki\n Bo Chumok Chumbi\n Gawi Maki\n Dangkio Ollyo Murup Chigui\n
             Piochok Chagui\n </string>
     <string name="textopumnegro2">Los dos movimientos especiales restantes, se explican a continuación. \n</string>
     <string name="nombrepumnegro1">Oe Santul Maki</string>
@@ -580,9 +589,9 @@
     <!-- Combinación Técnicas -->
     <string name="nombrecombinaciontecnicasnegro">Combinación de técnicas (avanzando y regresando)</string>
     <string name="combinaciontecnicasnegro1"> \n
-                                                Neryo Chagui - Ap Chagui - Yop Chagui \n
-                                                Yop Chagui - Dollyo Chagui - Mom Dollyo Tuit Chagui\n
-                                                Ap Chagui - Nacko Chagui - Dollyo Chagui\n
+                                                Neryo Chagui - Ap Chagui - Yop Chagui \n\n
+                                                Yop Chagui - Dollyo Chagui - Mom Dollyo Tuit Chagui\n\n
+                                                Ap Chagui - Nacko Chagui - Dollyo Chagui\n\n
                                                 Dollyo Chagui - Yop Chagui - Mom Dollyo Nacko Chagui</string>
     <!--Pumse-->
     <string name="titulopumsenegro">Pumse</string>

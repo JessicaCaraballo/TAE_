@@ -56,6 +56,7 @@
                 android:layout_marginLeft="@dimen/margen2"
                 android:layout_marginStart="@dimen/margen2"
                 android:layout_marginTop="@dimen/margen6"
+                android:layout_marginBottom="@dimen/margen4"
                 app:srcCompat="@drawable/pummarron1" />
 
             <TextView
@@ -91,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/imageView1"
                 android:layout_alignStart="@+id/imageView1"
+                android:layout_marginBottom="@dimen/margen4"
                 android:layout_below="@+id/imageView1"
                 android:layout_marginTop="@dimen/margen2"
                 app:srcCompat="@drawable/pummarron2" />
