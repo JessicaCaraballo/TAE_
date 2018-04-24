@@ -7,49 +7,194 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.negropatadasActivity">
 
-    <RelativeLayout
-        android:background="@drawable/fondo2"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
-        <TextView
-            android:id="@+id/textViewTitulo"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@drawable/fondo2"
-            android:text="negro patadas"
-            android:textColor="@color/colorsubtitulo"
-            android:textSize="@dimen/tamanosubtitulo"
-            tools:layout_editor_absoluteX="138dp"
-            tools:layout_editor_absoluteY="191dp" />
+            android:background="@drawable/fondo2">
 
-        <ImageButton
-            android:id="@+id/botonvolver1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewTitulo"
-            android:layout_marginTop="25dp"
-            android:onClick="Volver"
-            app:srcCompat="@drawable/apsogui_m"
-            android:text="Volver a negro" />
+            <!--boton volver superior -->
+            <ImageButton
+                android:id="@+id/botonvolver1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textViewTitulo"
+                android:onClick="Volver"
+                android:text="Volver a negro"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
 
-        <ImageButton
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewTitulo"
-            android:layout_marginTop="100dp"
-            android:onClick="Volver"
-            app:srcCompat="@drawable/apsogui_m"
-            android:text="Volver a negro" />
+            <!--patada-->
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/blanco"
+                android:background="@color/base"
+                android:fontFamily="@font/capture_it"
+                android:layout_marginTop="@dimen/margen1"
+                android:paddingLeft="@dimen/margen4"
+                android:paddingRight="@dimen/margen4"
+                android:text="@string/titulopatadanegro"
+                android:textSize="@dimen/tamanosubtitulo" />
 
-    </RelativeLayout>
+            <!--Coreano-->
+            <TextView
+                android:id="@+id/textViewSubtitulo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botonvolver1"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:fontFamily="@font/turtles"
+                android:text="@string/titulopatadanegrocoreano"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <!--Explicacion-->
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewSubtitulo1"
+                android:layout_alignStart="@+id/textViewSubtitulo1"
+                android:layout_margin="@dimen/margen2"
+                android:layout_below="@+id/textViewSubtitulo1"
+                android:fontFamily="@font/courier"
+                android:text="@string/textopatadanegro"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+            <!--Tecnicas-->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="@dimen/margen4"
+                android:padding="@dimen/margen2"
+                android:fontFamily="@font/courier"
+                android:text="@string/nombrepatadanegro"
+                android:textColor="@color/base"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <!--Explicacion 2-->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_margin="@dimen/margen2"
+                android:layout_below="@+id/textView2"
+                android:fontFamily="@font/courier"
+                android:text="@string/textopatadanegro2"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+            <!-- 01 -->
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginStart="@dimen/margen2"
+                android:layout_marginTop="@dimen/margen5"
+                app:srcCompat="@drawable/patadanegro1" />
+
+            <TextView
+                android:id="@+id/textViewSubtitulo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_toEndOf="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:fontFamily="@font/turtles"
+                android:text="@string/nombrepatadanegro1"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_toEndOf="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:fontFamily="@font/courier"
+                android:text="@string/patadanegro1"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+            <!-- 02 -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignStart="@+id/imageView1"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginTop="@dimen/margen5"
+                app:srcCompat="@drawable/patadanegro2" />
+
+            <TextView
+                android:id="@+id/textViewSubtitulo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:fontFamily="@font/turtles"
+                android:text="@string/nombrepatadanegro2"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_marginTop="31dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:fontFamily="@font/courier"
+                android:text="@string/patadanegro2"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+            <!--boton volver inferior-->
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="Volver"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        </RelativeLayout>
+    </ScrollView>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navnegro"

@@ -206,12 +206,92 @@
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />
 
+            <!-- 05 -->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignStart="@+id/imageView4"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginTop="@dimen/margen2"
+                app:srcCompat="@drawable/ataquenaranja5" />
+
+            <TextView
+                android:id="@+id/textViewSubtitulo5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView5"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_toEndOf="@+id/imageView5"
+                android:layout_toRightOf="@+id/imageView5"
+                android:fontFamily="@font/turtles"
+                android:text="@string/nombreataquenaranja5"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView5"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_marginTop="31dp"
+                android:layout_toEndOf="@+id/imageView5"
+                android:layout_toRightOf="@+id/imageView5"
+                android:fontFamily="@font/courier"
+                android:text="@string/ataquenaranja5"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+            <!-- 06 -->
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_alignStart="@+id/imageView5"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginTop="@dimen/margen2"
+                app:srcCompat="@drawable/ataquenaranja6" />
+
+            <TextView
+                android:id="@+id/textViewSubtitulo6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView6"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView6"
+                android:fontFamily="@font/turtles"
+                android:text="@string/nombreataquenaranja6"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView6"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:layout_marginTop="31dp"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView6"
+                android:fontFamily="@font/courier"
+                android:text="@string/ataquenaranja6"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
             <!--boton volver inferior -->
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageView4"
+                android:layout_alignBottom="@+id/imageView6"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="13dp"

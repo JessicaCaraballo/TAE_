@@ -31,7 +31,7 @@
                 android:text="Volver a azul"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
-            <!--ataques-->
+            <!--pum-->
             <TextView
                 android:id="@+id/textViewTitulo"
                 android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
                 android:layout_marginTop="@dimen/margen1"
                 android:paddingLeft="@dimen/margen4"
                 android:paddingRight="@dimen/margen4"
-                android:text="@string/tituloataqueazul"
+                android:text="@string/titulopumazul"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanosubtitulo" />
 
@@ -56,19 +56,17 @@
                 android:layout_marginLeft="@dimen/margen2"
                 android:layout_marginStart="@dimen/margen2"
                 android:layout_marginTop="@dimen/margen6"
-                app:srcCompat="@drawable/ataqueazul1" />
+                app:srcCompat="@drawable/pumazul1" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1"
                 android:layout_below="@+id/botonvolver1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView1"
-                android:layout_toRightOf="@+id/imageView1"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreataqueazul1"
+                android:text="@string/nombrepumazul1"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -82,11 +80,11 @@
                 android:layout_toEndOf="@+id/imageView1"
                 android:layout_toRightOf="@+id/imageView1"
                 android:fontFamily="@font/courier"
-                android:text="@string/ataqueazul1"
+                android:text="@string/pumazul1"
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />
 
-            <!-- 02 
+            <!-- 02 -->
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
@@ -95,7 +93,7 @@
                 android:layout_alignStart="@+id/imageView1"
                 android:layout_below="@+id/imageView1"
                 android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/ataqueazul2" />
+                app:srcCompat="@drawable/pumazul2" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo2"
@@ -107,7 +105,7 @@
                 android:layout_toEndOf="@+id/imageView2"
                 android:layout_toRightOf="@+id/imageView2"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreataqueazul2"
+                android:text="@string/nombrepumazul2"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -122,11 +120,11 @@
                 android:layout_toEndOf="@+id/imageView2"
                 android:layout_toRightOf="@+id/imageView2"
                 android:fontFamily="@font/courier"
-                android:text="@string/ataqueazul2"
+                android:text="@string/pumazul2"
                 android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
+                android:textSize="@dimen/base" />
 
-            <!-- 03 
+            <!-- 03 -->
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
@@ -135,7 +133,7 @@
                 android:layout_alignStart="@+id/imageView2"
                 android:layout_below="@+id/imageView2"
                 android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/ataqueazul3" />
+                app:srcCompat="@drawable/pumazul3" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo3"
@@ -147,7 +145,7 @@
                 android:layout_toEndOf="@+id/imageView3"
                 android:layout_toRightOf="@+id/imageView3"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreataqueazul3"
+                android:text="@string/nombrepumazul3"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -162,9 +160,9 @@
                 android:layout_toEndOf="@+id/imageView3"
                 android:layout_toRightOf="@+id/imageView3"
                 android:fontFamily="@font/courier"
-                android:text="@string/ataqueazul3"
+                android:text="@string/pumazul3"
                 android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
+                android:textSize="@dimen/base" />
 
             <!-- 04 
             <ImageView
@@ -175,7 +173,7 @@
                 android:layout_alignStart="@+id/imageView3"
                 android:layout_below="@+id/imageView3"
                 android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/ataqueazul4" />
+                app:srcCompat="@drawable/pumazul4" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo4"
@@ -187,7 +185,7 @@
                 android:layout_toEndOf="@+id/imageView4"
                 android:layout_toRightOf="@+id/imageView3"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreataqueazul4"
+                android:text="@string/nombrepumazul4"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -202,23 +200,23 @@
                 android:layout_toEndOf="@+id/imageView4"
                 android:layout_toRightOf="@+id/imageView4"
                 android:fontFamily="@font/courier"
-                android:text="@string/ataqueazul4"
+                android:text="@string/pumazul4"
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />-->
 
-            <!--boton volver inferior 
+            <!--boton volver inferior -->
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageView4"
+                android:layout_alignBottom="@+id/imageView3"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="13dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:onClick="Volver"
-                app:srcCompat="?attr/actionModeCloseDrawable" />-->
+                app:srcCompat="?attr/actionModeCloseDrawable" />
 
 
         </RelativeLayout>

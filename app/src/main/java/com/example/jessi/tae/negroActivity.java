@@ -31,6 +31,7 @@ public class negroActivity extends AppCompatActivity {
     private ImageButton mImageButtonDefensas;
     private ImageButton mImageButtonPatadas;
     private ImageButton mImageButtonPoomse;
+    private ImageButton mImageButtonPum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,15 @@ public class negroActivity extends AppCompatActivity {
                 Intent negroDefensas = new Intent(getApplicationContext(), negrodefensasActivity.class);
                 negroDefensas.putExtra("usuario", (Serializable) usuario);
                 startActivity(negroDefensas);
+            }
+        });
+        mImageButtonPum = (ImageButton) findViewById(R.id.imageButton6);
+        mImageButtonPum.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent negroPum = new Intent(getApplicationContext(), negropumActivity.class);
+                negroPum.putExtra("usuario", (Serializable) usuario);
+                startActivity(negroPum);
             }
         });
         mImageButtonPatadas = (ImageButton) findViewById(R.id.imageButton4);
@@ -146,6 +156,16 @@ public class negroActivity extends AppCompatActivity {
                         negro.putExtra("usuario", (Serializable) usuario);
                         startActivity(negro);
                         break;
+                    case R.id.terminologia:
+                        Intent terminologia = new Intent(getApplicationContext(),terminologiaActivity.class);
+                        terminologia.putExtra("usuario", (Serializable) usuario);
+                        startActivity(terminologia);
+                        break;
+                    case R.id.partescuerpo:
+                        Intent partescuerpo = new Intent(getApplicationContext(),partescuerpoActivity.class);
+                        partescuerpo.putExtra("usuario", (Serializable) usuario);
+                        startActivity(partescuerpo);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);
@@ -158,9 +178,9 @@ public class negroActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //this.mMenu = menu;
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.drawermenu, menu);
+        ////this.mMenu = menu;
+        //MenuInflater inflater = getMenuInflater();
+        //inflater.inflate(R.menu.drawermenu, menu);
         return true;
     }
 

@@ -45,7 +45,7 @@
         </item>
     </group>
     <group>
-        <item android:id="@+id/gimnasiosclubs" android:title="Gimnasions y clubs">
+        <item android:id="@+id/gimnasiosclubs" android:title="Gimnasions y clubs" android:visible="false" >
             <menu>
                 <item android:id="@+id/buscar" android:title="Buscar gimnasio/club" android:icon="@drawable/ic_menu_camera" />
                 <item android:id="@+id/alta" android:title="Solicitar alta" android:icon="@drawable/ic_menu_camera" />
@@ -56,5 +56,5 @@
     <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery" />
     <item android:id="@+id/about" android:title="Sobre nosotros" android:icon="@drawable/ic_menu_manage" />
     <item android:id="@+id/configuracion" android:title="Configuración" android:icon="@drawable/ic_menu_send" />
-    <item android:id="@+id/salir" android:title="salir" android:icon="@drawable/ic_menu_slideshow" />
+    <item android:id="@+id/salir" android:title="Salir" android:icon="@drawable/ic_menu_slideshow" />
 </menu>

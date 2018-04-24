@@ -48,7 +48,7 @@
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanosubtitulo" />
 
-
+            <!-- 01 -->
             <TextView
                 android:id="@+id/textViewSubtitulo1"
                 android:layout_width="wrap_content"
@@ -87,8 +87,44 @@
                 android:clickable="false"
                 android:visibility="visible" />
 
+            <!-- 02 -->
+            <TextView
+                android:id="@+id/textViewSubtitulo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoView4"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:fontFamily="@font/turtles"
+                android:text="@string/nombrepumsenaranja2"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanotecnica" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewSubtitulo2"
+                android:layout_alignStart="@+id/textViewSubtitulo2"
+                android:layout_below="@+id/textViewSubtitulo2"
+                android:layout_marginLeft="@dimen/margen2"
+                android:layout_marginRight="@dimen/margen2"
+                android:fontFamily="@font/courier"
+                android:text="@string/pumsepumsenaranja2"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
 
             <VideoView
+                android:id="@+id/videoView5"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="20dp"
+                android:clickable="false"
+                android:visibility="visible" />
+            <!--<VideoView
                 android:id="@+id/videoView5"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
@@ -97,7 +133,7 @@
                 android:layout_below="@+id/videoView4"
                 android:layout_marginTop="20dp"
                 android:clickable="false"
-                android:visibility="visible" />
+                android:visibility="visible" />-->
         </RelativeLayout>
     </ScrollView>
 

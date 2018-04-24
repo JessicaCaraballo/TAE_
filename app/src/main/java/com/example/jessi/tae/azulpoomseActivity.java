@@ -96,6 +96,16 @@ public class azulpoomseActivity extends AppCompatActivity {
                         negro.putExtra("usuario", (Serializable) usuario);
                         startActivity(negro);
                         break;
+                    case R.id.terminologia:
+                        Intent terminologia = new Intent(getApplicationContext(),terminologiaActivity.class);
+                        terminologia.putExtra("usuario", (Serializable) usuario);
+                        startActivity(terminologia);
+                        break;
+                    case R.id.partescuerpo:
+                        Intent partescuerpo = new Intent(getApplicationContext(),partescuerpoActivity.class);
+                        partescuerpo.putExtra("usuario", (Serializable) usuario);
+                        startActivity(partescuerpo);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);
@@ -134,9 +144,9 @@ public class azulpoomseActivity extends AppCompatActivity {
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //this.mMenu = menu;
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.drawermenu, menu);
+        ////this.mMenu = menu;
+        //MenuInflater inflater = getMenuInflater();
+        //inflater.inflate(R.menu.drawermenu, menu);
         return true;
     }
 

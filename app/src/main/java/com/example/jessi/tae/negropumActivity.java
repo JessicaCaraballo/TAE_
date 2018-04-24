@@ -1,45 +1,37 @@
 package com.example.jessi.tae;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.MediaController;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 import java.io.Serializable;
 
-public class marronpoomseActivity extends AppCompatActivity {
+public class negropumActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
-    private VideoView mVideoView;
-    private String youtubeID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_marronpoomse);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.marronpoomse);
+        setContentView(R.layout.activity_negropum);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.negropum);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navmarron);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navnegro);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
-        InsertarVideo();
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -115,20 +107,6 @@ public class marronpoomseActivity extends AppCompatActivity {
         });
     }
 
-    private void InsertarVideo() {
-        mVideoView =(VideoView)findViewById(R.id.videoView4);
-        MediaController mc = new MediaController(this);
-        mVideoView.setMediaController(mc);
-        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pumse7);
-        mVideoView.setVideoURI(uri);
-        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mVideoView.start();
-            }
-        });
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         ////this.mMenu = menu;
@@ -146,8 +124,8 @@ public class marronpoomseActivity extends AppCompatActivity {
     }
 
     public void Volver(View view) {
-        Intent marron = new Intent(getApplicationContext(),marronActivity.class);
-        marron.putExtra("usuario", (Serializable) usuario);
-        startActivity(marron);
+        Intent negro = new Intent(getApplicationContext(),negroActivity.class);
+        negro.putExtra("usuario", (Serializable) usuario);
+        startActivity(negro);
     }
 }

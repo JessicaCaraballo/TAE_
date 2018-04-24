@@ -2,10 +2,10 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/marronposiciones"
+    android:id="@+id/marronpum"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jessi.tae.marronposicionesActivity">
+    tools:context="com.example.jessi.tae.marronpumActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
                 android:text="Volver a marron"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
-            <!--posiciones-->
+            <!--pum-->
             <TextView
                 android:id="@+id/textViewTitulo"
                 android:layout_width="wrap_content"
@@ -40,11 +40,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignStart="@+id/imageView1"
                 android:background="@color/marron"
-                android:fontFamily="@font/capture_it"
+                android:fontFamily="@font/turtles"
                 android:layout_marginTop="@dimen/margen1"
                 android:paddingLeft="@dimen/margen4"
                 android:paddingRight="@dimen/margen4"
-                android:text="@string/tituloposicionmarron"
+                android:text="@string/titulopummarron"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanosubtitulo" />
 
@@ -56,19 +56,17 @@
                 android:layout_marginLeft="@dimen/margen2"
                 android:layout_marginStart="@dimen/margen2"
                 android:layout_marginTop="@dimen/margen6"
-                app:srcCompat="@drawable/posicionmarron1" />
+                app:srcCompat="@drawable/pummarron1" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1"
                 android:layout_below="@+id/botonvolver1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView1"
-                android:layout_toRightOf="@+id/imageView1"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreposicionmarron1"
+                android:text="@string/nombrepummarron1"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -82,11 +80,11 @@
                 android:layout_toEndOf="@+id/imageView1"
                 android:layout_toRightOf="@+id/imageView1"
                 android:fontFamily="@font/courier"
-                android:text="@string/posicionmarron1"
+                android:text="@string/pummarron1"
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />
 
-            <!-- 02
+            <!-- 02 -->
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
@@ -95,7 +93,7 @@
                 android:layout_alignStart="@+id/imageView1"
                 android:layout_below="@+id/imageView1"
                 android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/posicionmarron2" />
+                app:srcCompat="@drawable/pummarron2" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo2"
@@ -107,7 +105,7 @@
                 android:layout_toEndOf="@+id/imageView2"
                 android:layout_toRightOf="@+id/imageView2"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreposicionmarron2"
+                android:text="@string/nombrepummarron2"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -122,11 +120,11 @@
                 android:layout_toEndOf="@+id/imageView2"
                 android:layout_toRightOf="@+id/imageView2"
                 android:fontFamily="@font/courier"
-                android:text="@string/posicionmarron2"
+                android:text="@string/pummarron2"
                 android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
+                android:textSize="@dimen/base" />
 
-            <!-- 03
+            <!-- 03 -->
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
@@ -135,7 +133,7 @@
                 android:layout_alignStart="@+id/imageView2"
                 android:layout_below="@+id/imageView2"
                 android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/posicionmarron3" />
+                app:srcCompat="@drawable/pummarron3" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo3"
@@ -147,7 +145,7 @@
                 android:layout_toEndOf="@+id/imageView3"
                 android:layout_toRightOf="@+id/imageView3"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreposicionmarron3"
+                android:text="@string/nombrepummarron3"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -162,11 +160,11 @@
                 android:layout_toEndOf="@+id/imageView3"
                 android:layout_toRightOf="@+id/imageView3"
                 android:fontFamily="@font/courier"
-                android:text="@string/posicionmarron3"
+                android:text="@string/pummarron3"
                 android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
+                android:textSize="@dimen/base" />
 
-            <!-- 04
+            <!-- 04 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
@@ -175,7 +173,7 @@
                 android:layout_alignStart="@+id/imageView3"
                 android:layout_below="@+id/imageView3"
                 android:layout_marginTop="@dimen/margen2"
-                app:srcCompat="@drawable/posicionmarron4" />
+                app:srcCompat="@drawable/pummarron4" />
 
             <TextView
                 android:id="@+id/textViewSubtitulo4"
@@ -187,7 +185,7 @@
                 android:layout_toEndOf="@+id/imageView4"
                 android:layout_toRightOf="@+id/imageView3"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombreposicionmarron4"
+                android:text="@string/nombrepummarron4"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanotecnica" />
 
@@ -202,27 +200,28 @@
                 android:layout_toEndOf="@+id/imageView4"
                 android:layout_toRightOf="@+id/imageView4"
                 android:fontFamily="@font/courier"
-                android:text="@string/posicionmarron4"
+                android:text="@string/pummarron4"
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />-->
 
-            <!--boton volver inferior
+            <!--boton volver inferior -->
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageView4"
+                android:layout_alignBottom="@+id/imageView3"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="13dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:onClick="Volver"
-                app:srcCompat="?attr/actionModeCloseDrawable" />-->
+                app:srcCompat="?attr/actionModeCloseDrawable" />
 
 
         </RelativeLayout>
     </ScrollView>
+
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navmarron"

@@ -206,9 +206,6 @@
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />
 
-
-
-
             <!--boton volver inferior -->
             <ImageButton
                 android:id="@+id/imageButton"
@@ -223,7 +220,6 @@
                 android:layout_marginRight="16dp"
                 android:onClick="Volver"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
-
 
         </RelativeLayout>
     </ScrollView>

@@ -1,6 +1,8 @@
 package com.example.jessi.tae;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -10,7 +12,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import java.io.Serializable;
 
@@ -18,6 +22,8 @@ public class negropoomseActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private VideoView mVideoView;
+    private String youtubeID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +39,7 @@ public class negropoomseActivity extends AppCompatActivity {
         NavigationView navigationView = (NavigationView) findViewById(R.id.navnegro);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
+        InsertarVideo();
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -88,6 +95,16 @@ public class negropoomseActivity extends AppCompatActivity {
                         negro.putExtra("usuario", (Serializable) usuario);
                         startActivity(negro);
                         break;
+                    case R.id.terminologia:
+                        Intent terminologia = new Intent(getApplicationContext(),terminologiaActivity.class);
+                        terminologia.putExtra("usuario", (Serializable) usuario);
+                        startActivity(terminologia);
+                        break;
+                    case R.id.partescuerpo:
+                        Intent partescuerpo = new Intent(getApplicationContext(),partescuerpoActivity.class);
+                        partescuerpo.putExtra("usuario", (Serializable) usuario);
+                        startActivity(partescuerpo);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);
@@ -98,11 +115,25 @@ public class negropoomseActivity extends AppCompatActivity {
         });
     }
 
+    private void InsertarVideo() {
+        mVideoView =(VideoView)findViewById(R.id.videoView4);
+        MediaController mc = new MediaController(this);
+        mVideoView.setMediaController(mc);
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pumse8);
+        mVideoView.setVideoURI(uri);
+        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mVideoView.start();
+            }
+        });
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //this.mMenu = menu;
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.drawermenu, menu);
+        ////this.mMenu = menu;
+        //MenuInflater inflater = getMenuInflater();
+        //inflater.inflate(R.menu.drawermenu, menu);
         return true;
     }
 

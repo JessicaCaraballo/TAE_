@@ -21,6 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".terminologiaActivity" />
+        <activity android:name=".partescuerpoActivity" />
         <activity android:name=".registrarseActivity" />
         <activity android:name=".principalActivity" />
         <activity android:name=".historiaActivity" />
@@ -59,12 +61,14 @@
         <activity android:name=".marrondefensasActivity" />
         <activity android:name=".marronpatadasActivity" />
         <activity android:name=".marronpoomseActivity" />
+        <activity android:name=".marronpumActivity" />
         <activity android:name=".negroActivity" />
         <activity android:name=".negroposicionesActivity" />
         <activity android:name=".negroataquesActivity" />
         <activity android:name=".negrodefensasActivity" />
         <activity android:name=".negropatadasActivity" />
         <activity android:name=".negropoomseActivity" />
+        <activity android:name=".negropumActivity" />
     </application>
 
 </manifest>
