@@ -166,7 +166,7 @@
                 android:textColor="@color/base"
                 android:textSize="@dimen/base" />
 
-            <!-- 04 
+            <!-- 04 -->
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
@@ -204,14 +204,14 @@
                 android:fontFamily="@font/courier"
                 android:text="@string/pummarron4"
                 android:textColor="@color/base"
-                android:textSize="@dimen/base" />-->
+                android:textSize="@dimen/base" />
 
             <!--boton volver inferior -->
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageView3"
+                android:layout_alignBottom="@+id/imageView4"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="13dp"

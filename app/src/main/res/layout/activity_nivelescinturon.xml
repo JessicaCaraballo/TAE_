@@ -22,18 +22,17 @@
             android:layout_height="wrap_content"
             android:background="@drawable/fondo2">
 
-
             <TextView
                 android:id="@+id/textViewTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="Arial"
-                android:text="Niveles de cinturon"
+                android:layout_margin="@dimen/margen1"
+                android:fontFamily="@font/capture_it"
                 android:textColor="@color/colortitulo"
-                android:textSize="@dimen/tamanotitulo" />
-
+                android:textSize="@dimen/tamanotitulo"
+                android:text="@string/nivelcituron" />
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"

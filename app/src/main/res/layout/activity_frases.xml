@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frases"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jessi.tae.frasesActivity">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo2">
+
+
+                <TextView
+                    android:id="@+id/textViewTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/margen1"
+                    android:fontFamily="@font/capture_it"
+                    android:textColor="@color/colortitulo"
+                    android:textSize="@dimen/tamanotitulo"
+                    android:text="@string/frases" />
+
+                <!-- 01 -->
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTitulo"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaroja" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textViewTitulo"
+                    android:layout_toEndOf="@+id/imageView1"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase1"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 02 -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaazul" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView1"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase2"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 03 -->
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaroja" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase3"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 04 -->
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaazul" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView3"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase4"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 05 -->
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaroja" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView4"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase5"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 06 -->
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaazul" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView5"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:layout_toRightOf="@+id/imageView6"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase6"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 07 -->
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaroja" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView6"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase7"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 08 -->
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaazul" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView7"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase8"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 09 -->
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaroja" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView8"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:layout_toRightOf="@+id/imageView9"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase9"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <!-- 10 -->
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView9"
+                    android:layout_margin="@dimen/margen2"
+                    app:srcCompat="@drawable/comillaazul" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView9"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/frase10"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+
+
+                <!--<ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:src="@drawable/saludo_opt" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    android:text="@string/saludo2"/>-->
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navFrases"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:background="@color/colorAccent"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/colorPrimary"
+        app:menu="@menu/drawermenu"></android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

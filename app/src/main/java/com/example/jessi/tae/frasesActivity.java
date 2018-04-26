@@ -6,31 +6,32 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import java.io.Serializable;
 
-public class naranjapatadasActivity extends AppCompatActivity {
+public class frasesActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("e","e");
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_naranjapatadas);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.naranjapatadas);
+        setContentView(R.layout.activity_frases);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.frases);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navnaranja);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navFrases);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
@@ -142,11 +143,5 @@ public class naranjapatadasActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void Volver(View view) {
-        Intent naranja = new Intent(getApplicationContext(),naranjaActivity.class);
-        naranja.putExtra("usuario", (Serializable) usuario);
-        startActivity(naranja);
     }
 }

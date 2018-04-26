@@ -7,19 +7,68 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.historiaActivity">
 
-    <RelativeLayout
-        android:background="@drawable/fondo2"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Historia"
-            tools:layout_editor_absoluteX="138dp"
-            tools:layout_editor_absoluteY="191dp" />
-    </RelativeLayout>
+            android:background="@drawable/fondo2">
+
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margen1"
+                android:fontFamily="@font/capture_it"
+                android:textColor="@color/colortitulo"
+                android:textSize="@dimen/tamanotitulo"
+                android:text="@string/historia" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitulo"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/courier"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base"
+                android:text="@string/historia1"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:src="@drawable/historia" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:fontFamily="@font/courier"
+                android:text="@string/historia2"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+        </RelativeLayout>
+    </ScrollView>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navHistoria"

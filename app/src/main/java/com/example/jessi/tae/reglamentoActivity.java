@@ -1,37 +1,83 @@
 package com.example.jessi.tae;
 
-import android.content.Intent;
+import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import com.github.barteksc.pdfviewer.PDFView;
+import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
+import com.github.barteksc.pdfviewer.listener.OnPageChangeListener;
+import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
+import com.shockwave.pdfium.PdfDocument;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.File;
+import java.io.IOException;
 import java.io.Serializable;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
 
-public class naranjapatadasActivity extends AppCompatActivity {
+import okhttp3.OkHttpClient;
+import okhttp3.internal.Util;
+
+public class reglamentoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private Button mBotonDescarga;
+    private String downloadUrl = "https://www.fetaekwondo.net/images/2017/03/Reglamento2017.pdf";
+    private static final String TAG = reglamentoActivity.class.getSimpleName();
+    public static final String SAMPLE_FILE = "reglamento2017.pdf";
+    PDFView pdfView;
+    Integer pageNumber = 0;
+    String pdfFileName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("e","e");
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_naranjapatadas);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.naranjapatadas);
+        setContentView(R.layout.activity_reglamento);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.reglamento);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navnaranja);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navReglamento);
         View headerView = navigationView.getHeaderView(0);
+/*
+        String extStorageDirectory = Environment.getExternalStorageDirectory()
+                .toString();
+        File folder = new File(extStorageDirectory, "pdf");
+        folder.mkdir();
+        File file = new File(folder, "Reglamento.pdf");
+        try {
+            file.createNewFile();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        Downloader.DownloadFile("https://www.fetaekwondo.net/images/2017/03/Reglamento2017.pdf", file);
+*/
+        //showPdf();
+/*
+        pdfView= (PDFView)findViewById(R.id.pdfView);
+        displayFromAsset(SAMPLE_FILE);
+*/
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -127,6 +173,71 @@ public class naranjapatadasActivity extends AppCompatActivity {
             }
         });
     }
+/*
+    private void displayFromAsset(String assetFileName) {
+        pdfFileName = assetFileName;
+
+        pdfView.fromAsset(SAMPLE_FILE)
+                .defaultPage(pageNumber)
+                .enableSwipe(true)
+
+                .swipeHorizontal(false)
+                //.onPageChange(this)
+                .enableAnnotationRendering(true)
+                //.onLoad(this)
+                .scrollHandle(new DefaultScrollHandle(this))
+                .load();
+    }*/
+
+/*
+    @Override
+    public void onPageChanged(int page, int pageCount) {
+        pageNumber = page;
+        setTitle(String.format("%s %s / %s", pdfFileName, page + 1, pageCount));
+    }
+
+
+    @Override
+    public void loadComplete(int nbPages) {
+        PdfDocument.Meta meta = pdfView.getDocumentMeta();
+        printBookmarksTree(pdfView.getTableOfContents(), "-");
+
+    }*/
+/*
+    public void printBookmarksTree(List<PdfDocument.Bookmark> tree, String sep) {
+        for (PdfDocument.Bookmark b : tree) {
+
+            Log.e(TAG, String.format("%s %s, p %d", sep, b.getTitle(), b.getPageIdx()));
+
+            if (b.hasChildren()) {
+                printBookmarksTree(b.getChildren(), sep + "-");
+            }
+        }
+    }
+
+
+    public void showPdf(){
+        File file = new File(Environment.getExternalStorageDirectory()+"/pdf/temp.pdf");
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        Uri uri = Uri.fromFile(file);
+        intent.setDataAndType(uri, "application/pdf");
+        startActivity(intent);
+    }*/
+
+    /*public void showPdf()
+    {
+        File file2 = new File(Environment.getExternalStorageDirectory()+"/pdf/Reglamento.pdf");
+        PackageManager packageManager = getPackageManager();
+        Intent testIntent = new Intent(Intent.ACTION_VIEW);
+        testIntent.setType("application/pdf");
+        List list = packageManager.queryIntentActivities(testIntent, PackageManager.MATCH_DEFAULT_ONLY);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        Uri uri = Uri.fromFile(file2);
+        intent.setDataAndType(uri, "application/pdf");
+        startActivity(intent);
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -142,11 +253,5 @@ public class naranjapatadasActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void Volver(View view) {
-        Intent naranja = new Intent(getApplicationContext(),naranjaActivity.class);
-        naranja.putExtra("usuario", (Serializable) usuario);
-        startActivity(naranja);
     }
 }

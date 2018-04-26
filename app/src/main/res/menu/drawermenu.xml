@@ -3,32 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/inicio" android:title="Inicio">
         <menu>
-            <item android:id="@+id/historia" android:title="Historia" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/saludo" android:title="Saludo" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/ponercinturon" android:title="Colocarse el cinturón" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/nivelescinturon" android:title="Niveles de cinturón" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/clasificacion" android:title="Clasificación" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/frases" android:title="Frases motivadoras" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/federaciones" android:title="Federaciones" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/reglamento" android:title="Reglamento y arbitraje" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/partescuerpo" android:title="Partes del cuerpo" android:icon="@drawable/ic_menu_camera" />
-            <item android:id="@+id/terminologia" android:title="Terminología" android:icon="@drawable/ic_menu_camera" />
+            <item android:id="@+id/historia" android:title="Historia" android:icon="@drawable/historia1" />
+            <item android:id="@+id/saludo" android:title="Saludo" android:icon="@drawable/saludo1" />
+            <item android:id="@+id/ponercinturon" android:title="Colocarse el cinturón" android:icon="@drawable/cinturon" />
+            <item android:id="@+id/nivelescinturon" android:title="Niveles de cinturón" android:icon="@drawable/cinturon" />
+            <item android:id="@+id/clasificacion" android:title="Clasificación" android:icon="@drawable/ic_menu_camera"  android:visible="false"/>
+            <item android:id="@+id/frases" android:title="Frases motivadoras" android:icon="@drawable/frases" />
+            <item android:id="@+id/federaciones" android:title="Federaciones" android:icon="@drawable/federacion" />
+            <item android:id="@+id/reglamento" android:title="Reglamento y arbitraje" android:icon="@drawable/reglamento" />
+            <item android:id="@+id/partescuerpo" android:title="Partes del cuerpo" android:icon="@drawable/cuerpo" />
+            <item android:id="@+id/terminologia" android:title="Terminología" android:icon="@drawable/terminologia" />
         </menu>
     </item>
     <group>
         <item android:id="@+id/tecnicas" android:title="Cinturones">
             <menu>
-                <item android:id="@+id/amarillo" android:title="Amarillo" android:icon="@drawable/ic_menu_camera" />
-                <item android:id="@+id/naranja" android:title="Naranja" android:icon="@drawable/ic_menu_camera" />
-                <item android:id="@+id/verde" android:title="Verde" android:icon="@drawable/ic_menu_camera" />
-                <item android:id="@+id/azul" android:title="Azul" android:icon="@drawable/ic_menu_camera" />
-                <item android:id="@+id/marron" android:title="Marron" android:icon="@drawable/ic_menu_camera" />
-                <item android:id="@+id/negro" android:title="Negro" android:icon="@drawable/ic_menu_camera" />
+                <item android:id="@+id/amarillo" android:title="Amarillo" android:icon="@drawable/cinturon"  />
+                <item android:id="@+id/naranja" android:title="Naranja" android:icon="@drawable/cinturon" />
+                <item android:id="@+id/verde" android:title="Verde" android:icon="@drawable/cinturon" />
+                <item android:id="@+id/azul" android:title="Azul" android:icon="@drawable/cinturon" />
+                <item android:id="@+id/marron" android:title="Marron" android:icon="@drawable/cinturon" />
+                <item android:id="@+id/negro" android:title="Negro" android:icon="@drawable/cinturon" />
             </menu>
         </item>
     </group>
     <group>
-        <item android:id="@+id/ejercicios" android:title="Ejercícios" >
+        <item android:id="@+id/ejercicios" android:title="Ejercícios"  android:visible="false">
             <menu>
                 <item android:id="@+id/velocidad" android:title="Velocidad" android:icon="@drawable/ic_menu_camera" />
                 <item android:id="@+id/fuerza" android:title="Fuerza" android:icon="@drawable/ic_menu_camera" />
@@ -37,7 +37,7 @@
         </item>
     </group>
     <group>
-        <item android:id="@+id/galeria" android:title="Galería" >
+        <item android:id="@+id/galeria" android:title="Galería"  android:visible="false" >
             <menu>
                 <item android:id="@+id/fotos" android:title="Fotos" android:icon="@drawable/ic_menu_camera" />
                 <item android:id="@+id/videos" android:title="Videos" android:icon="@drawable/ic_menu_camera" />
@@ -53,8 +53,8 @@
             </menu>
         </item>
     </group>
-    <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery" />
-    <item android:id="@+id/about" android:title="Sobre nosotros" android:icon="@drawable/ic_menu_manage" />
-    <item android:id="@+id/configuracion" android:title="Configuración" android:icon="@drawable/ic_menu_send" />
-    <item android:id="@+id/salir" android:title="Salir" android:icon="@drawable/ic_menu_slideshow" />
+    <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery"  android:visible="false"/>
+    <item android:id="@+id/sobrenosotros" android:title="Sobre nosotros" android:icon="@drawable/contacto" />
+    <item android:id="@+id/configuracion" android:title="Configuración" android:icon="@drawable/ic_menu_send" android:visible="false"/>
+    <item android:id="@+id/salir" android:title="Salir" android:icon="@drawable/salir" />
 </menu>

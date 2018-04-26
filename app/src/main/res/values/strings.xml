@@ -13,10 +13,24 @@
 
     <!-- Textos -->
     <!--Historia-->
-    <string name="historia"></string>
+    <string name="historia">Historia</string>
+    <string name="historia1">Los antepasados de lo que actualemnte es Corea, se organizaban en tribus, dónde se localizan incidios de artes marciales debido a pinturas y murales.\n\n
+            Comenzaron con danzas y ritos religioso, pero debían defenderse contra otras tribus, por lo que incorporaron movimietos copiados de los animales.\n\n
+            En la actual corea del sur, en la dinastía Sil-la, se sabe de unos guerreros especializados por su disciplina y ferocidad, los cuales conquistaron diversos reinos. Destacaban las artes marciales Tae Kyon y Tang Su Do.\n\n
+            En 1910 tras la invasión de los japoneses, quedó prohibida la práctica de manifestaciones culturales y deportivas no japoneses (apesa r de que practicaban en las familias a escondidas).\n\n
+            En 1945, tras finalizar la segunda guerra mundial, y a pesar de la influencia del Karate durante 35años, se rinició la práctica de Tae Kyon y Tang Su Do.\n\n
+            Finalemnte, Choi Hong Hee, un militar coreano, adiestró a los soldados en diferentes artes marciales. En 1955, nació el Taekwondo (el camino de los pies y de los puños), combinando lo mejor de distintas artes marciales.\n\n
+            En 1966 se fundó la ITF(International Taekwondo Federation y en 1970 la WTF (World Taekwondo Federation). El estilo W.T.F. continúo si estilo de combate, pero se cambiaron algunas técnicas por creerse influenciadas por el Kárate.\n\n
+            En 1994, el Taekwondo fue aceptado como deporte olímpico, para los juegos olímpicos de Sydney.
+            </string>
+    <string name="historia2">¿Pero qué es el Taekwondo? \n \n
+            Es una técnica de movimientos corporales con la máxima potencia, equilibro, velocidad y precisión.\n
+            Es un deporte, es una forma de vida para sus practicantes, es una disciplina mental y corporal. \n
+            </string>
 
     <!--Sobre nosotros-->
-    <string name="sobrenosotros">Si estás leyendo esto, es porque eres tan entusiasta como nosotros de este arte marcia... :)\n
+    <string name="sobrenosotros">Sobre nosotros</string>
+    <string name="sobrenosotros1">Si estás leyendo esto, es porque eres tan entusiasta como nosotros de este arte marcia... :)\n
         Somos Jessi y David, dos estudiantes de 2º grado superior, Desarrollo de Aplicaciones Multiplataformar, también conocido como DAM.\n
         Este proyecto ha sido creado sin ánimo de lucro, con material propio, tanto imágenes y textos, basados en conocimientos adquiridos como deportista desde el año xxxx.\n
         Nos hemos dedicido a crear está APP tras encuentrar un agujero en la falta de aplicaciones de este arte marcial, el Taekwondo.
@@ -25,6 +39,7 @@
     Amantes del taekwondo y p-->
 
     <!--Saludo-->
+    <string name="saludo">Saludo</string>
     <string name="saludo1">El saludo es una demostración de respeto al maestro y al resto de nuestros compañeros. El saludo no debe ser solo un gesto vacío. A fuerza de repetirlo una y otra vez esta
      manifestación de respeto se convierte en un gesto espontáneo y sincero que se expresa de corazón y que enriquece la vida tanto de quién lo da como de quien lo recibe.</string>
     <string name="saludo2">Es tal la importancia del saludo y su significado, que en el curso de una sola clase, este ritual se repite un gran número de veces:\n
@@ -34,8 +49,10 @@
     - Al finalizar la clase. El alumno de mayor grado dirije el protocolo correspondiente.\n
     - Antes de salir del Dojang. Se saluda mirando al Dojang.\n</string>
 
+
     <!--PonerCinturon-->
-    <string name="ponercinturon">1- Coloque sobre el ombligo una lado de la punta del cinturon.\n
+    <string name="ponercinturon">Colocar cinturon</string>
+    <string name="ponercinturon1">1- Coloque sobre el ombligo una lado de la punta del cinturon.\n
 2- Agarre dicha punta del cinturón a nivel del ombligo, y de la vuelta con el otro lado del cinturón alrededor de su cadera.\n
 3- Con el cinturon sobrante, envuelvalo alrededor de su cintura.\n
 4- Paselo por encima el primer extremo.\n
@@ -45,13 +62,52 @@
 8- Con las dos puntas del cinturon, realizamos un nudo, en direccion de arriba hacia abajo. Lo ajustamos.\n
 9- Coprobamos que las partes que quedas de las puntas son iguales de largas a ambos lados.\n</string>
 
+
     <!--NivelCinturon-->
+    <string name="nivelcituron">Niveles cinturón</string>
     <string name="nivelcituron1">Los grados en Taekwondo se dividen en KUP, PUM y DAN. En España, existen 11 grados KUP, los más básicos. Siguen una numeración inversa al nivel del alumno,
         cada grado está representado por un color de cinturón -Ti- con un significado simbólico. \n
     En el caso del KUP, los cinturones son blanco (10º KUP), blanco-amarillo (9º KUP), amarillo (8º KUP), amarillo-verde (7º KUP), verde (6º KUP), verde-azul (5º KUP), azul (4º KUP),
         azul-rojo (3º KUP), marrón (2º KUP) y rojo-negro (1º KUP).\n
         Los grados intermedios (de dos colores) sólo se otorgan a practicantes menores de 14 años.</string>
 
+    <!-- Frases -->
+    <string name="frases">Frases</string>
+    <string name="frase1">El verdadero cinturón negro es aquel cinturón blanco que jamás se dio por vencido.</string>
+    <string name="frase2">En el Taekwondo, caerse está permitido, levantarse es obligatorio</string>
+    <string name="frase3">El Taekwondo no es fuerza y velocidad, es disciplina e inteligencia.</string>
+    <string name="frase4">No importa si pateas mil veces, lo importante es que pateees una sola vez y saber que lo pegaste con la fuerza de mil patadas.</string>
+    <string name="frase5">¿Qué es mi vida? ¿Mi pasión? ¿Mi ser? LA respuesta es muy simple, el Taekwondo.</string>
+    <string name="frase6">Morir en el entrenamiento para vivir en el combate.</string>
+    <string name="frase7">Ningún sueño es imposible, miestras sigas manteniendo la ilusión de conseguirlo.</string>
+    <string name="frase8">La derrota de hoy, es la semilla de la victoria de mañana.</string>
+    <string name="frase9">El caino se hace caminando. Paso firme, cabeza alta, actitud, trabajo y corazón.,</string>
+    <string name="frase10">Más fuerte, más rápido, más alto.</string>
+
+
+    <!-- Partes del cuerpo -->
+    <string name="partesdelcuerpo">Partes del cuerpo</string>
+    <string name="partecuerpo1">\n Mori: cabeza\n Mok: cuello \n Nok: nariz\n Bo: boca \n Tok: barbilla \n Pal: brazo\n Palkup: codo \n Palmok: antebrazo \n Kut: dedos \n Chumok: puño \n Jori: cadera \n Dari: pierna \n \n
+            Son: mano \n Son mok: muñeca \n Sonnal: canto de la mano\n  Son Kut: dedos de la mano\n Me chumok: canto del puño \n\n
+            Bal: pie \n Bal kut: dedos del pie \n Bal mok: tobillo \n  Bal dung: empeine \n Bal nal: canto del pie \n Bal nal dung: canto del pier interior \n Ap chuck: metatarso del pie \n Ti chuck: talón \n Bal Badat: plata del pie \n</string>
+
+
+    <!-- Terminologia -->
+    <string name="terminologiabasica">Términos básicos</string>
+    <string name="terminologiabasica1">\n Sus 5 principios: Estoicismo, Valentia, Paciencia, Humildad, Cortesia \n\n Sabomin: maestro \n Dochang: lugar de entrenamiento \n Dobok: Traje de Taekwondo \n Ti: cinturon\n
+            Kiorugui: combate \n Chumbi: preparación \n Bon Kiorugui: combate preparado\n Duiro Dora: media vuelta \n Kihap: grito (Ki-Energía/Hap-Aire\n Tea Guk Chag: grandeza y eternidad\n Pumse: defensas y ataques combinados\n
+            Are: zona baja del cuerpo \n Momotong: zona media del cuerpo \n Olgul: Zona alta del cuerpo</string>
+
+    <string name="terminologiacompeticion">Competición</string>
+    <string name="terminologiacompeticion1">\n Chariot: firmes, posicion de saludo \n Kionye: Saludo \n Chumbi: preparación \n Sichak: empezar \n Kesok: continuar\n Kalio:separarse \n Kumna: final \n Jogu: peto \n
+            Chong: azul \n Hong: rojo \n Sung: vencedor \n Juecho: asalto \n Kiongo: medio punto menos \n Kamchum: un punto menos \n Cha Yan Gu: cara a craççara</string>
+
+    <string name="terminologianumeros">Números</string>
+    <string name="terminologianumeros1">\n 1 - Jana \n 2 - Dul \n 3 - Set \n 4 - Net \n 5 - Dasot \n 6 - Yosot \n 7 - Ilgop \n 8 - Yodol \n 9 - Ajop \n 10 - Yul \n 11 - Yul Jana \n 12 - Yul Dul \n 20 - Sumul </string>
+    <string name="terminologianumeros2">\n 1º - Il \n 2º - I \n 3º - Sam \n 4º - Sa \n 5º - Oh \n 6º - Youk \n 7º - Child \n 8º - Pal \n 9º - Gu \n 10º - Sib </string>
+
+
+    <!--   C  I  N  T  U  R  O  N  E  S  -->
     <!--AMARILLO-->
     <string name="significadoamarillo">Simboliza pequeños destellos de luz interior, la cual desea cubrir toda la tierra del mundo dentro del Taekwondo.</string>
 
@@ -368,7 +424,7 @@
     <string name="titulodefensaazul">Defensas</string>
     <string name="nombredefensaazul1">Jan Sonnal Yop Montong Bakat Maki</string>
     <string name="defensaazul1">\n
-            Defensa realizada con el canto de la mano, del interior al exterior./n
+            Defensa realizada con el canto de la mano, del interior al exterior.\n
             Se bloquea lateralmente.</string>
     <string name="nombredefensaazul2">Jan Sonnal Yop Mok Chigui</string>
     <string name="defensaazul2">\n
@@ -379,7 +435,9 @@
             Se usa la parte exterior de la muñeca, de dentro hacia fuera.\n
             Puño a la altura de la cabeza, hombro parelelo al suelo.</string>
     <string name="nombredefensaazul4">Gechio Are Maki</string>
-    <string name="defensaazul4">\n</string>
+    <string name="defensaazul4">\n
+            Las muñecas se cruzan en la zona superior, y se desplazan hacia abajo y hacia fuera.\n
+            Defiende dos zonas al mismo tiempo.</string>
     <string name="nombredefensaazul5">Batagson Momtong Maki</string>
     <string name="defensaazul5">
             Defensa con la palma de la mano, de fuera hacia dentro.\n
@@ -396,8 +454,7 @@
 
     <string name="nombrepumazul2">Bituro Jansonnal Olgul Bakat Maki</string>
     <string name="pumazul2"> \n
-            Defensa realizada con el canto de la mano, del interior al exterior.\n
-            Aw bloquea lateralmente.</string>
+            Defensa realizada con el canto de la mano, del interior al exterior, con giro de cadera.\n</string>
 
     <string name="nombrepumazul3">Montong Piochok Palkup Chigui</string>
     <string name="pumazul3"> \n
@@ -419,7 +476,7 @@
             Ap Chagui en salto.</string>
     <string name="nombrepatadaazul4">Tuio Yop Chagui</string>
     <string name="patadaazul4">\n
-            Yoo Chagui en salto.</string>
+            Yop Chagui en salto.</string>
     <string name="nombrepatadaazul5">Tuio Dolio Chagui</string>
     <string name="patadaazul5">\n
             Dolio Chagui en salto.</string>
@@ -506,7 +563,8 @@
     <string name="nombrepummarron3">Dangkio Ollyo Murup Chigui</string>
     <string name="pummarron3"> \n</string>
     <string name="nombrepummarron4">Piochok Chagui</string>
-    <string name="pummarron4"> \n</string>
+    <string name="pummarron4"> \n
+            La palma de la mano se usa de blanco, sobre la plama se lanza un Badal Dung.</string>
 
     <!--Patadas-->
     <string name="titulopatadamarron">Patadas</string>
@@ -599,4 +657,13 @@
     <string name="pumsenegro1">\n
             Simboliza el origen de la vida.\n
             Es el último grado de este aprendizaje, la piera que culmina el camino.</string>
+
+    <!--Federaciones-->
+    <string name="federaciones">Titulo Federaciones</string>
+    <string name="federacionesTexto">Federaciones texto</string>
+
+    <!--Reglamento-->
+    <string name="reglamento">Titulo Reglamento</string>
+    <string name="reglamentoTexto">Reglamento texto</string>
+
 </resources>

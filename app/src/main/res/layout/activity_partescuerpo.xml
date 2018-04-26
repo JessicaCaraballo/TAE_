@@ -23,29 +23,41 @@
                 android:id="@+id/textViewTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView4"
                 android:layout_alignParentTop="true"
-                android:layout_alignStart="@+id/textView4"
-                android:background="@color/amarillo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margen1"
                 android:fontFamily="@font/capture_it"
-                android:padding="@dimen/margen2"
-                android:text="Partes del cuerpo"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanosubtitulo" />
+                android:textColor="@color/colortitulo"
+                android:textSize="@dimen/tamanotitulo"
+                android:text="@string/partesdelcuerpo"/>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/textViewTitulo"
+                app:srcCompat="@drawable/partesdelcuerpo" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textViewTitulo"
-                android:layout_margin="@dimen/margen2"
+                android:layout_marginTop="457dp"
                 android:fontFamily="@font/courier"
-                android:text="Texto partes del cuerpo" />
+                android:text="@string/partecuerpo1"
+                android:layout_marginLeft="@dimen/margen6"/>
+
+
 
 
         </RelativeLayout>
+
+
     </ScrollView>
 
     <android.support.design.widget.NavigationView

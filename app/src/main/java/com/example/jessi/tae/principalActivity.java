@@ -99,6 +99,26 @@ public class principalActivity extends AppCompatActivity {
                         partescuerpo.putExtra("usuario", (Serializable) usuario);
                         startActivity(partescuerpo);
                         break;
+                    case R.id.sobrenosotros:
+                        Intent sobrenosotros = new Intent(getApplicationContext(), sobrenosotrosActivity.class);
+                        sobrenosotros.putExtra("usuario", (Serializable) usuario);
+                        startActivity(sobrenosotros);
+                        break;
+                    case R.id.frases:
+                        Intent frases = new Intent(getApplicationContext(), frasesActivity.class);
+                        frases.putExtra("usuario", (Serializable) usuario);
+                        startActivity(frases);
+                        break;
+                    case R.id.federaciones:
+                        Intent federaciones = new Intent(getApplicationContext(), federacionesActivity.class);
+                        federaciones.putExtra("usuario", (Serializable) usuario);
+                        startActivity(federaciones);
+                        break;
+                    case R.id.reglamento:
+                        Intent reglamento = new Intent(getApplicationContext(), reglamentoActivity.class);
+                        reglamento.putExtra("usuario", (Serializable) usuario);
+                        startActivity(reglamento);
+                        break;
                     case R.id.salir:
                         finish();
                         System.exit(0);

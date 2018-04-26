@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -69,6 +71,10 @@
         <activity android:name=".negropatadasActivity" />
         <activity android:name=".negropoomseActivity" />
         <activity android:name=".negropumActivity" />
+        <activity android:name=".frasesActivity" />
+        <activity android:name=".sobrenosotrosActivity" />
+        <activity android:name=".federacionesActivity" />
+        <activity android:name=".reglamentoActivity" />
     </application>
 
 </manifest>

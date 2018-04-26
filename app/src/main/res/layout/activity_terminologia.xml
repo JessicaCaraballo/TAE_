@@ -15,35 +15,120 @@
         android:layout_alignParentTop="true">
 
         <RelativeLayout
-            android:background="@drawable/fondo2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo2">
 
+            <!--Basico-->
             <TextView
-                android:id="@+id/textViewTitulo"
+                android:id="@+id/textViewTitulo1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView4"
                 android:layout_alignParentTop="true"
-                android:layout_alignStart="@+id/textView4"
-                android:background="@color/amarillo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margen2"
                 android:fontFamily="@font/capture_it"
-                android:padding="@dimen/margen2"
-                android:text="Terminología"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanosubtitulo" />
+                android:textColor="@color/colortitulo"
+                android:textSize="@dimen/tamanotitulo"
+                android:text="@string/terminologiabasica" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitulo1"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/courier"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base"
+                android:text="@string/terminologiabasica1"/>
+
+            <!--Competicion-->
+            <TextView
+                android:id="@+id/textViewTitulo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/capture_it"
+                android:text="@string/terminologiacompeticion"
+                android:textColor="@color/colortitulo"
+                android:textSize="@dimen/tamanotitulo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1"
+                android:layout_below="@+id/textViewTitulo2"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/courier"
+                android:text="@string/terminologiacompeticion1"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+
+            <!--Numeros-->
+
+            <!--Competicion-->
+            <TextView
+                android:id="@+id/textViewTitulo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/capture_it"
+                android:text="@string/terminologianumeros"
+                android:textColor="@color/colortitulo"
+                android:textSize="@dimen/tamanotitulo" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textViewTitulo3"
+                android:layout_margin="@dimen/margen2"
+                android:fontFamily="@font/courier"
+                android:text="@string/terminologianumeros1"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textViewTitulo"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignEnd="@+id/textViewTitulo1"
+                android:layout_alignRight="@+id/textViewTitulo1"
+                android:fontFamily="@font/courier"
+                android:text="@string/terminologianumeros2"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base" />
+            <!--<ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:src="@drawable/saludo_opt" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
                 android:layout_margin="@dimen/margen2"
                 android:fontFamily="@font/courier"
-                android:text="Texto terminologia" />
-
+                android:textColor="@color/base"
+                android:textSize="@dimen/base"
+                android:text="@string/saludo2"/>-->
 
         </RelativeLayout>
     </ScrollView>
