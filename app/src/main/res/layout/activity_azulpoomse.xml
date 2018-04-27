@@ -29,6 +29,7 @@
                 android:layout_alignTop="@+id/textViewTitulo"
                 android:onClick="Volver"
                 android:text="Volver a azul"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <!--pumse-->
@@ -53,11 +54,9 @@
                 android:id="@+id/textViewSubtitulo1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/botonvolver1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView1"
-                android:layout_toRightOf="@+id/imageView1"
+                android:layout_alignLeft="@+id/textViewSubtitulo2"
+                android:layout_alignStart="@+id/textViewSubtitulo2"
+                android:layout_below="@+id/textViewTitulo"
                 android:fontFamily="@font/turtles"
                 android:text="@string/nombrepumseazul1"
                 android:textColor="@color/colorsubtitulo"
@@ -124,6 +123,7 @@
                 android:layout_below="@+id/textView2"
                 android:layout_marginTop="20dp"
                 android:clickable="false"
+                android:background="@drawable/boton_redondo"
                 android:visibility="visible" />
 
         </RelativeLayout>

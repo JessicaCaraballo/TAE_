@@ -12,6 +12,42 @@
 
 
     <!-- Textos -->
+
+    <!--Main-->
+    <string name="entrar">Entrar</string>
+    <string name="entrarcomoinvitado">Entrar como invitado</string>
+    <string name="registrarse">Registrarse</string>
+
+    <!--Principal-->
+    <string name="bienvenida">B I E N V E N I D @</string>
+    <string name="bienvenida1">. . . a la primera aplicación de Taekwondo, creado por taekwondistas para taekwondistas.</string>
+    <string name="bienvenida2">¡ Te encantará !</string>
+
+    <!--Federacion-->
+    <string name="federacion">Federaciones</string>
+    <string name="federacion1">Taekwondo Mundial</string>
+    <string name="federaciontexto1">\n El Taekwondo Mundial es la institución que se dedica a regular las normas del taekwondo a nivel competitivo, así como de celebrar periódicamente competiciones y eventos en cada una
+            de sus disciplinas.\n
+            Es reconocida por el Comité Olímpico Internacional. Tiene su sede en la ciudad de Seúl (Corea del Sur).\n
+            En el último estudio, cobtaba con la afiliación de 206 federaciones nacionales (de los cinco continentes), siendo una de las mayores federaciones del mundo en cuanto a miembros nacionales afiliados.
+            El volumen de practicantes es entorno a los 73 millones.\n\n
+            Hasta la fecha se conocía como Federación Mundial de Taekwondo, pero debido a que WTF son las siglas en inglés de la expresión "What the fuck?", y cuyo uso se volvió muy popular en redes sociales para expresar
+            sorpresa. Debido a tal hecho, la Federación Mundial de Taekwondo decidió cambiar en junio de 2017 sus siglas, pasando a denominarse Taekwondo Mundial, en inglés World Taekwondo (siglas: WT).</string>
+
+    <string name="federacion2">Union Europea Taekwondo</string>
+    <string name="federaciontexto2">\n La Union Europea Taekwondo es la institución que se dedica a regular las normas del taekwondo en Europa, así como de celebrar periódicamente
+            competiciones y eventos en cada una de sus disciplinas. Es una de las cinco organizaciones continentales que componen el Taekwondo Mundial (WT).</string>
+
+    <string name="federacion3">Federacion Espanola Taekwondo</string>
+    <string name="federaciontexto3">\n Dentro de la Unión Europea del Taekwondo, se enceuntra la Federación Española de Taekwondo, compuesta de: Federación Andaluza, Federación Aragonesa, Federación Asturiana, Federación Balear
+            Federación Canaria, Federación Cántabra, Federación Castellano Leonesa, Federación Castellano-Manchega, Federación Catalana, Federación Ceutí, Federación de Euskadi, Federación Estremeña, Federación Gallega,
+            Federación Madrileña, Federación Murciana, Federación Navarra, Federación Riojana y Federación Valenciana. </string>
+
+
+    <!--Reglamento-->
+    <string name="reglamento">Titulo Reglamento</string>
+    <string name="reglamentoTexto">Reglamento texto</string>
+
     <!--Historia-->
     <string name="historia">Historia</string>
     <string name="historia1">Los antepasados de lo que actualemnte es Corea, se organizaban en tribus, dónde se localizan incidios de artes marciales debido a pinturas y murales.\n\n
@@ -67,8 +103,8 @@
     <string name="nivelcituron">Niveles cinturón</string>
     <string name="nivelcituron1">Los grados en Taekwondo se dividen en KUP, PUM y DAN. En España, existen 11 grados KUP, los más básicos. Siguen una numeración inversa al nivel del alumno,
         cada grado está representado por un color de cinturón -Ti- con un significado simbólico. \n
-    En el caso del KUP, los cinturones son blanco (10º KUP), blanco-amarillo (9º KUP), amarillo (8º KUP), amarillo-verde (7º KUP), verde (6º KUP), verde-azul (5º KUP), azul (4º KUP),
-        azul-rojo (3º KUP), marrón (2º KUP) y rojo-negro (1º KUP).\n
+    En el caso del KUP, los cinturones son blanco (11º KUP), blanco-amarillo (10º KUP), amarillo (9º KUP), amarillo-naranja (8º KUP), naranja (7º KUP), naranja-verde (6º KUP), verde (5º KUP),
+        verde-azul (4º KUP), azul (3º KUP), azul-rojo (2º KUP), rojo/marrón (1º KUP), rojo-negro (1º KUM), y negro (1º DAN).\n
         Los grados intermedios (de dos colores) sólo se otorgan a practicantes menores de 14 años.</string>
 
     <!-- Frases -->
@@ -657,13 +693,5 @@
     <string name="pumsenegro1">\n
             Simboliza el origen de la vida.\n
             Es el último grado de este aprendizaje, la piera que culmina el camino.</string>
-
-    <!--Federaciones-->
-    <string name="federaciones">Titulo Federaciones</string>
-    <string name="federacionesTexto">Federaciones texto</string>
-
-    <!--Reglamento-->
-    <string name="reglamento">Titulo Reglamento</string>
-    <string name="reglamentoTexto">Reglamento texto</string>
 
 </resources>

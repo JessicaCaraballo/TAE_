@@ -77,18 +77,26 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textErrorLogin2"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margen4"
+
+            android:paddingRight="@dimen/margen2"
+            android:paddingLeft="@dimen/margen2"
             android:onClick="registrarse"
-            android:text="Registrarse" />
+            android:background="@drawable/boton_redondo"
+            android:text="@string/registrarse" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textErrorLogin2"
+            android:layout_below="@+id/buttonRegistrarse2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="39dp"
+            android:layout_marginTop="@dimen/margen2"
+            android:paddingRight="@dimen/margen2"
+            android:paddingLeft="@dimen/margen2"
             android:onClick="lanzarPrincipalActivity"
-            android:text="Entrar como invitado" />
+            android:background="@drawable/boton_redondo"
+            android:text="@string/entrarcomoinvitado" />
 
     </RelativeLayout>
 

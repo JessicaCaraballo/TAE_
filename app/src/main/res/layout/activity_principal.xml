@@ -7,18 +7,78 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.principalActivity">
 
-    <LinearLayout
-        android:background="@drawable/chicatae"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo2">
+
+
+    <!--Bienvenido-->
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/textViewTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
-    </LinearLayout>
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:background="@color/azul"
+            android:fontFamily="@font/capture_it"
+            android:paddingLeft="@dimen/margen4"
+            android:paddingRight="@dimen/margen4"
+            android:text="@string/bienvenida"
+            android:textColor="@color/colortitulo"
+            android:textSize="@dimen/tamanosubtitulo" />
+
+    <!-- 01 -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen2"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/principal" />
+
+        <TextView
+            android:id="@+id/textViewSubtitulo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_margin="@dimen/margen2"
+            android:fontFamily="@font/turtles"
+            android:text="@string/bienvenida1"
+            android:textColor="@color/colorsubtitulo"
+            android:textSize="@dimen/tamanotecnica" />
+
+        <!--02-->
+        <TextView
+            android:id="@+id/textViewSubtitulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSubtitulo1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/turtles"
+            android:text="@string/bienvenida2"
+            android:textColor="@color/colorsubtitulo"
+            android:textSize="@dimen/tamanotecnica" />
+
+        <!--<ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSubtitulo2"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/principal2" />-->
+
+    </RelativeLayout>
+    </ScrollView>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navPrincipal"

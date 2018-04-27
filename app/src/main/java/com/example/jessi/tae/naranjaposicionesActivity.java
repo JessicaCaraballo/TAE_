@@ -109,7 +109,7 @@ public class naranjaposicionesActivity extends AppCompatActivity {
                         startActivity(frases);
                         break;
                     case R.id.federaciones:
-                        Intent federaciones = new Intent(getApplicationContext(), federacionesActivity.class);
+                        Intent federaciones = new Intent(getApplicationContext(), sobrenosotrosActivity.class);
                         federaciones.putExtra("usuario", (Serializable) usuario);
                         startActivity(federaciones);
                         break;

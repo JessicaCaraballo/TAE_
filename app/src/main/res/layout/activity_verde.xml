@@ -42,7 +42,6 @@
                 android:layout_below="@+id/textViewTitulo"
                 android:layout_margin="@dimen/margen2"
                 android:fontFamily="@font/courier"
-
                 android:text="@string/significadoverde" />
 
 
@@ -53,6 +52,7 @@
                 android:layout_alignTop="@+id/imageButton2"
                 android:layout_toEndOf="@+id/textView12"
                 android:layout_toRightOf="@+id/textView12"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="@drawable/botonataque" />
 
             <ImageButton
@@ -63,6 +63,7 @@
                 android:layout_alignStart="@+id/imageButton3"
                 android:layout_below="@+id/textView4"
                 android:layout_marginTop="19dp"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="@drawable/botonposicion" />
 
             <ImageButton
@@ -74,6 +75,7 @@
                 android:layout_marginRight="19dp"
                 android:layout_toLeftOf="@+id/imageButton4"
                 android:layout_toStartOf="@+id/imageButton4"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="@drawable/botondefensa" />
 
             <ImageButton
@@ -83,6 +85,7 @@
                 android:layout_alignLeft="@+id/imageButton1"
                 android:layout_alignStart="@+id/imageButton1"
                 android:layout_below="@+id/textView9"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="@drawable/botonpatada" />
 
             <TextView
@@ -136,6 +139,7 @@
                 android:layout_alignLeft="@+id/imageButton3"
                 android:layout_alignStart="@+id/imageButton3"
                 android:layout_below="@+id/textView10"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="@drawable/botonpumse" />
 
             <TextView
@@ -196,6 +200,7 @@
                 android:layout_below="@+id/textView11"
                 android:layout_toEndOf="@+id/textView12"
                 android:layout_toRightOf="@+id/textView12"
+                android:background="@drawable/boton_redondo"
                 android:src="@drawable/botonpum" />
         </RelativeLayout>
     </ScrollView>

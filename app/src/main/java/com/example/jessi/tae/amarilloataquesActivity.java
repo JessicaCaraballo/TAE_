@@ -99,7 +99,7 @@ public class amarilloataquesActivity extends AppCompatActivity {
                         startActivity(partescuerpo);
                         break;
                     case R.id.sobrenosotros:
-                        Intent sobrenosotros = new Intent(getApplicationContext(), federacionesActivity.class);
+                        Intent sobrenosotros = new Intent(getApplicationContext(), sobrenosotrosActivity.class);
                         sobrenosotros.putExtra("usuario", (Serializable) usuario);
                         startActivity(sobrenosotros);
                         break;

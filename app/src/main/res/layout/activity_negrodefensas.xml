@@ -29,6 +29,7 @@
                 android:layout_alignTop="@+id/textViewTitulo"
                 android:onClick="Volver"
                 android:text="Volver a negro"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <!--defensa-->
@@ -51,9 +52,10 @@
                 android:id="@+id/textViewSubtitulo1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/botonvolver1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
+                android:layout_below="@+id/textViewTitulo"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@+id/textView5"
+                android:layout_toStartOf="@+id/textView5"
                 android:fontFamily="@font/turtles"
                 android:text="@string/titulodefensanegrocoreano"
                 android:textColor="@color/colorsubtitulo"
@@ -190,20 +192,6 @@
                 android:textSize="@dimen/base" />
             -->
 
-            <!--boton volver inferior-->
-            <!--<ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_paddingTop="@dimen/margen5"
-                android:layout_alignBottom="@+id/imageView2"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="13dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:onClick="Volver"
-                app:srcCompat="?attr/actionModeCloseDrawable" />-->
             <ImageButton
                 android:id="@+id/botonvolver2"
                 android:layout_width="wrap_content"
@@ -214,6 +202,7 @@
                 android:layout_marginTop="17dp"
                 android:onClick="Volver"
                 android:text="Volver a negro"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
         </RelativeLayout>
     </ScrollView>

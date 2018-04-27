@@ -20,9 +20,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/fondo2">
 
-
                 <TextView
-                    android:id="@+id/textViewTitulo"
+                    android:id="@+id/textViewTitulo0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -31,10 +30,22 @@
                     android:fontFamily="@font/capture_it"
                     android:textColor="@color/colortitulo"
                     android:textSize="@dimen/tamanotitulo"
-                    android:text="@string/federaciones" />
+                    android:text="@string/federacion" />
+                <!--01-->
+                <TextView
+                    android:id="@+id/textViewTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textViewTitulo0"
+                    android:layout_margin="@dimen/margen1"
+                    android:fontFamily="@font/capture_it"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanosubtitulo"
+                    android:text="@string/federacion1" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textViewTitulo"
@@ -42,7 +53,77 @@
                     android:fontFamily="@font/courier"
                     android:textColor="@color/base"
                     android:textSize="@dimen/base"
-                    android:text="@string/federacionesTexto" />
+                    android:text="@string/federaciontexto1" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:src="@drawable/federacion1" />
+
+                <!--02-->
+                <TextView
+                    android:id="@+id/textViewTitulo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_margin="@dimen/margen1"
+                    android:fontFamily="@font/capture_it"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanosubtitulo"
+                    android:text="@string/federacion2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTitulo2"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    android:text="@string/federaciontexto2" />
+
+
+                <!--03-->
+                <TextView
+                    android:id="@+id/textViewTitulo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_margin="@dimen/margen1"
+                    android:fontFamily="@font/capture_it"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanosubtitulo"
+                    android:text="@string/federacion3" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTitulo3"
+                    android:layout_margin="@dimen/margen2"
+                    android:fontFamily="@font/courier"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    android:text="@string/federaciontexto3" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:src="@drawable/federacion2" />
+
 
 
             </RelativeLayout>

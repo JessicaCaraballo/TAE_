@@ -29,6 +29,7 @@
                 android:layout_alignTop="@+id/textViewTitulo"
                 android:onClick="Volver"
                 android:text="Volver a negro"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <!--pum-->
@@ -51,9 +52,10 @@
                 android:id="@+id/textViewSubtitulo1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/botonvolver1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textViewTitulo"
+                android:layout_marginTop="11dp"
                 android:fontFamily="@font/turtles"
                 android:text="@string/titulopumnegrocoreano"
                 android:textColor="@color/colorsubtitulo"
@@ -202,6 +204,7 @@
                 android:layout_marginTop="17dp"
                 android:onClick="Volver"
                 android:text="Volver a negro"
+                android:background="@drawable/boton_redondo"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
         </RelativeLayout>

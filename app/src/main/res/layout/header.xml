@@ -3,11 +3,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="@drawable/taefondo"
+    android:background="@drawable/fondologin2"
     android:padding="5dp">
 
     <ImageView
-        android:src="@drawable/logo"
+        android:src="@drawable/iconologin2"
         android:layout_width="75dp"
         android:layout_height="75dp" />
 
