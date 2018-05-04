@@ -15,6 +15,18 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margen1"
+            android:fontFamily="@font/capture_it"
+            android:textColor="@color/colortitulo"
+            android:textSize="@dimen/tamanosubtitulo"
+            android:text="@string/entrar"  />
+
 
         <TextView
             android:id="@+id/textView2"
@@ -24,7 +36,7 @@
             android:layout_marginTop="39dp"
             android:layout_toLeftOf="@+id/textErrorLogin"
             android:layout_toStartOf="@+id/textErrorLogin"
-            android:text="Email:" />
+            android:text="@string/email" />
 
         <TextView
             android:id="@+id/textView3"
@@ -34,7 +46,7 @@
             android:layout_marginTop="32dp"
             android:layout_toLeftOf="@+id/editText2"
             android:layout_toStartOf="@+id/editText2"
-            android:text="Contraseña:" />
+            android:text="@string/pass" />
 
         <EditText
             android:id="@+id/editText"
@@ -119,6 +131,8 @@
             android:paddingLeft="@dimen/margen2"
             android:paddingRight="@dimen/margen2"
             android:text="@string/registrarse" />
+
+
 
     </RelativeLayout>
 

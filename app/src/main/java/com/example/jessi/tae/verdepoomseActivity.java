@@ -127,7 +127,11 @@ public class verdepoomseActivity extends AppCompatActivity {
                         break;
                     case R.id.salir:
                         finish();
-                        System.exit(0);
+                        System.exit(0);finish();
+                        Intent intent = new Intent(Intent.ACTION_MAIN);
+                        intent.addCategory(Intent.CATEGORY_HOME);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
                         break;
                 }
                 return true;

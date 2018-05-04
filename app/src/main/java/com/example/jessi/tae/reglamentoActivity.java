@@ -1,7 +1,15 @@
 package com.example.jessi.tae;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.PowerManager;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
@@ -24,6 +32,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.DataInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
@@ -39,18 +48,26 @@ public class reglamentoActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
     private Button mBotonDescarga;
-    private String downloadUrl = "https://www.fetaekwondo.net/images/2017/03/Reglamento2017.pdf";
+    private String downloadUrl = "http://www.pdf995.com/samples/pdf.pdf";
     private static final String TAG = reglamentoActivity.class.getSimpleName();
     public static final String SAMPLE_FILE = "reglamento2017.pdf";
     PDFView pdfView;
     Integer pageNumber = 0;
     String pdfFileName;
+    ProgressDialog mProgressDialog;
+    TextView tv_loading;
+
+    private Button btnDownload;
+    String URL = "https://www.fetaekwondo.net/images/2017/03/Reglamento2017.pdf";
+    String URL2 = "https://www.fetaekwondo.net/images/2017/03/Reglamento2017.pdf";
+    //String URL = "http://www.pdf995.com/samples/pdf.pdf";
+    //String URL = "http://mueblesdecocinaenzaragoza.es/reglamento.pdf";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("e","e");
         super.onCreate(savedInstanceState);
-        Bundle bundle = getIntent().getExtras();
+        final Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
         setContentView(R.layout.activity_reglamento);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.reglamento);
@@ -60,6 +77,52 @@ public class reglamentoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView = (NavigationView) findViewById(R.id.navReglamento);
         View headerView = navigationView.getHeaderView(0);
+
+        btnDownload = (Button) findViewById(R.id.button1);
+
+        btnDownload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new DownloadTask(reglamentoActivity.this, URL);
+                NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(reglamentoActivity.this)
+                        .setSmallIcon(R.drawable.ic_launcher)
+                        .setContentTitle("Documento descargado")
+                                .setContentText("Se ha descargado el Reglamento 2017");
+                NotificationManager mNotificationManager =
+                        (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+                // mId allows you to update the notification later on.
+                int mId = 1001;
+                mNotificationManager.notify(mId, mBuilder.build());
+                        /*
+                NotificationCompat.Builder mBuilder = new NotificationCompat.Builder (reglamentoActivity.this)
+                        .setSmallIcon(R.drawable.ic_launcher)
+                        .setContentTitle("Documento descargado")
+                        .setContentText("Se ha descargado el Reglamento 2017")
+                        .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+                        */
+                /*
+                Intent intent = new Intent();
+                intent.setAction(android.content.Intent.ACTION_VIEW);
+                String url = "content://media/internal/TAE/Reglamento2017.pdf"; //Environment.getExternalStorageDirectory() + "content://media/internal/TAE/Reglamento2017.pdf";
+                File file = new File(url); //new File("YOUR_SONG_URI"); // set your audio path
+                intent.setDataAndType(Uri.fromFile(file), "pdf/*");
+
+                PendingIntent pIntent = PendingIntent.getActivity(reglamentoActivity.this, 0, intent, 0);
+
+                Notification noti = new Notification.Builder(reglamentoActivity.this) //NotificationCompat.Builder(this)
+                        .setContentTitle("Descarga completada")
+                        .setContentText("Reglamento 2017")
+                        .setSmallIcon(R.drawable.ic_launcher);
+                        //.setContentIntent(pIntent).build();
+
+                //noti.flags |= Notification.FLAG_AUTO_CANCEL;
+
+                NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                notificationManager.notify(0, noti);
+                */
+            }
+        });
+
 /*
         String extStorageDirectory = Environment.getExternalStorageDirectory()
                 .toString();
@@ -78,6 +141,14 @@ public class reglamentoActivity extends AppCompatActivity {
         pdfView= (PDFView)findViewById(R.id.pdfView);
         displayFromAsset(SAMPLE_FILE);
 */
+/*
+        mProgressDialog = new ProgressDialog(reglamentoActivity.this);
+        mProgressDialog.setMessage("Descargando");
+        mProgressDialog.setIndeterminate(true);
+        mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        mProgressDialog.setCancelable(true);*/
+
+
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -166,13 +237,25 @@ public class reglamentoActivity extends AppCompatActivity {
                         break;
                     case R.id.salir:
                         finish();
-                        System.exit(0);
+                        Intent intent = new Intent(Intent.ACTION_MAIN);
+                        intent.addCategory(Intent.CATEGORY_HOME);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
                         break;
                 }
                 return true;
             }
         });
     }
+
+
+/*
+    private void descargar(){
+        DownloadTask dt = new DownloadTask(;
+        context,target File,dialog message)
+    }*/
+
+
 /*
     private void displayFromAsset(String assetFileName) {
         pdfFileName = assetFileName;
