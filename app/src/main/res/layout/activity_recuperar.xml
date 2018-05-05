@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margen1"
+            android:layout_margin="@dimen/margen2"
             android:fontFamily="@font/capture_it"
             android:textColor="@color/colortitulo"
             android:textSize="@dimen/tamanosubtitulo"
@@ -58,6 +58,7 @@
             android:layout_alignStart="@+id/button2"
             android:layout_below="@+id/textView2"
             android:layout_marginTop="25dp"
+            android:textColor="@color/colortitulo"
             android:text="Email o contraseña incorrecto"
             android:visibility="invisible" />
 
@@ -93,12 +94,12 @@
             android:id="@+id/botonvolver1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/textViewTitulo"
+            android:layout_alignBottom="@+id/textViewTitulo"
+            android:layout_toEndOf="@+id/textViewTitulo"
+            android:layout_toRightOf="@+id/textViewTitulo"
+            android:background="@drawable/boton_redondo"
             android:onClick="volver"
             android:text="Volver"
-            android:background="@drawable/boton_redondo"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
 

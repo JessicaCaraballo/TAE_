@@ -29,7 +29,7 @@
     <!-- Textos -->
 
     <!--Principal-->
-    <string name="bienvenida">B I E N V E N I D @</string>
+    <string name="bienvenida">B I E N V E N I D @ </string>
     <string name="bienvenida1">. . . a la primera aplicación de Taekwondo, creado por taekwondistas para taekwondistas.</string>
     <string name="bienvenida2">¡ Te encantará !</string>
 
@@ -46,7 +46,8 @@
 
     <string name="federacion2">Union Europea Taekwondo</string>
     <string name="federaciontexto2">\n La Union Europea Taekwondo es la institución que se dedica a regular las normas del taekwondo en Europa, así como de celebrar periódicamente
-            competiciones y eventos en cada una de sus disciplinas. Es una de las cinco organizaciones continentales que componen el Taekwondo Mundial (WT).</string>
+            competiciones y eventos en cada una de sus disciplinas. \n
+            Es una de las cinco organizaciones continentales que componen el Taekwondo Mundial (WT).</string>
 
     <string name="federacion3">Federacion Espanola Taekwondo</string>
     <string name="federaciontexto3">\n Dentro de la Unión Europea del Taekwondo, se enceuntra la Federación Española de Taekwondo, compuesta de: Federación Andaluza, Federación Aragonesa, Federación Asturiana, Federación Balear
@@ -81,7 +82,7 @@
     <string name="sobrenosotros">Sobre nosotros</string>
     <string name="sobrenosotros1">Si estás leyendo esto, es porque eres tan entusiasta como nosotros de este arte marcial... :)\n\n
         Somos Jessi y David, dos estudiantes de 2º grado superior, Desarrollo de Aplicaciones Multiplataformar, también conocido como DAM.\n\n
-        Este proyecto ha sido creado sin ánimo de lucro, con material propio, tanto imágenes y textos, basados en conocimientos adquiridos como deportista desde hace más de 10 años .\n
+        Este proyecto ha sido creado sin ánimo de lucro, con material propio, tanto imágenes y textos, basados en conocimientos adquiridos como deportista desde hace más de 10 años .\n\n
         Nos hemos dedicido a crear está APP tras encoentrar un agujero en la falta de aplicaciones de este arte marcial, el Taekwondo.
         Esperemos que os guste, y os sirva de utildad. Tenéis una comunidad a vuestra disposición para poder mejorarla.</string>
 
@@ -101,23 +102,23 @@
 
     <!--PonerCinturon-->
     <string name="ponercinturon">Colocar cinturon</string>
-    <string name="ponercinturon1">1- Coloque sobre el ombligo una lado de la punta del cinturon.\n
-2- Agarre dicha punta del cinturón a nivel del ombligo, y de la vuelta con el otro lado del cinturón alrededor de su cadera.\n
-3- Con el cinturon sobrante, envuelvalo alrededor de su cintura.\n
-4- Paselo por encima el primer extremo.\n
-5- La punta del cinturón que queda hacia fuera, la colocamos hacia dentro, por debajo del doblez del cinturón y luego hacia arriba. \n
-6- Preparamos dobleada la punta inferior del cintron.\n
-7- Colocamos doblada hacia abajo la punta superior del cinturón.\n
-8- Con las dos puntas del cinturon, realizamos un nudo, en direccion de arriba hacia abajo. Lo ajustamos.\n
+    <string name="ponercinturon1">1- Coloque sobre el ombligo una lado de la punta del cinturon.\n\n
+2- Agarre dicha punta del cinturón a nivel del ombligo, y de la vuelta con el otro lado del cinturón alrededor de su cadera.\n\n
+3- Con el cinturon sobrante, envuelvalo alrededor de su cintura.\n\n
+4- Paselo por encima el primer extremo.\n\n
+5- La punta del cinturón que queda hacia fuera, la colocamos hacia dentro, por debajo del doblez del cinturón y luego hacia arriba. \n\n
+6- Preparamos dobleada la punta inferior del cintron.\n\n
+7- Colocamos doblada hacia abajo la punta superior del cinturón.\n\n
+8- Con las dos puntas del cinturon, realizamos un nudo, en direccion de arriba hacia abajo. Lo ajustamos.\n\n
 9- Coprobamos que las partes que quedas de las puntas son iguales de largas a ambos lados.\n</string>
 
 
     <!--NivelCinturon-->
     <string name="nivelcituron">Niveles cinturón</string>
     <string name="nivelcituron1">Los grados en Taekwondo se dividen en KUP, PUM y DAN. En España, existen 11 grados KUP, los más básicos. Siguen una numeración inversa al nivel del alumno,
-        cada grado está representado por un color de cinturón -Ti- con un significado simbólico. \n
+        cada grado está representado por un color de cinturón -Ti- con un significado simbólico. \n\n
     En el caso del KUP, los cinturones son blanco (11º KUP), blanco-amarillo (10º KUP), amarillo (9º KUP), amarillo-naranja (8º KUP), naranja (7º KUP), naranja-verde (6º KUP), verde (5º KUP),
-        verde-azul (4º KUP), azul (3º KUP), azul-rojo (2º KUP), rojo/marrón (1º KUP), rojo-negro (1º KUM), y negro (1º DAN).\n
+        verde-azul (4º KUP), azul (3º KUP), azul-rojo (2º KUP), rojo/marrón (1º KUP), rojo-negro (1º KUM), y negro (1º DAN).\n\n
         Los grados intermedios (de dos colores) sólo se otorgan a practicantes menores de 14 años.</string>
 
     <!-- Frases -->
