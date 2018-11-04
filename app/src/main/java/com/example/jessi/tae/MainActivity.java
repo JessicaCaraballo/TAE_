@@ -150,4 +150,8 @@ public class MainActivity extends AppCompatActivity {
         registrarse.putExtra("usuario", (Serializable) usuario);
         startActivity(registrarse);
     }
+    public void recuperar(View view) {
+        Intent recuperar = new Intent(getApplicationContext(), recuperarActivity.class);
+        startActivity(recuperar);
+    }
 }

@@ -219,8 +219,6 @@
                 android:onClick="Volver"
                 android:background="@drawable/boton_redondo"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
-
-
         </RelativeLayout>
     </ScrollView>
 

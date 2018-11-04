@@ -34,15 +34,42 @@
                     android:text="@string/reglamento" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textViewTitulo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_margin="@dimen/margen2"
+                    android:layout_below="@+id/textViewTitulo"
                     android:fontFamily="@font/courier"
+                    android:text="@string/reglamentoTexto"
                     android:textColor="@color/base"
-                    android:textSize="@dimen/base"
-                    android:text="@string/reglamentoTexto" />
+                    android:textSize="@dimen/base" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/boton_redondo"
+                    android:padding="@dimen/margen2"
+                    android:onClick="descargar"
+                    android:text="@string/botonreglamento" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_below="@+id/button1"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/reglamentoTexto2"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
 
 
                 <!--<com.github.barteksc.pdfviewer.PDFView

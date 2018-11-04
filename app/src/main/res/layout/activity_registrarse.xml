@@ -68,6 +68,7 @@
             android:layout_below="@+id/textView3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="29dp"
+            android:textColor="@color/colortitulo"
             android:text="Email o contraseña incorrecto"
             android:visibility="invisible" />
 
@@ -77,26 +78,75 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textErrorLogin2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margen4"
-
-            android:paddingRight="@dimen/margen2"
-            android:paddingLeft="@dimen/margen2"
-            android:onClick="registrarse"
             android:background="@drawable/boton_redondo"
+            android:layout_margin="@dimen/margen2"
+            android:onClick="registrarse"
+            android:paddingLeft="@dimen/margen2"
+            android:paddingRight="@dimen/margen2"
             android:text="@string/registrarse" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/buttonRegistrarse2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margen2"
-            android:paddingRight="@dimen/margen2"
-            android:paddingLeft="@dimen/margen2"
-            android:onClick="lanzarPrincipalActivity"
             android:background="@drawable/boton_redondo"
+            android:onClick="recuperar"
+            android:paddingLeft="@dimen/margen2"
+            android:paddingRight="@dimen/margen2"
+            android:text="Olvidé mi contraseña" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button5"
+            android:layout_margin="@dimen/margen2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/boton_redondo"
+            android:onClick="lanzarPrincipalActivity"
+            android:paddingLeft="@dimen/margen2"
+            android:paddingRight="@dimen/margen2"
             android:text="@string/entrarcomoinvitado" />
+
+        <!--<Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textErrorLogin2"
+            android:layout_toRightOf="@+id/textErrorLogin2"
+            android:background="@drawable/boton_redondo"
+            android:onClick="volver"
+            android:paddingLeft="@dimen/margen2"
+            android:paddingRight="@dimen/margen2"
+            android:text="Volver" />-->
+
+        <ImageButton
+            android:id="@+id/botonvolver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/editText"
+            android:layout_toRightOf="@+id/editText"
+            android:background="@drawable/boton_redondo"
+            android:onClick="volver"
+            android:text="Volver"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/botonvolver1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/capture_it"
+            android:textColor="@color/colortitulo"
+            android:text="Registrarse"
+            android:textSize="@dimen/tamanosubtitulo" />
+
 
     </RelativeLayout>
 

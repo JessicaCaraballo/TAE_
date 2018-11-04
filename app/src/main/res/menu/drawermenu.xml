@@ -10,7 +10,7 @@
             <item android:id="@+id/clasificacion" android:title="Clasificación" android:icon="@drawable/ic_menu_camera"  android:visible="false"/>
             <item android:id="@+id/frases" android:title="Frases motivadoras" android:icon="@drawable/frases" />
             <item android:id="@+id/federaciones" android:title="Federaciones" android:icon="@drawable/federacion" />
-            <item android:id="@+id/reglamento" android:title="Reglamento y arbitraje" android:icon="@drawable/reglamento" />
+            <item android:id="@+id/reglamento" android:title="Reglamento" android:icon="@drawable/reglamento" />
             <item android:id="@+id/partescuerpo" android:title="Partes del cuerpo" android:icon="@drawable/cuerpo" />
             <item android:id="@+id/terminologia" android:title="Terminología" android:icon="@drawable/terminologia" />
         </menu>

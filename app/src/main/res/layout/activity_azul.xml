@@ -42,7 +42,6 @@
                 android:layout_below="@+id/textViewTitulo"
                 android:layout_margin="@dimen/margen2"
                 android:fontFamily="@font/courier"
-
                 android:text="@string/significadoazul" />
 
 

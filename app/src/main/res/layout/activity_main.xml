@@ -15,16 +15,27 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margen2"
+            android:fontFamily="@font/capture_it"
+            android:textColor="@color/colortitulo"
+            android:textSize="@dimen/tamanosubtitulo"
+            android:text="@string/entrar" />
+
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/progressBar"
-            android:layout_marginTop="39dp"
-            android:layout_toLeftOf="@+id/textErrorLogin"
-            android:layout_toStartOf="@+id/textErrorLogin"
-            android:text="Email:" />
+            android:layout_below="@+id/textViewTitulo"
+            android:layout_toLeftOf="@+id/buttonOlvide"
+            android:layout_toStartOf="@+id/buttonOlvide"
+            android:text="@string/email" />
 
         <TextView
             android:id="@+id/textView3"
@@ -34,7 +45,7 @@
             android:layout_marginTop="32dp"
             android:layout_toLeftOf="@+id/editText2"
             android:layout_toStartOf="@+id/editText2"
-            android:text="Contraseña:" />
+            android:text="@string/pass" />
 
         <EditText
             android:id="@+id/editText"
@@ -60,12 +71,36 @@
             android:ems="10"
             android:inputType="textPassword" />
 
-        <!--Entrar como invitado-->
-        <Button
-            android:id="@+id/button"
+        <TextView
+            android:id="@+id/textErrorLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="Email o contraseña incorrecto"
+            android:textColor="@color/colortitulo"
+            android:visibility="invisible" />
 
+        <!--Entrar-->
+        <Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textErrorLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margen2"
+            android:background="@drawable/boton_redondo"
+            android:onClick="login"
+            android:text="@string/entrar" />
+
+
+        <!--Entrar como invitado-->
+        <Button
+            android:id="@+id/buttonInvitado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/buttonEntrar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margen2"
@@ -75,28 +110,34 @@
             android:onClick="lanzarPrincipalActivity"
             android:text="@string/entrarcomoinvitado" />
 
-        <!--Entrar-->
         <Button
-            android:id="@+id/buttonEntrar"
+            android:id="@+id/buttonOlvide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textErrorLogin"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
+            android:layout_alignLeft="@+id/buttonInvitado"
+            android:layout_alignStart="@+id/buttonInvitado"
+            android:layout_below="@+id/buttonInvitado"
+            android:paddingLeft="@dimen/margen2"
+            android:paddingRight="@dimen/margen2"
+            android:layout_marginTop="15dp"
             android:background="@drawable/boton_redondo"
-            android:onClick="login"
-            android:text="@string/entrar" />
+            android:onClick="recuperar"
+            android:text="Olvidé mi contraseña" />
 
-        <TextView
-            android:id="@+id/textErrorLogin"
+        <Button
+            android:id="@+id/buttonRegistrarse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/button"
-            android:layout_alignStart="@+id/button"
-            android:layout_below="@+id/editText2"
-            android:layout_marginTop="24dp"
-            android:text="Email o contraseña incorrecto"
-            android:visibility="invisible" />
+            android:layout_below="@+id/buttonOlvide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="registrarse"
+            android:paddingLeft="@dimen/margen2"
+            android:paddingRight="@dimen/margen2"
+            android:text="@string/registrarse" />
+
+
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -107,18 +148,11 @@
             android:layout_centerVertical="true"
             android:visibility="gone" />
 
-        <Button
-            android:id="@+id/buttonRegistrarse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
-            android:background="@drawable/boton_redondo"
-            android:onClick="registrarse"
-            android:paddingLeft="@dimen/margen2"
-            android:paddingRight="@dimen/margen2"
-            android:text="@string/registrarse" />
+
+
+
+
+
 
     </RelativeLayout>
 
