@@ -35,7 +35,7 @@ public class amarilloActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
     private ImageButton mImageButtonPosiciones;
-    private ImageButton mImageButtonAtaques;
+    private ImageButton mImageButtonAtaques2;
     private ImageButton mImageButtonDefensas;
     private ImageButton mImageButtonPatadas;
     private ImageButton mImageButtonPoomse;
@@ -62,13 +62,13 @@ public class amarilloActivity extends AppCompatActivity {
                 startActivity(amarilloPosiciones);
             }
         });
-        mImageButtonAtaques = (ImageButton) findViewById(R.id.imageButton1);
-        mImageButtonAtaques.setOnClickListener(new View.OnClickListener(){
+        mImageButtonAtaques2 = (ImageButton) findViewById(R.id.imageButton1);
+        mImageButtonAtaques2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent amarilloAtaques = new Intent(getApplicationContext(), amarilloataquesActivity.class);
-                amarilloAtaques.putExtra("usuario", (Serializable) usuario);
-                startActivity(amarilloAtaques);
+                Intent amarilloAtaques2 = new Intent(getApplicationContext(), amarilloataquesActivity.class);
+                amarilloAtaques2.putExtra("usuario", (Serializable) usuario);
+                startActivity(amarilloAtaques2);
             }
         });
         mImageButtonDefensas = (ImageButton) findViewById(R.id.imageButton3);

@@ -190,7 +190,11 @@
     <string name="tituloataqueamarillo">Ataques</string>
     <string name="nombreataqueamarillo1">Jan Jirugui</string>
     <string name="ataqueamarillo1">\n
-            Un puñetazo, un ataque con la parte frontal del puño.</string>
+            Un puñetazo, un ataque con la parte frontal del puño.
+            Postura del jinete, sentados a caballo.\n
+			Separación entre los talones de 1 paso.\n
+			Ambas rodillas dobladas y pies paralelos entre sí.\n
+			El peso del cuerpo se distribuye al 50%.</string>
     <string name="nombreataqueamarillo2">Dubon Jirugui</string>
     <string name="ataqueamarillo2">\n
             Un puñetazo doble.</string>
