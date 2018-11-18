@@ -11,6 +11,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
+        <uses-library android:name="com.google.android.maps" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -80,6 +83,7 @@
         <activity android:name=".sobrenosotrosActivity" />
         <activity android:name=".federacionesActivity" />
         <activity android:name=".reglamentoActivity" />
+        <activity android:name=".mapaActivity" />
     </application>
 
 </manifest>

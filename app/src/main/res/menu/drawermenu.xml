@@ -53,6 +53,7 @@
             </menu>
         </item>
     </group>
+    <item android:id="@+id/mapa" android:title="Mapa" android:icon="@drawable/ic_launcher" />
     <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery"  android:visible="false"/>
     <item android:id="@+id/sobrenosotros" android:title="Sobre nosotros" android:icon="@drawable/contacto" />
     <item android:id="@+id/configuracion" android:title="Configuración" android:icon="@drawable/ic_menu_send" android:visible="false"/>

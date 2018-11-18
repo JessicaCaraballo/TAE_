@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jessi.tae.mapaActivity">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo2">
+
+
+                <TextView
+                    android:id="@+id/textViewTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/margen1"
+                    android:fontFamily="@font/capture_it"
+                    android:textColor="@color/colortitulo"
+                    android:textSize="@dimen/tamanotitulo"
+                    android:text="@string/mapaTitulo" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_below="@+id/textViewTitulo"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/mapaTextoInicial"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_below="@+id/button1"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/mapaTextoFinal"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base" />
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textViewTitulo"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignRight="@+id/textViewTitulo"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_below="@+id/textView1"
+                    android:clickable="true"
+                    android:apiKey="API Key"
+                    android:layout_marginTop="18dp" />
+
+
+                <!--<com.github.barteksc.pdfviewer.PDFView
+                    android:id="@+id/pdfView"
+                    android:layout_below="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>-->
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:background="@color/colorAccent"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/colorPrimary"
+        app:menu="@menu/drawermenu"></android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

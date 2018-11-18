@@ -708,4 +708,10 @@
             Simboliza el origen de la vida.\n
             Es el último grado de este aprendizaje, la piera que culmina el camino.</string>
 
+    <!-- Mapas -->
+    <string name="mapaTitulo">Mapa Gimnasios</string>
+    <string name="mapaTextoInicial">A continuación le mostramos un mapa con los Gimnasios de Taekwondo</string>
+    <string name="mapaTextoFinal">Si desea que su gimnasio aparezca en este mapa puede solicutarlo a traves del siguiente formulario</string>
+
+
 </resources>

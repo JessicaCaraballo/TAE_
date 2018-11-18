@@ -1,50 +1,49 @@
 package com.example.jessi.tae;
 
+import android.app.NotificationManager;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.github.barteksc.pdfviewer.PDFView;
+import com.google.android.gms.maps.MapView;
+
 import java.io.Serializable;
 
-public class principalActivity extends AppCompatActivity {
+public class mapaActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
-    private Button mButton4;
+    private MapView mapView;
+    //private MapController myMapController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("e","e");
         super.onCreate(savedInstanceState);
-        Bundle bundle = getIntent().getExtras();
+        final Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_principal);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.principal);
+        setContentView(R.layout.activity_mapa);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.mapa);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        mButton4 = (Button) findViewById(R.id.button4);
-        mButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mDrawerLayout.openDrawer(Gravity.LEFT);
-            }
-        });
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navPrincipal);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navMapa);
         View headerView = navigationView.getHeaderView(0);
+
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -149,6 +148,10 @@ public class principalActivity extends AppCompatActivity {
         });
     }
 
+    protected boolean isRouteDisplayed() {
+        return false;
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         ////this.mMenu = menu;
@@ -164,40 +167,4 @@ public class principalActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-/*
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
-    }*/
-/*
-    @Override
-    public void onPrepareOptionsMenu(Menu menu) {
-        menu.findItem(R.id.drawer).setVisible(false);
-        super.onPrepareOptionsMenu(menu);
-    }
-    */
-/*
-    public void showOverflowMenu(boolean showMenu){
-        if(mMenu == null)
-            return;
-        mMenu.setGroupVisible(R.id.drawer, showMenu);
-    }*/
-    /*
-    @Override
-public boolean onCreateOptionsMenu(Menu menu)
-{
-    // inflate menu from xml
-    MenuInflater inflater = getSupportMenuInflater();
-    inflater.inflate(R.menu.settings, menu);
-
-    if (mState == HIDE_MENU)
-    {
-        for (int i = 0; i < menu.size(); i++)
-            menu.getItem(i).setVisible(false);
-    }
 }
-*/
-
-}
-
