@@ -14,35 +14,63 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
 
-        <RelativeLayout
-            android:background="@drawable/fondo2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textViewTitulo"
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:textSize="@dimen/tamanosubtitulo"
-                android:textColor="@color/colorsubtitulo"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <!--ataques-->
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:background="@color/amarillo"
                 android:fontFamily="@font/capture_it"
-                android:padding="@dimen/margen2"
-                android:layout_margin="@dimen/margen2"
-                android:text="Cinturón Amarillo" />
+                android:paddingLeft="@dimen/margen4"
+                android:paddingRight="@dimen/margen4"
+                android:text="Cinturón Amarillo"
+                android:textColor="@color/colorsubtitulo"
+                android:textSize="@dimen/tamanosubtitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textViewTitulo"
                 android:layout_margin="@dimen/margen2"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/courier"
-                android:text="@string/significadoamarillo" />
+                android:text="@string/significadoamarillo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
 
 
             <ImageButton
@@ -50,9 +78,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/imageButton2"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_toEndOf="@+id/textView12"
                 android:layout_toRightOf="@+id/textView12"
                 android:background="@drawable/boton_redondo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
                 app:srcCompat="@drawable/botonataque" />
 
             <ImageButton
@@ -62,8 +97,14 @@
                 android:layout_alignLeft="@+id/imageButton3"
                 android:layout_alignStart="@+id/imageButton3"
                 android:layout_below="@+id/textView4"
-                android:layout_marginTop="19dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/boton_redondo"
+                app:layout_constraintEnd_toStartOf="@+id/guideline1"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
                 app:srcCompat="@drawable/botonposicion" />
 
             <ImageButton
@@ -71,11 +112,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView8"
-                android:layout_marginEnd="19dp"
-                android:layout_marginRight="19dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_toLeftOf="@+id/imageButton4"
                 android:layout_toStartOf="@+id/imageButton4"
                 android:background="@drawable/boton_redondo"
+                app:layout_constraintEnd_toStartOf="@+id/guideline1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline2"
                 app:srcCompat="@drawable/botondefensa" />
 
             <ImageButton
@@ -85,7 +130,13 @@
                 android:layout_alignLeft="@+id/imageButton1"
                 android:layout_alignStart="@+id/imageButton1"
                 android:layout_below="@+id/textView9"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/boton_redondo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toTopOf="@+id/guideline2"
                 app:srcCompat="@drawable/botonpatada" />
 
             <TextView
@@ -95,10 +146,16 @@
                 android:layout_alignEnd="@+id/imageButton2"
                 android:layout_alignRight="@+id/imageButton2"
                 android:layout_below="@+id/imageButton2"
-                android:layout_marginEnd="18dp"
-                android:layout_marginRight="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/turtles"
-                android:text="@string/tituloposicionamarillo" />
+                android:text="@string/tituloposicionamarillo"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+                app:layout_constraintStart_toStartOf="@+id/imageButton2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -107,20 +164,32 @@
                 android:layout_alignEnd="@+id/imageButton1"
                 android:layout_alignRight="@+id/imageButton1"
                 android:layout_below="@+id/imageButton1"
-                android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/turtles"
-                android:text="@string/tituloataqueamarillo" />
+                android:text="@string/tituloataqueamarillo"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton1"
+                app:layout_constraintStart_toStartOf="@+id/imageButton1"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="67dp"
+                android:layout_height="20dp"
                 android:layout_alignEnd="@+id/textView8"
                 android:layout_alignRight="@+id/textView8"
                 android:layout_below="@+id/imageButton3"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/turtles"
-                android:text="@string/titulodefensaamarillo" />
+                android:text="@string/titulodefensaamarillo"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+                app:layout_constraintStart_toStartOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -129,8 +198,14 @@
                 android:layout_alignBottom="@+id/textView10"
                 android:layout_alignEnd="@+id/textView9"
                 android:layout_alignRight="@+id/textView9"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/turtles"
-                android:text="@string/titulopatadaamarillo" />
+                android:text="@string/titulopatadaamarillo"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+                app:layout_constraintStart_toStartOf="@+id/imageButton4"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
             <ImageButton
                 android:id="@+id/imageButton5"
@@ -139,10 +214,13 @@
                 android:layout_alignLeft="@+id/textView10"
                 android:layout_alignStart="@+id/textView10"
                 android:layout_below="@+id/textView10"
-                android:layout_marginLeft="27dp"
-                android:layout_marginStart="27dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
                 android:background="@drawable/boton_redondo"
-                app:srcCompat="@drawable/botonpumse" />
+                app:layout_constraintEnd_toStartOf="@+id/guideline1"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:srcCompat="@drawable/botonpumse"
+                tools:layout_editor_absoluteY="341dp" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -150,9 +228,16 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageButton5"
                 android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/turtles"
-                android:text="@string/titulopumseamarillo" />
-        </RelativeLayout>
+                android:text="@string/titulopumseamarillo"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toStartOf="@+id/imageButton5"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
     <android.support.design.widget.NavigationView

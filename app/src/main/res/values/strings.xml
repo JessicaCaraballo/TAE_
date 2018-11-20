@@ -24,8 +24,6 @@
     <string name="pass">Contraseña:</string>
 
 
-
-
     <!-- Textos -->
 
     <!--Principal-->
@@ -716,6 +714,7 @@
     <string name="mapaTitulo">Mapa Gimnasios</string>
     <string name="mapaTextoInicial">A continuación le mostramos un mapa con los Gimnasios de Taekwondo</string>
     <string name="mapaTextoFinal">Si desea que su gimnasio aparezca en este mapa puede solicutarlo a traves del siguiente formulario</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
 </resources>

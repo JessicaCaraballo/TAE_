@@ -14,215 +14,382 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
 
-        <RelativeLayout
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fondo2">
+            android:layout_height="match_parent">
 
-            <!--boton volver superior -->
-            <ImageButton
-                android:id="@+id/botonvolver1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView1"
-                android:layout_alignRight="@+id/textView1"
-                android:layout_alignTop="@+id/textViewTitulo"
-                android:onClick="Volver"
-                android:background="@drawable/boton_redondo"
-                android:text="Volver a amarillo"
-                app:srcCompat="?attr/actionModeCloseDrawable" />
 
-            <!--defensaes-->
+            <!--defensas-->
             <TextView
                 android:id="@+id/textViewTitulo"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView1"
                 android:layout_alignParentTop="true"
-                android:layout_alignStart="@+id/imageView1"
                 android:background="@color/amarillo"
                 android:fontFamily="@font/turtles"
-                android:layout_marginTop="@dimen/margen1"
                 android:paddingLeft="@dimen/margen4"
                 android:paddingRight="@dimen/margen4"
                 android:text="@string/titulodefensaamarillo"
                 android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanosubtitulo" />
+                android:textSize="@dimen/tamanosubtitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />
+
+            <!--boton volver superior -->
+            <ImageButton
+                android:id="@+id/botonvolver1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTitulo"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/boton_redondo"
+                android:cropToPadding="true"
+                android:onClick="Volver"
+                android:text="Volver a amarillo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <!-- 01 -->
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginStart="@dimen/margen2"
-                android:layout_marginTop="@dimen/margen6"
-                app:srcCompat="@drawable/defensaamarillo1" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+                tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/textViewSubtitulo1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView1"
-                android:layout_alignStart="@+id/textView1"
-                android:layout_alignTop="@+id/imageView1"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo1"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_begin="41dp" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textViewSubtitulo1"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView1"
-                android:layout_toRightOf="@+id/imageView1"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo1"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_begin="160dp" />
 
-           <!-- 02 -->
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView1"
-                android:layout_alignStart="@+id/imageView1"
-                android:layout_below="@+id/imageView1"
-                android:layout_marginTop="@dimen/margen5"
-                app:srcCompat="@drawable/defensaamarillo2" />
+                <Button
+                    android:id="@+id/botonsubir1"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/botonsubir"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView1"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline1_1" />
 
-            <TextView
-                android:id="@+id/textViewSubtitulo2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView2"
-                android:layout_toRightOf="@+id/imageView2"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo2"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline1_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo1"
+                    app:srcCompat="@drawable/defensaamarillo1" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textViewSubtitulo1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_alignTop="@+id/imageView1"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/nombredefensaamarillo1"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanotecnica"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline1_1"
+                    app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSubtitulo1"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/defensaamarillo1"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline1_1"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo1" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- 02 -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView2"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_marginTop="31dp"
-                android:layout_toEndOf="@+id/imageView2"
-                android:layout_toRightOf="@+id/imageView2"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo2"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1"
+                tools:ignore="MissingConstraints">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_begin="160dp" />
+
+                <Button
+                    android:id="@+id/botonsubir2"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/botonsubir"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo2"
+                    app:srcCompat="@drawable/defensaamarillo2" />
+
+                <TextView
+                    android:id="@+id/textViewSubtitulo2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/nombredefensaamarillo2"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanotecnica"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSubtitulo2"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/defensaamarillo2"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo2" />
+
+            </android.support.constraint.ConstraintLayout>
 
             <!-- 03 -->
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView2"
-                android:layout_alignStart="@+id/imageView2"
-                android:layout_below="@+id/imageView2"
-                android:layout_marginTop="@dimen/margen6"
-                app:srcCompat="@drawable/defensaamarillo3" />
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout2"
+                tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/textViewSubtitulo3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView3"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView3"
-                android:layout_toRightOf="@+id/imageView3"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo3"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_begin="160dp" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView3"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_marginTop="31dp"
-                android:layout_toEndOf="@+id/imageView3"
-                android:layout_toRightOf="@+id/imageView3"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo3"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />
+                <Button
+                    android:id="@+id/botonsubir3"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/botonsubir"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo3"
+                    app:srcCompat="@drawable/defensaamarillo3" />
+
+                <TextView
+                    android:id="@+id/textViewSubtitulo3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/nombredefensaamarillo3"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanotecnica"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSubtitulo3"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/defensaamarillo3"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo3" />
+
+            </android.support.constraint.ConstraintLayout>
 
             <!-- 04 -->
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView3"
-                android:layout_alignStart="@+id/imageView3"
-                android:layout_below="@+id/imageView3"
-                android:layout_marginTop="@dimen/margen5"
-                app:srcCompat="@drawable/defensaamarillo4" />
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout3"
+                tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/textViewSubtitulo4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView4"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_toEndOf="@+id/imageView4"
-                android:layout_toRightOf="@+id/imageView3"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombredefensaamarillo4"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_begin="160dp" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView4"
-                android:layout_marginLeft="@dimen/margen2"
-                android:layout_marginRight="@dimen/margen2"
-                android:layout_marginTop="31dp"
-                android:layout_toEndOf="@+id/imageView4"
-                android:layout_toRightOf="@+id/imageView4"
-                android:fontFamily="@font/courier"
-                android:text="@string/defensaamarillo4"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />
+                <Button
+                    android:id="@+id/botonsubir4"
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/botonsubir"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo4"
+                    app:srcCompat="@drawable/defensaamarillo4" />
+
+                <TextView
+                    android:id="@+id/textViewSubtitulo4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/nombredefensaamarillo4"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanotecnica"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSubtitulo4"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/defensaamarillo4"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo4" />
+
+            </android.support.constraint.ConstraintLayout>
 
             <!--boton volver inferior -->
             <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
+                android:id="@+id/botonvolver2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView4"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="@dimen/margen3"
-                android:layout_marginBottom="13dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:onClick="Volver"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/boton_redondo"
+                android:onClick="Volver"
+                app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout4"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
-        </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
     </ScrollView>
+
 
 
     <android.support.design.widget.NavigationView
