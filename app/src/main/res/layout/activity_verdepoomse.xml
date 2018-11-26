@@ -14,82 +14,126 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
 
-        <RelativeLayout
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@drawable/fondo2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/fondo2">
-
-            <!--boton volver superior -->
-            <ImageButton
-                android:id="@+id/botonvolver1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView1"
-                android:layout_alignRight="@+id/textView1"
-                android:layout_alignTop="@+id/textViewTitulo"
-                android:onClick="Volver"
-                android:text="Volver a verde"
-                android:background="@drawable/boton_redondo"
-                app:srcCompat="?attr/actionModeCloseDrawable" />
+            tools:ignore="MissingConstraints">
 
             <!--pumse-->
             <TextView
                 android:id="@+id/textViewTitulo"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView1"
                 android:layout_alignParentTop="true"
-                android:layout_alignStart="@+id/imageView1"
                 android:background="@color/verde"
                 android:fontFamily="@font/turtles"
-                android:layout_marginTop="@dimen/margen1"
                 android:paddingLeft="@dimen/margen4"
                 android:paddingRight="@dimen/margen4"
                 android:text="@string/titulopumseverde"
                 android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanosubtitulo" />
+                android:textSize="@dimen/tamanosubtitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />
 
-
-            <TextView
-                android:id="@+id/textViewSubtitulo1"
-                android:layout_width="wrap_content"
+            <!--boton volver superior -->
+            <ImageButton
+                android:id="@+id/botonvolver1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textViewTitulo"
-                android:layout_marginLeft="11dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombrepumseverde1"
-                android:textColor="@color/colorsubtitulo"
-                android:textSize="@dimen/tamanotecnica" />
+                android:layout_alignTop="@+id/textViewTitulo"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/boton_redondo"
+                android:cropToPadding="true"
+                android:onClick="Volver"
+                android:text="Volver a verde"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
+            <!-- 01 -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textViewSubtitulo1"
-                android:layout_alignStart="@+id/textViewSubtitulo1"
-                android:layout_below="@+id/textViewSubtitulo1"
-                android:layout_margin="@dimen/margen2"
-                android:fontFamily="@font/courier"
-                android:text="@string/pumseverde1"
-                android:textColor="@color/base"
-                android:textSize="@dimen/base" />
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+                tools:ignore="MissingConstraints">
 
+                <TextView
+                    android:id="@+id/textViewSubtitulo1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/nombrepumseverde1"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanotecnica"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="48dp" />
 
-            <VideoView
-                android:id="@+id/videoView4"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textViewSubtitulo1"
+                    android:layout_alignStart="@+id/textViewSubtitulo1"
+                    android:layout_below="@+id/textViewSubtitulo1"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/pumseverde1"
+                    android:textColor="@color/base"
+                    android:textSize="@dimen/base"
+                    app:layout_constraintBottom_toTopOf="@+id/videoView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo1" />
+
+                <VideoView
+                    android:id="@+id/videoView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView1"
+                    android:clickable="false"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="163dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!--boton volver inferior -->
+            <ImageButton
+                android:id="@+id/botonvolver2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_below="@+id/textView1"
-                android:layout_marginTop="20dp"
-                android:clickable="false"
-                android:visibility="visible" />
-        </RelativeLayout>
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/boton_redondo"
+                android:onClick="Volver"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        </android.support.constraint.ConstraintLayout>
+
     </ScrollView>
 
     <android.support.design.widget.NavigationView
@@ -102,6 +146,5 @@
         app:menu="@menu/drawermenu"
         android:layout_gravity="start">
     </android.support.design.widget.NavigationView>
-
 
 </android.support.v4.widget.DrawerLayout>

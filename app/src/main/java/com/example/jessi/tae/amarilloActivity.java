@@ -1,33 +1,17 @@
 package com.example.jessi.tae;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.TypedArray;
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.animation.RotateAnimation;
-import android.widget.BaseAdapter;
-import android.widget.Gallery;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.io.File;
 import java.io.Serializable;
 
 public class amarilloActivity extends AppCompatActivity {
@@ -53,7 +37,7 @@ public class amarilloActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView = (NavigationView) findViewById(R.id.navAmarillo);
         View headerView = navigationView.getHeaderView(0);
-        mImageButtonPosiciones = (ImageButton) findViewById(R.id.imageButton2);
+        mImageButtonPosiciones = (ImageButton) findViewById(R.id.imageButtonPosicion);
         mImageButtonPosiciones.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -62,7 +46,7 @@ public class amarilloActivity extends AppCompatActivity {
                 startActivity(amarilloPosiciones);
             }
         });
-        mImageButtonAtaques2 = (ImageButton) findViewById(R.id.imageButton1);
+        mImageButtonAtaques2 = (ImageButton) findViewById(R.id.imageButtonAtaque);
         mImageButtonAtaques2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -71,7 +55,7 @@ public class amarilloActivity extends AppCompatActivity {
                 startActivity(amarilloAtaques2);
             }
         });
-        mImageButtonDefensas = (ImageButton) findViewById(R.id.imageButton3);
+        mImageButtonDefensas = (ImageButton) findViewById(R.id.imageButtonDefensa);
         mImageButtonDefensas.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -80,7 +64,7 @@ public class amarilloActivity extends AppCompatActivity {
                 startActivity(amarilloDefensas);
             }
         });
-        mImageButtonPatadas = (ImageButton) findViewById(R.id.imageButton4);
+        mImageButtonPatadas = (ImageButton) findViewById(R.id.imageButtonPatada);
         mImageButtonPatadas.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -89,7 +73,7 @@ public class amarilloActivity extends AppCompatActivity {
                 startActivity(amarilloPatadas);
             }
         });
-        mImageButtonPoomse = (ImageButton) findViewById(R.id.imageButton5);
+        mImageButtonPoomse = (ImageButton) findViewById(R.id.imageButtonPumse);
         mImageButtonPoomse.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

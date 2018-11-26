@@ -14,167 +14,290 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
 
-        <RelativeLayout
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:background="@drawable/fondo2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/textViewTitulo"
-                android:layout_width="wrap_content"
+            <!--tecnica-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:textSize="@dimen/tamanosubtitulo"
-                android:textColor="@color/colorsubtitulo"
-                android:background="@color/naranja"
-                android:fontFamily="@font/capture_it"
-                android:padding="@dimen/margen2"
-                android:layout_margin="@dimen/margen2"
-                android:text="Cinturón naranja" />
+                tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textViewTitulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/naranja"
+                    android:fontFamily="@font/capture_it"
+                    android:paddingLeft="@dimen/margen4"
+                    android:paddingRight="@dimen/margen4"
+                    android:text="Cinturón naranja"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanosubtitulo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />
+
+                <TextView
+                    android:id="@+id/textViewSignificado"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textViewTitulo"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/significadonaranja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textViewTitulo"
-                android:layout_margin="@dimen/margen2"
-                android:fontFamily="@font/courier"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1"
+                tools:ignore="MissingConstraints">
 
-                android:text="@string/significadonaranja" />
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineVertical1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent="0.5" />
 
+                <!--posicion-->
+                <ImageButton
+                    android:id="@+id/imageButtonPosicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineVertical1"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonposicion" />
 
-            <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textViewPosicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imageButtonPosicion"
+                    android:layout_alignRight="@+id/imageButtonPosicion"
+                    android:layout_below="@+id/imageButtonPosicion"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/tituloposicionnaranja"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonPosicion"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonPosicion"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonPosicion" />
+
+                <!--ataque-->
+                <ImageButton
+                    android:id="@+id/imageButtonAtaque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageButtonPosicion"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.539"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineVertical1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonataque" />
+
+                <TextView
+                    android:id="@+id/textViewAtaque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imageButtonAtaque"
+                    android:layout_alignRight="@+id/imageButtonAtaque"
+                    android:layout_below="@+id/imageButtonAtaque"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/tituloataquenaranja"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonAtaque"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonAtaque"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonAtaque" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageButton2"
-                android:layout_toEndOf="@+id/textView12"
-                android:layout_toRightOf="@+id/textView12"
-                android:background="@drawable/boton_redondo"
-                app:srcCompat="@drawable/botonataque" />
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout2"
+                tools:ignore="MissingConstraints">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageButton3"
-                android:layout_alignStart="@+id/imageButton3"
-                android:layout_below="@+id/textView4"
-                android:layout_marginTop="19dp"
-                android:background="@drawable/boton_redondo"
-                app:srcCompat="@drawable/botonposicion" />
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineVertical2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent="0.5" />
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView8"
-                android:layout_marginEnd="19dp"
-                android:layout_marginRight="19dp"
-                android:layout_toLeftOf="@+id/imageButton4"
-                android:layout_toStartOf="@+id/imageButton4"
-                android:background="@drawable/boton_redondo"
-                app:srcCompat="@drawable/botondefensa" />
+                <!--defensa-->
+                <ImageButton
+                    android:id="@+id/imageButtonDefensa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imageButtonPatada"
+                    android:layout_toStartOf="@+id/imageButtonPatada"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botondefensa" />
 
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageButton1"
-                android:layout_alignStart="@+id/imageButton1"
-                android:layout_below="@+id/textView9"
-                android:background="@drawable/boton_redondo"
-                app:srcCompat="@drawable/botonpatada" />
+                <TextView
+                    android:id="@+id/textViewDefensa"
+                    android:layout_width="67dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/imageButtonDefensa"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/titulodefensanaranja"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonDefensa"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonDefensa"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonDefensa" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/imageButton2"
-                android:layout_alignRight="@+id/imageButton2"
-                android:layout_below="@+id/imageButton2"
-                android:layout_marginEnd="18dp"
-                android:layout_marginRight="18dp"
-                android:fontFamily="@font/turtles"
-                android:text="@string/tituloposicionnaranja" />
+                <!--patada-->
+                <ImageButton
+                    android:id="@+id/imageButtonPatada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineVertical2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonpatada" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/imageButton1"
-                android:layout_alignRight="@+id/imageButton1"
-                android:layout_below="@+id/imageButton1"
-                android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp"
-                android:fontFamily="@font/turtles"
-                android:text="@string/tituloataquenaranja" />
+                <TextView
+                    android:id="@+id/textViewPatada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewDefensa"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/titulopatadanaranja"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonPatada"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonPatada"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonPatada" />
+            </android.support.constraint.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView8"
-                android:layout_alignRight="@+id/textView8"
-                android:layout_below="@+id/imageButton3"
-                android:fontFamily="@font/turtles"
-                android:text="@string/titulodefensanaranja" />
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout3"
+                tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/textView10"
-                android:layout_alignEnd="@+id/textView9"
-                android:layout_alignRight="@+id/textView9"
-                android:fontFamily="@font/turtles"
-                android:text="@string/titulopatadanaranja" />
+                <!--pumse-->
+                <ImageButton
+                    android:id="@+id/imageButtonPumse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonpumse" />
 
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView10"
-                android:layout_alignStart="@+id/textView10"
-                android:layout_below="@+id/textView10"
-                android:layout_marginLeft="27dp"
-                android:layout_marginStart="27dp"
-                android:background="@drawable/boton_redondo"
-                app:srcCompat="@drawable/botonpumse" />
+                <TextView
+                    android:id="@+id/textViewPumse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButtonPumse"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/titulopumsenaranja"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonPumse"
+                    app:layout_constraintHorizontal_bias="0.545"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonPumse"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonPumse" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageButton5"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="@font/turtles"
-                android:text="@string/titulopumsenaranja" />
+            </android.support.constraint.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
+            <!--combinacion tecnica-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout5"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView12"
-                android:layout_margin="@dimen/margen2"
-                android:fontFamily="@font/turtles"
-                android:text="@string/nombrecombinaciontecnicasnaranja" />
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView13"
-                android:layout_margin="@dimen/margen2"
-                android:fontFamily="@font/courier"
-                android:text="@string/combinaciontecnicasnaranja1" />
-        </RelativeLayout>
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout4"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/nombrecombinaciontecnicasnaranja"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/combinaciontecnicasnaranja1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
     </ScrollView>
 
     <android.support.design.widget.NavigationView
@@ -187,6 +310,5 @@
         app:menu="@menu/drawermenu"
         android:layout_gravity="start">
     </android.support.design.widget.NavigationView>
-
 
 </android.support.v4.widget.DrawerLayout>

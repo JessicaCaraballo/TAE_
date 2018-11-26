@@ -158,7 +158,7 @@ public class naranjapoomseActivity extends AppCompatActivity {
         mVideoView2 =(VideoView)findViewById(R.id.videoView5);
         MediaController mc2 = new MediaController(this);
         mVideoView2.setMediaController(mc2);
-        Uri uri2 = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pumse6);
+        Uri uri2 = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pumse3);
         mVideoView2.setVideoURI(uri2);
         mVideoView2.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
