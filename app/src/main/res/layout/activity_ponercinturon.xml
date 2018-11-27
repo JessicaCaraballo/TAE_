@@ -14,49 +14,83 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@drawable/fondo2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fondo2">
+                tools:ignore="MissingConstraints">
 
 
                 <TextView
                     android:id="@+id/textViewTitulo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_margin="@dimen/margen1"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/capture_it"
+                    android:text="@string/ponercinturon"
                     android:textColor="@color/colortitulo"
                     android:textSize="@dimen/tamanotitulo"
-                    android:text="@string/ponercinturon"/>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <!--01-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+                tools:ignore="MissingConstraints">
 
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textViewTitulo"
                     android:layout_centerHorizontal="true"
-                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="false"
                     android:cropToPadding="false"
-                    android:src="@drawable/atar_cinturon_opt" />
+                    android:src="@drawable/atar_cinturon_opt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imageView2"
-                    android:layout_margin="@dimen/margen2"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/courier"
+                    android:text="@string/ponercinturon1"
                     android:textColor="@color/base"
                     android:textSize="@dimen/base"
-                    android:text="@string/ponercinturon1" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.0" />
 
-            </RelativeLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
         </ScrollView>
-
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navPonercinturon"
@@ -72,6 +106,5 @@
         app:headerLayout="@layout/header"
         app:itemTextColor="@color/colorPrimary"
         app:menu="@menu/drawermenu"></android.support.design.widget.NavigationView>
-
 
 </android.support.v4.widget.DrawerLayout>
