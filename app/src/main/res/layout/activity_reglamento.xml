@@ -7,81 +7,106 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.reglamentoActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
-        <ScrollView
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true">
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo2"
+            tools:ignore="MissingConstraints">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fondo2">
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margen1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/capture_it"
+                android:text="@string/reglamento"
+                android:textColor="@color/colortitulo"
+                android:textSize="@dimen/tamanotitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/button1"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTitulo"
+                android:layout_margin="@dimen/margen2"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/courier"
+                android:text="@string/reglamentoTexto"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
 
-                <TextView
-                    android:id="@+id/textViewTitulo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_margin="@dimen/margen1"
-                    android:fontFamily="@font/capture_it"
-                    android:textColor="@color/colortitulo"
-                    android:textSize="@dimen/tamanotitulo"
-                    android:text="@string/reglamento" />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/boton_redondo"
+                android:onClick="descargar"
+                android:padding="@dimen/margen2"
+                android:text="@string/botonreglamento"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="@dimen/margen2"
-                    android:layout_below="@+id/textViewTitulo"
-                    android:fontFamily="@font/courier"
-                    android:text="@string/reglamentoTexto"
-                    android:textColor="@color/base"
-                    android:textSize="@dimen/base" />
-
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView1"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/boton_redondo"
-                    android:padding="@dimen/margen2"
-                    android:onClick="descargar"
-                    android:text="@string/botonreglamento" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="@dimen/margen2"
-                    android:layout_below="@+id/button1"
-                    android:fontFamily="@font/courier"
-                    android:text="@string/reglamentoTexto2"
-                    android:textColor="@color/base"
-                    android:textSize="@dimen/base" />
-
-
-                <!--<com.github.barteksc.pdfviewer.PDFView
+            <!--<com.github.barteksc.pdfviewer.PDFView
                     android:id="@+id/pdfView"
                     android:layout_below="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>-->
 
 
-            </RelativeLayout>
-        </ScrollView>
-
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/button1"
+                android:layout_margin="@dimen/margen2"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/courier"
+                android:text="@string/reglamentoTexto2"
+                android:textColor="@color/base"
+                android:textSize="@dimen/base"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button1"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navReglamento"
@@ -97,6 +122,5 @@
         app:headerLayout="@layout/header"
         app:itemTextColor="@color/colorPrimary"
         app:menu="@menu/drawermenu"></android.support.design.widget.NavigationView>
-
 
 </android.support.v4.widget.DrawerLayout>
