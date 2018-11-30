@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -18,29 +19,43 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.github.barteksc.pdfviewer.PDFView;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.Serializable;
 
-public class mapaActivity extends AppCompatActivity {
+public class mapaActivity extends FragmentActivity implements OnMapReadyCallback{
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
     private MapView mapView;
     //private MapController myMapController;
+    private String apikey = "AIzaSyCRyKEAgoSezchqNx1s5m2CozYv4YvQyoA";
+    private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.i("e","e");
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mapa);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+        //Log.i("e","e");
+        //super.onCreate(savedInstanceState);
         final Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
-        setContentView(R.layout.activity_mapa);
+        //setContentView(R.layout.activity_mapa);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.mapa);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportFragmentManager(). .s .setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView = (NavigationView) findViewById(R.id.navMapa);
         View headerView = navigationView.getHeaderView(0);
 
@@ -146,6 +161,16 @@ public class mapaActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+
+        // Zaragoza.
+        LatLng sydney = new LatLng(41.648823, -0.889085);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marcador en Zaragoza"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
     protected boolean isRouteDisplayed() {

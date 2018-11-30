@@ -47,6 +47,25 @@
 
 
 
+            <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_below="@+id/textView1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                tools:context=".MainActivity"
+                android:id="@+id/mapaConstraint">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MapsActivity" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
@@ -55,13 +74,13 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_margin="@dimen/margen2"
-                    android:layout_below="@+id/button1"
+                    android:layout_below="@+id/mapaConstraint"
                     android:fontFamily="@font/courier"
                     android:text="@string/mapaTextoFinal"
                     android:textColor="@color/base"
                     android:textSize="@dimen/base" />
 
-                <com.google.android.gms.maps.MapView
+                <!--<com.google.android.gms.maps.MapView
                     android:id="@+id/mapView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -72,7 +91,7 @@
                     android:layout_below="@+id/textView1"
                     android:clickable="true"
                     android:apiKey="API Key"
-                    android:layout_marginTop="18dp" />
+                    android:layout_marginTop="18dp" />-->
 
 
                 <!--<com.github.barteksc.pdfviewer.PDFView

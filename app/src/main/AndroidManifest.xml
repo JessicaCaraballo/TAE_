@@ -22,7 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
         <uses-library android:name="com.google.android.maps" />
-
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCRyKEAgoSezchqNx1s5m2CozYv4YvQyoA"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
