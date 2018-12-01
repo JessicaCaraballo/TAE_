@@ -716,5 +716,7 @@
     <string name="mapaTextoFinal">Si desea que su gimnasio aparezca en este mapa puede solicutarlo a traves del siguiente formulario</string>
     <string name="title_activity_main2">Main2Activity</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
