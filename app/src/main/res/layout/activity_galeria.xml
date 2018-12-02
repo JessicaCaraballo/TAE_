@@ -185,4 +185,16 @@
 
 
     </ScrollView>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navAmarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorAccent"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/colorPrimary"
+        app:menu="@menu/drawermenu"></android.support.design.widget.NavigationView>
+
 </android.support.v4.widget.DrawerLayout>

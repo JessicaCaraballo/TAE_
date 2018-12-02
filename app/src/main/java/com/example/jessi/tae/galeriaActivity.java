@@ -48,6 +48,20 @@ public class galeriaActivity extends AppCompatActivity {
         usuario = (Usuario)bundle.getSerializable("usuario");
         setContentView(R.layout.activity_galeria);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.galeriaImagenes);
+
+
+        mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
+        mDrawerLayout.addDrawerListener(mToogle);
+        mToogle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navAmarillo);
+        View headerView = navigationView.getHeaderView(0);
+        TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
+        _email.setText(usuario.getEmail());
+
+
+
+
 /**/
         LayoutInflater inflater = (LayoutInflater) this.getLayoutInflater();
         //ViewGroup container = (ViewGroup) this.vie
@@ -170,7 +184,7 @@ public class galeriaActivity extends AppCompatActivity {
         return view;
     }
 
-/*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         ////this.mMenu = menu;
@@ -185,7 +199,7 @@ public class galeriaActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 
     public void Volver(View view) {
         Intent amarillo = new Intent(getApplicationContext(),amarilloActivity.class);
