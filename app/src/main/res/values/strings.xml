@@ -718,5 +718,10 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--Galeria-->
+    <string name="galeria">Galeria</string>
+    <string name="galeria1">Algo 1 sobre la galeria</string>
+    <string name="galeria2">Final de galeria de imagenes</string>
+
 
 </resources>
