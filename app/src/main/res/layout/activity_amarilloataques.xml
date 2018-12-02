@@ -85,9 +85,9 @@
                     android:layout_height="20dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria1"
                     app:layout_constraintBottom_toTopOf="@+id/imageView1"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline1_1" />
+                    app:layout_constraintEnd_toStartOf="@+id/guideline1_1"/>
 
                 <ImageView
                     android:id="@+id/imageView1"
@@ -161,7 +161,7 @@
                     android:layout_height="20dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria2"
                     app:layout_constraintBottom_toTopOf="@+id/imageView2"
                     app:layout_constraintEnd_toStartOf="@+id/guideline2" />
 
@@ -237,7 +237,7 @@
                     android:layout_height="20dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria3"
                     app:layout_constraintBottom_toTopOf="@+id/imageView3"
                     app:layout_constraintEnd_toStartOf="@+id/guideline3" />
 

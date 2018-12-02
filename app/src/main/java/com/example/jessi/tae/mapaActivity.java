@@ -29,7 +29,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.Serializable;
 
-public class mapaActivity extends FragmentActivity implements OnMapReadyCallback{
+public class mapaActivity extends FragmentActivity implements OnMapReadyCallback {
+
+
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
@@ -55,10 +57,11 @@ public class mapaActivity extends FragmentActivity implements OnMapReadyCallback
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
-        //getSupportFragmentManager(). .s .setDisplayHomeAsUpEnabled(true);
+        //getSupportFragmentManager().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.navMapa);
         View headerView = navigationView.getHeaderView(0);
-
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

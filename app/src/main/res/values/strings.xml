@@ -136,8 +136,8 @@
     <!-- Partes del cuerpo -->
     <string name="partesdelcuerpo">Partes del cuerpo</string>
     <string name="partecuerpo1">\n Mori: cabeza\n Mok: cuello \n Nok: nariz\n Bo: boca \n Tok: barbilla \n Pal: brazo\n Palkup: codo \n Palmok: antebrazo \n Kut: dedos \n Chumok: puño \n Jori: cadera \n Dari: pierna \n \n
-            Son: mano \n Son mok: muñeca \n Sonnal: canto de la mano\n  Son Kut: dedos de la mano\n Me chumok: canto del puño \n\n
-            Bal: pie \n Bal kut: dedos del pie \n Bal mok: tobillo \n  Bal dung: empeine \n Bal nal: canto del pie \n Bal nal dung: canto del pier interior \n Ap chuck: metatarso del pie \n Ti chuck: talón \n Bal Badat: plata del pie \n</string>
+            Son: mano \n Son Mok: muñeca \n Sonnal: canto de la mano\n  Son Kut: dedos de la mano\n Me Chumok: canto del puño \n\n
+            Bal: pie \n Bal Kut: dedos del pie \n Bal Mok: tobillo \n  Bal Dung: empeine \n Bal Nal: canto del pie \n Bal Nal dung: canto del pier interior \n Ap Chuck: metatarso del pie \n Ti Chuck: talón \n Bal Badat: plata del pie \n</string>
 
 
     <!-- Terminologia -->
@@ -312,7 +312,7 @@
 
     <!--Defensas-->
     <string name="titulodefensanaranja">Defensas</string>
-    <string name="nombredefensanaranja1">Jan Sonnal Monton Bakat Maki</string>
+    <string name="nombredefensanaranja1">Jan Sonnal Momtong Bakat Maki</string>
     <string name="defensanaranja1">\n
             Defensa zona media.\n
 			La palma de la mano se situa mirando al oponente.\n
@@ -336,12 +336,12 @@
     <!-- Combinación Técnicas -->
     <string name="nombrecombinaciontecnicasnaranja">Combinación de técnicas</string>
     <string name="combinaciontecnicasnaranja1"> \n
-                                                Are Maki - Monton An Maki - Monton Bande Jirugui (con diferente mano)\n\n
-                                                Are Maki - Olgul Maki (con misma mano) - Monton Baro Jirugui\n\n
-                                                Ap Chagui - Mon Dolio Tuit Chagui (con diferente pie)\n\n
+                                                Are Maki - Momtong An Maki - Momtong Bande Jirugui (con diferente mano)\n\n
+                                                Are Maki - Olgul Maki (con misma mano) - Momtong Baro Jirugui\n\n
+                                                Ap Chagui - Mon Dollyo Tuit Chagui (con diferente pie)\n\n
                                                 Ap Chagui - Yop Chagui (con diferente pie)\n\n
-                                                Dolio Chagui Monton -Yop Chagui Olgul (con diferente pie)\n\n
-                                                Bandal Chagui - Nerio Chagui</string>
+                                                Dollyo Chagui Momtong - Yop Chagui Olgul (con diferente pie)\n\n
+                                                Bandal Chagui - Neryo Chagui</string>
 
     <!--Pumse-->
     <string name="titulopumsenaranja">Pumse</string>
@@ -370,7 +370,7 @@
 
     <!--Ataques-->
     <string name="tituloataqueverde">Ataques</string>
-    <string name="nombreataqueverde1">Du Sonnal Monton Chigui</string>
+    <string name="nombreataqueverde1">Du Sonnal Momtong Chigui</string>
     <string name="ataqueverde1">\n
             Golpe a la zona media, con las dos manos abiertas y las palmas hacia arriba.\n
 			Técnica como Du Sonnal Mok Chigui, pero a la zona media del cuerpo.</string>
@@ -378,7 +378,7 @@
     <string name="ataqueverde2">\n
             Ataque en corta distancia, a la base de las costillas.\n
             Doble ataque en forma de gancho, con los puños hacia arriba.</string>
-    <string name="nombreataqueverde3">Pioson Kut Seuo Chirigui</string>
+    <string name="nombreataqueverde3">Pyoson Kut Seuo Chirigui</string>
     <string name="ataqueverde3">\n
             Ataque a la zona de las costillas.\n
             Se golpea con la punta de los dedos (conocidos como Pion Son Kut).
@@ -386,7 +386,7 @@
     <string name="nombreataqueverde4">Dung Chumok Ape Chigui</string>
     <string name="ataqueverde4">\n
             Ataque al labio superior o sien.\n
-            Se golpea con el reverso del puño (conocido como Son Dun).\n
+            Se golpea con el reverso del puño (conocido como Son Dung).\n
             El codo se encuentra en tensión, ligeramente doblado.</string>
 
     <!--Defensas-->
@@ -408,11 +408,11 @@
 
     <!--Patadas-->
     <string name="titulopatadaverde">Patadas</string>
-    <string name="nombrepatadaverde1">Mon Dollyo Nako Chagui</string>
+    <string name="nombrepatadaverde1">Mom Dollyo Nacko Chagui</string>
     <string name="patadaverde1">\n
             Es una patada giro, que simula un gancho.\n
 			El pie que golpea se lanza en arco paralelo al suelo.</string>
-    <string name="nombrepatadaverde2">Mon Dollyo Yop Chagui</string>
+    <string name="nombrepatadaverde2">Mom Dollyo Yop Chagui</string>
     <string name="patadaverde2">\n
             Patada Yop Chagui, pero con giro de cuerpo.</string>
     <string name="nombrepatadaverde3">Mon Dollyo Furio Chagui</string>
@@ -424,9 +424,9 @@
     <!-- Combinación Técnicas -->
     <string name="nombrecombinaciontecnicasverde">Combinación de técnicas</string>
     <string name="combinaciontecnicasverde1">\n
-                                               Bandal Chagui - Mon Dolio Nako Chagui (con diferente pie) \n\n
-                                               Yop Chagui - Mon Dolio Yop Chagui - Yop Chagui (con diferente pie)\n\n
-                                               Mon Dolio Nako Chagui (en 360 grados) - Colio Chagui (mismo pie)</string>
+                                               Bandal Chagui - Mon Dollyo Nacko Chagui (con diferente pie) \n\n
+                                               Yop Chagui - Mon Dollyo Yop Chagui - Yop Chagui (con diferente pie)\n\n
+                                               Mon Dollyo Nacko Chagui (en 360 grados) - Dollyo Chagui (mismo pie)</string>
 
     <!--Pumse-->
     <string name="titulopumseverde">Pumse</string>
@@ -474,7 +474,7 @@
 
     <!--Defensas-->
     <string name="titulodefensaazul">Defensas</string>
-    <string name="nombredefensaazul1">Jan Sonnal Yop Montong Bakat Maki</string>
+    <string name="nombredefensaazul1">Jan Sonnal Yop Momtong Bakat Maki</string>
     <string name="defensaazul1">\n
             Defensa realizada con el canto de la mano, del interior al exterior.\n
             Se bloquea lateralmente.</string>
@@ -529,17 +529,17 @@
     <string name="nombrepatadaazul4">Tuio Yop Chagui</string>
     <string name="patadaazul4">\n
             Yop Chagui en salto.</string>
-    <string name="nombrepatadaazul5">Tuio Dolio Chagui</string>
+    <string name="nombrepatadaazul5">Tuio Dollyo Chagui</string>
     <string name="patadaazul5">\n
-            Dolio Chagui en salto.</string>
+            Dollyo Chagui en salto.</string>
 
     <!-- Combinación Técnicas -->
     <string name="nombrecombinaciontecnicasazul">Combinación de técnicas (con la misma pierna)</string>
     <string name="combinaciontecnicasazul1"> \n
-                                                Dolio Chagui - Culo Nako Chagui \n\n
-                                                Culo Dolio Chagui Doble (Monton y Olgul)\n\n
-                                                Culo Yop Chagui Olgul\n\n
-                                                PAp Chagui - Yop Chagui Monton</string>
+                                                Dollyo Chagui - Culoso Nako Chagui \n\n
+                                                Culoso Dollyo Chagui Doble (Monton y Olgul)\n\n
+                                                Culoso Yop Chagui Olgul\n\n
+                                                Bal Chagui - Yop Chagui Momtong</string>
 
     <!--Pumse-->
     <string name="titulopumseazul">Pumse</string>
@@ -640,14 +640,14 @@
     <string name="tituloposicionnegrocoreano">Sogui Kisul</string>
     <string name="textoposicionnegro">Todas las técnicas han sido estudiadas con anterioridad. \n\n
             Las técnicas deben efectuarse en Du Chumok Jori Chumbi (Salvo Chariot Sogui y Moa Sogui)</string>
-    <string name="nombreposicionnegro">\n Pionji Sogui\n Moa Sogui\n Ap Sogui\n Ap Kubi Sogui\n ChumChum Sogui\n Bom Sogui\n Tuit Kubi Osgui\n Tuit Koa Sogui\n Naranji Sogui\n Uen Sogui\n Orun Sogui\n  </string>
+    <string name="nombreposicionnegro">\n Pionji Sogui\n Moa Sogui\n Ap Sogui\n Ap Kubi Sogui\n ChumChum Sogui\n Bom Sogui\n Tuit Kubi Sogui\n Tuit Koa Sogui\n Naranji Sogui\n Uen Sogui\n Orun Sogui\n  </string>
 
     <!--Ataques-->
     <string name="tituloataquenegro">Ataques</string>
     <string name="tituloataquenegrocoreano">Son Kisul Gongkiok</string>
     <string name="textoataquenegro">Todas las técnicas han sido estudiadas con anterioridad. \n</string>
-    <string name="nombreataquenegro">\n Momtong Bande Jirugui\n Momtong Baro Jirugui\n Olgul Bande Jirugui\n Momtong Dubon Jirugui\n Sonnal An Chicgui\n Pionson Kut Seuo Chirugui\n Dung Chumok Ape Chigui\n
-            Me Chumok Neryo Yop Chigui\n Palkup Dollio Chigui\n Du Checo Jirugui\n Dung Chumok Bakt Chigui\n Yop Jirugui  </string>
+    <string name="nombreataquenegro">\n Momtong Bande Jirugui\n Momtong Baro Jirugui\n Olgul Bande Jirugui\n Momtong Dubon Jirugui\n Sonnal An Chigui\n Pyonson Kut Seuo Chirugui\n Dung Chumok Ape Chigui\n
+            Me Chumok Neryo Yop Chigui\n Palkup Dollyo Chigui\n Du Checho Jirugui\n Dung Chumok Bakat Chigui\n Yop Jirugui  </string>
 
     <!--Defensas-->
     <string name="titulodefensanegro">Defensas</string>
@@ -669,7 +669,7 @@
     <string name="titulopumnegro">Mov. Especial</string>
     <string name="titulopumnegrocoreano">Pum</string>
     <string name="textopumnegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
-    <string name="nombrepumnegro">\n Kibon Chumbi Sogui\n Chebipum Mok Chigui\n Momtong Piochok Palkup Chicgui\n Bituro Olgul Bakat Maki\n Bo Chumok Chumbi\n Gawi Maki\n Dangkio Ollyo Murup Chigui\n
+    <string name="nombrepumnegro">\n Kibon Chumbi Sogui\n Chebipum Mok Chigui\n Momtong Piochok Palkup Chigui\n Bituro Olgul Bakat Maki\n Bo Chumok Chumbi\n Gawi Maki\n Dangkio Ollyo Murup Chigui\n
             Piochok Chagui\n </string>
     <string name="textopumnegro2">Los dos movimientos especiales restantes, se explican a continuación. \n</string>
     <string name="nombrepumnegro1">Oe Santul Maki</string>
@@ -708,7 +708,7 @@
     <string name="nombrepumsenegro1">Taeguk Pal Chang</string>
     <string name="pumsenegro1">\n
             Simboliza el origen de la vida.\n
-            Es el último grado de este aprendizaje, la piera que culmina el camino.</string>
+            Es el último grado de este aprendizaje, la pieza que culmina el camino.</string>
 
     <!-- Mapas -->
     <string name="mapaTitulo">Mapa Gimnasios</string>

@@ -140,6 +140,11 @@ public class amarilloataquesActivity extends AppCompatActivity {
                         reglamento.putExtra("usuario", (Serializable) usuario);
                         startActivity(reglamento);
                         break;
+                    case R.id.mapa:
+                        Intent mapa = new Intent(getApplicationContext(), mapaActivity.class);
+                        mapa.putExtra("usuario", (Serializable) usuario);
+                        startActivity(mapa);
+                        break;
                     case R.id.salir:
                         finish();
                         Intent intent = new Intent(Intent.ACTION_MAIN);
