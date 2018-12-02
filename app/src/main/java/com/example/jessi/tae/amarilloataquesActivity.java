@@ -42,10 +42,17 @@ public class amarilloataquesActivity extends AppCompatActivity {
         boton1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                /*
                 FragmentManager manager = getSupportFragmentManager();
                 galeriaFragment galeria = new galeriaFragment();
                 galeria.setStyle(DialogFragment.STYLE_NO_FRAME, R.style.transparente);
                 galeria.show(manager,"");
+                */
+
+                Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
+                galeria.putExtra("usuario", (Serializable) usuario);
+                galeria.putExtra("galeria", (Serializable) "amarilloataquesActivity");
+                startActivity(galeria);
             }
         });
 
