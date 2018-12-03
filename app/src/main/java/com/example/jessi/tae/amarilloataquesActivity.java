@@ -38,7 +38,7 @@ public class amarilloataquesActivity extends AppCompatActivity {
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
 
-        boton1 = (Button)findViewById(R.id.botonsubir1);
+        boton1 = (Button)findViewById(R.id.botongaleria1);
         boton1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

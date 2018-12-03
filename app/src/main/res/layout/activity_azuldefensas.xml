@@ -79,12 +79,12 @@
                     app:layout_constraintGuide_begin="160dp" />
 
                 <Button
-                    android:id="@+id/botonsubir1"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria1"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintBottom_toTopOf="@+id/imageView1"
                     app:layout_constraintEnd_toStartOf="@+id/guideline1_1" />
 
@@ -156,12 +156,12 @@
                     app:layout_constraintGuide_begin="160dp" />
 
                 <Button
-                    android:id="@+id/botonsubir2"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria2"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintBottom_toTopOf="@+id/imageView2"
                     app:layout_constraintEnd_toStartOf="@+id/guideline2" />
 
@@ -232,12 +232,12 @@
                     app:layout_constraintGuide_begin="160dp" />
 
                 <Button
-                    android:id="@+id/botonsubir3"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria3"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintBottom_toTopOf="@+id/imageView3"
                     app:layout_constraintEnd_toStartOf="@+id/guideline3" />
 
@@ -308,12 +308,12 @@
                     app:layout_constraintGuide_begin="160dp" />
 
                 <Button
-                    android:id="@+id/botonsubir4"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria4"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintBottom_toTopOf="@+id/imageView4"
                     app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -384,12 +384,12 @@
                     app:layout_constraintGuide_begin="160dp" />
 
                 <Button
-                    android:id="@+id/botonsubir5"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria5"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintBottom_toTopOf="@+id/imageView5"
                     app:layout_constraintEnd_toStartOf="@+id/guideline5" />
 
@@ -460,12 +460,12 @@
                     app:layout_constraintGuide_begin="160dp" />
 
                 <Button
-                    android:id="@+id/botonsubir6"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria6"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintBottom_toTopOf="@+id/imageView6"
                     app:layout_constraintEnd_toStartOf="@+id/guideline6" />
 
@@ -530,9 +530,9 @@
                 android:layout_marginEnd="4dp"
                 android:background="@drawable/boton_redondo"
                 android:onClick="Volver"
-                app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
+                app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout6"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout6"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
         </android.support.constraint.ConstraintLayout>

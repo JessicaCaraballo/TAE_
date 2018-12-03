@@ -149,13 +149,13 @@
                 tools:ignore="MissingConstraints">
 
                 <Button
-                    android:id="@+id/botonsubir1"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria1"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textViewSubtitulo1"
                     app:layout_constraintTop_toTopOf="@+id/textViewSubtitulo1" />
@@ -164,7 +164,7 @@
                     android:id="@+id/textViewSubtitulo1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/turtles"
                     android:text="@string/nombrepatadanegro1"
@@ -202,13 +202,13 @@
                 tools:ignore="MissingConstraints">
 
                 <Button
-                    android:id="@+id/botonsubir2"
-                    android:layout_width="22dp"
-                    android:layout_height="20dp"
+                    android:id="@+id/botongaleria2"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/botonsubir"
+                    android:background="@drawable/botongaleria"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textViewSubtitulo2"
                     app:layout_constraintTop_toTopOf="@+id/textViewSubtitulo2" />
