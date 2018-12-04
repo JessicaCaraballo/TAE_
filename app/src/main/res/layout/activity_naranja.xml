@@ -106,7 +106,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/turtles"
-                    android:text="@string/tituloposicionnaranja"
+                    android:text="@string/tituloposicion"
                     app:layout_constraintEnd_toEndOf="@+id/imageButtonPosicion"
                     app:layout_constraintStart_toStartOf="@+id/imageButtonPosicion"
                     app:layout_constraintTop_toBottomOf="@+id/imageButtonPosicion" />
@@ -138,7 +138,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/turtles"
-                    android:text="@string/tituloataquenaranja"
+                    android:text="@string/tituloataque"
                     app:layout_constraintEnd_toEndOf="@+id/imageButtonAtaque"
                     app:layout_constraintStart_toStartOf="@+id/imageButtonAtaque"
                     app:layout_constraintTop_toBottomOf="@+id/imageButtonAtaque" />
@@ -185,7 +185,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/turtles"
-                    android:text="@string/titulodefensanaranja"
+                    android:text="@string/titulodefensa"
                     app:layout_constraintEnd_toEndOf="@+id/imageButtonDefensa"
                     app:layout_constraintStart_toStartOf="@+id/imageButtonDefensa"
                     app:layout_constraintTop_toBottomOf="@+id/imageButtonDefensa" />
@@ -212,7 +212,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/turtles"
-                    android:text="@string/titulopatadanaranja"
+                    android:text="@string/titulopatada"
                     app:layout_constraintEnd_toEndOf="@+id/imageButtonPatada"
                     app:layout_constraintStart_toStartOf="@+id/imageButtonPatada"
                     app:layout_constraintTop_toBottomOf="@+id/imageButtonPatada" />
@@ -248,7 +248,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/turtles"
-                    android:text="@string/titulopumsenaranja"
+                    android:text="@string/titulopumse"
                     app:layout_constraintEnd_toEndOf="@+id/imageButtonPumse"
                     app:layout_constraintHorizontal_bias="0.545"
                     app:layout_constraintStart_toStartOf="@+id/imageButtonPumse"
@@ -273,7 +273,7 @@
                     android:layout_margin="@dimen/margen2"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/turtles"
-                    android:text="@string/nombrecombinaciontecnicasnaranja"
+                    android:text="@string/nombrecombinaciontecnicas"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

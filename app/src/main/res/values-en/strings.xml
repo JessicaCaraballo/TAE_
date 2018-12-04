@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taekwondo</string>
+    <string name="action_settings">Settings</string>
+    <string name="abrir">Open</string>
+    <string name="cerrar">Close</string>
+    <string name="entrar">Access</string>
+    <string name="entrarcomoinvitado">Access as a guest</string>
+    <string name="registrarse">Check in</string>
+    <string name="olvidar">I forgot my password</string>
+    <string name="recuperar">Recover my password</string>
+    <string name="email">E-mail</string>
+    <string name="pass">Password</string>
+    <string name="bienvenida">W E L C O M E</string>
+    <string name="bienvenida1">to the first Taekwondo application, created by taekwondo players for taekwondo players.</string>
+    <string name="bienvenida2">You will love it</string>
+    <string name="federacion">Federations</string>
+    <string name="reglamento">Regulation</string>
+    <string name="historia">History</string>
+    <string name="saludo">Greeting</string>
+    <string name="ponercinturon">Place belt</string>
+    <string name="nivelcituron">Levels belt</string>
+    <string name="frases">Phrases</string>
+    <string name="partesdelcuerpo">Body parts</string>
+    <string name="terminologiabasica">Basic terms</string>
+    <string name="galeria">Gallery</string>
+    <string name="mapaTitulo">Map Gyms</string>
+    <string name="tituloposicion">Positions</string>
+    <string name="tituloataque">Attacks</string>
+    <string name="titulodefensa">Defenses</string>
+    <string name="titulopatada">Kicks</string>
+    <string name="titulopumse">Pumse</string>
+    <string name="nombrecombinaciontecnicas">Combination of techniques</string>
+    <string name="titulopum">Mov. Special</string>
+    <string name="sobrenosotros">"About us "</string>
+    <string name="terminologiacompeticion">Competition</string>
+    <string name="terminologianumeros">Numbers</string>
+    <string name="ataqueamarillo1">A punch, an attack with the front of the fist. \n Rider is posture, seated on horseback. \n Separation between the heels of 1 step. \n Both knees bent and feet parallel to each other. \n The weight of the body is distributed at 50%.</string>
+    <string name="ataqueamarillo2">A double punch.</string>
+    <string name="ataqueamarillo3">Front punch to the middle zone. \n The first that hits is the one corresponding to the front leg.</string>
+    <string name="ataqueamarillo4">Front punch to the middle zone. \n The first that hits is the one corresponding to the back leg.</string>
+</resources>

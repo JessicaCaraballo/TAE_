@@ -33,7 +33,7 @@
                 android:fontFamily="@font/turtles"
                 android:paddingLeft="@dimen/margen4"
                 android:paddingRight="@dimen/margen4"
-                android:text="@string/titulopatadanaranja"
+                android:text="@string/titulopatada"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanosubtitulo"
                 app:layout_constraintEnd_toEndOf="parent"

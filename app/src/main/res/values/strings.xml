@@ -99,7 +99,7 @@
 
 
     <!--PonerCinturon-->
-    <string name="ponercinturon">Colocar cinturon</string>
+    <string name="ponercinturon">Colocar cinturón</string>
     <string name="ponercinturon1">1- Coloque sobre el ombligo una lado de la punta del cinturon.\n\n
 2- Agarre dicha punta del cinturón a nivel del ombligo, y de la vuelta con el otro lado del cinturón alrededor de su cadera.\n\n
 3- Con el cinturon sobrante, envuelvalo alrededor de su cintura.\n\n
@@ -155,12 +155,36 @@
     <string name="terminologianumeros2">\n 1º - Il \n 2º - I \n 3º - Sam \n 4º - Sa \n 5º - Oh \n 6º - Youk \n 7º - Child \n 8º - Pal \n 9º - Gu \n 10º - Sib </string>
 
 
+    <!-- Mapas -->
+    <string name="mapaTitulo">Mapa Gimnasios</string>
+    <string name="mapaTextoInicial">A continuación le mostramos un mapa con los Gimnasios de Taekwondo</string>
+    <string name="mapaTextoFinal">Si desea que su gimnasio aparezca en este mapa puede solicutarlo a traves del siguiente formulario</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Galeria-->
+    <string name="galeria">Galeria</string>
+    <string name="galeria1">Algo 1 sobre la galeria</string>
+    <string name="galeria2">Final de galeria de imagenes</string>
+
+
+
     <!--   C  I  N  T  U  R  O  N  E  S  -->
+    <string name="tituloposicion">Posiciones</string>
+    <string name="tituloataque">Ataques</string>
+    <string name="titulodefensa">Defensas</string>
+    <string name="titulopatada">Patadas</string>
+    <string name="titulopumse">Pumse</string>
+    <string name="nombrecombinaciontecnicas">Combinación de técnicas</string>
+    <string name="titulopum">Mov. Especial</string>
+
+
     <!--AMARILLO-->
     <string name="significadoamarillo">Simboliza pequeños destellos de luz interior, la cual desea cubrir toda la tierra del mundo dentro del Taekwondo.</string>
 
     <!--Posiciones-->
-    <string name="tituloposicionamarillo">Posiciones</string>
     <string name="nombreposicionamarillo1">Ap Sogui</string>
     <string name="posicionamarillo1">\n
             Paso corto, paso normal de andar.\n
@@ -185,7 +209,6 @@
 			El peso del cuerpo se distribuye al 50%.</string>
 
     <!--Ataques-->
-    <string name="tituloataqueamarillo">Ataques</string>
     <string name="nombreataqueamarillo1">Jan Jirugui</string>
     <string name="ataqueamarillo1">\n
             Un puñetazo, un ataque con la parte frontal del puño.
@@ -210,7 +233,6 @@
 			El primer puño que golpea es el correspondiente a la pierna trasera, y el siguiente puño el correspondiente a la pierna delantera.</string>
 
     <!--Defensas-->
-    <string name="titulodefensaamarillo">Defensas</string>
     <string name="nombredefensaamarillo1">Are Maki</string>
     <string name="defensaamarillo1">\n
             Defensa zona baja, desvía patadas y puñetazos. \n
@@ -242,7 +264,6 @@
 			La distancia entre los puños y el cinturon, es de un puño.</string>
 
     <!--Patadas-->
-    <string name="titulopatadaamarillo">Patadas</string>
     <string name="nombrepatadaamarillo1">Ap Chagui</string>
     <string name="patadaamarillo1">\n
             Patada frontal levantando lo más alto posible, la rodilla retrasada.\n
@@ -262,7 +283,6 @@
 			Se carga elevando la pierna de modo frontal hacia delante.Se hace descender la pierna, golpeando con la planta del pie (Bal Badat)</string>
 
     <!--Pumse-->
-    <string name="titulopumseamarillo">Pumse</string>
     <string name="nombrepumseamarillo1">Taeguk Il Chang</string>
     <string name="pumseamarillo1">\n
             Representa el cielo y la luz.\n
@@ -273,7 +293,6 @@
     <string name="significadonaranja">Simboliza la tierra fértil, donde se plantará una nueva semilla que brotará como una futura planta.</string>
 
     <!--Posiciones-->
-    <string name="tituloposicionnaranja">Posiciones</string>
     <string name="nombreposicionnaranja1">Tuit Kubi Sogui</string>
     <string name="posicionnaranja1">\n
             Paso medio, la separación entre talones es de un paso.\n
@@ -282,7 +301,6 @@
 			Pierna trasera soporta el 70% del peso, la pierna delantera soporta el 30% del peso.</string>
 
     <!--Ataques-->
-    <string name="tituloataquenaranja">Ataques</string>
     <string name="nombreataquenaranja1">Sebon Jirugui</string>
     <string name="ataquenaranja1">\n
             Paso medio, la separación entre talones es de un paso.\n
@@ -311,7 +329,6 @@
             Se golpea con el puño de la pierna adelantada, a la zona alta.</string>
 
     <!--Defensas-->
-    <string name="titulodefensanaranja">Defensas</string>
     <string name="nombredefensanaranja1">Jan Sonnal Momtong Bakat Maki</string>
     <string name="defensanaranja1">\n
             Defensa zona media.\n
@@ -319,7 +336,6 @@
 			El bloqueo se realiza apoyando el dedo gordo junto al dedo índice. </string>
 
     <!--Patadas-->
-    <string name="titulopatadanaranja">Patadas</string>
     <string name="nombrepatadanaranja1">An Dari Chagui</string>
     <string name="patadanaranja1">\n
             Patada circular hacia dentro.\n
@@ -334,7 +350,6 @@
             Se extiende el talón del pie que golpea hacia un opoente que está detrás nuestro.</string>
 
     <!-- Combinación Técnicas -->
-    <string name="nombrecombinaciontecnicasnaranja">Combinación de técnicas</string>
     <string name="combinaciontecnicasnaranja1"> \n
                                                 Are Maki - Momtong An Maki - Momtong Bande Jirugui (con diferente mano)\n\n
                                                 Are Maki - Olgul Maki (con misma mano) - Momtong Baro Jirugui\n\n
@@ -344,7 +359,6 @@
                                                 Bandal Chagui - Neryo Chagui</string>
 
     <!--Pumse-->
-    <string name="titulopumsenaranja">Pumse</string>
     <string name="nombrepumsenaranja1">Taeguk I Chang</string>
     <string name="pumsenaranja1">\n
             Representa la alegría, el júbilo.\n
@@ -709,19 +723,6 @@
     <string name="pumsenegro1">\n
             Simboliza el origen de la vida.\n
             Es el último grado de este aprendizaje, la pieza que culmina el camino.</string>
-
-    <!-- Mapas -->
-    <string name="mapaTitulo">Mapa Gimnasios</string>
-    <string name="mapaTextoInicial">A continuación le mostramos un mapa con los Gimnasios de Taekwondo</string>
-    <string name="mapaTextoFinal">Si desea que su gimnasio aparezca en este mapa puede solicutarlo a traves del siguiente formulario</string>
-    <string name="title_activity_main2">Main2Activity</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <!--Galeria-->
-    <string name="galeria">Galeria</string>
-    <string name="galeria1">Algo 1 sobre la galeria</string>
-    <string name="galeria2">Final de galeria de imagenes</string>
 
 
 </resources>
