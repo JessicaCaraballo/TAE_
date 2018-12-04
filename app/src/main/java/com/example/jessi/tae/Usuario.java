@@ -14,15 +14,19 @@ public class Usuario implements Serializable {
     private String email;
     private String password;
     private byte activo;
+    private int idioma;
+    private String imagen;
 
     public Usuario(){
     }
 
-    public Usuario(int id, String email, String password, byte activo){
+    public Usuario(int id, String email, String password, byte activo, int idioma, String imagen){
         this.id = id;
         this.email = email;
         this.password = password;
         this.activo = activo;
+        this.idioma = idioma;
+        this.imagen = imagen;
     }
 
     public int getId() {
@@ -37,6 +41,10 @@ public class Usuario implements Serializable {
     public byte getActivo() {
         return this.activo;
     }
+    public int getIdioma() {
+        return this.idioma;
+    }
+    public String getImagen() { return this.imagen; }
 
     public void setId(int id) {
         this.id = id;
@@ -48,4 +56,10 @@ public class Usuario implements Serializable {
         this.password = password;
     }
     public void setActivo(byte activo) { this.activo = activo; }
+    public void setIdioma(int idioma) {
+        this.idioma = idioma;
+    }
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
 }
