@@ -29,6 +29,7 @@ public class amarilloActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
+        usuario.setIdioma(2);
         setContentView(R.layout.activity_amarillo);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.amarillo);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);

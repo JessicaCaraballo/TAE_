@@ -2,6 +2,7 @@ package com.example.jessi.tae;
 
 import android.app.DialogFragment;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -15,6 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.Serializable;
+import java.util.Locale;
 
 public class amarilloataquesActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
@@ -27,6 +29,7 @@ public class amarilloataquesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
+        EstablecerIdioma(usuario.getIdioma());
         setContentView(R.layout.activity_amarilloataques);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloataques);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
@@ -156,6 +159,28 @@ public class amarilloataquesActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    private void EstablecerIdioma(int idioma) {
+        switch (idioma) {
+            case 2:
+                Locale locale2 = new Locale("en");
+                Locale.setDefault(locale2);
+                Configuration config2 = new Configuration();
+                config2.locale = locale2;
+                getBaseContext().getResources().updateConfiguration(config2, getBaseContext().getResources().getDisplayMetrics());
+
+                break;
+            default:
+                Locale locale = new Locale("es");
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+
+                break;
+
+        }
     }
 
     @Override
