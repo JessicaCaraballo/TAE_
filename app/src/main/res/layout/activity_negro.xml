@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.negroActivity">
 
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
@@ -99,7 +99,7 @@
                 android:layout_marginEnd="18dp"
                 android:layout_marginRight="18dp"
                 android:fontFamily="@font/turtles"
-                android:text="@string/tituloposicionnegro" />
+                android:text="@string/tituloposicion" />
 
             <TextView
                 android:id="@+id/textViewAtaque"
@@ -111,7 +111,7 @@
                 android:layout_marginEnd="30dp"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/turtles"
-                android:text="@string/tituloataquenegro" />
+                android:text="@string/tituloataque" />
 
             <TextView
                 android:id="@+id/textViewDefensa"
@@ -121,7 +121,7 @@
                 android:layout_alignRight="@+id/textViewPosicion"
                 android:layout_below="@+id/imageButtonDefensa"
                 android:fontFamily="@font/turtles"
-                android:text="@string/titulodefensanegro" />
+                android:text="@string/titulodefensa" />
 
             <TextView
                 android:id="@+id/textViewPatada"
@@ -131,7 +131,7 @@
                 android:layout_alignEnd="@+id/textViewAtaque"
                 android:layout_alignRight="@+id/textViewAtaque"
                 android:fontFamily="@font/turtles"
-                android:text="@string/titulopatadanegro" />
+                android:text="@string/titulopatada" />
 
             <ImageButton
                 android:id="@+id/imageButtonPumse"
@@ -161,7 +161,7 @@
                 android:layout_toLeftOf="@+id/textViewPumse"
                 android:layout_toStartOf="@+id/textViewPumse"
                 android:fontFamily="@font/turtles"
-                android:text="@string/titulopumsenegro" />
+                android:text="@string/titulopumse" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -171,7 +171,7 @@
                 android:layout_alignRight="@+id/imageButtonPum"
                 android:layout_below="@+id/imageButtonPum"
                 android:fontFamily="@font/turtles"
-                android:text="@string/titulopumnegro" />
+                android:text="@string/titulopum" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -182,7 +182,7 @@
                 android:layout_below="@+id/textViewPumse"
                 android:layout_margin="@dimen/margen2"
                 android:fontFamily="@font/turtles"
-                android:text="@string/nombrecombinaciontecnicasnegro" />
+                android:text="@string/nombrecombinaciontecnicasavanzandoregresando" />
             <TextView
                 android:id="@+id/textViewPum"
                 android:layout_width="wrap_content"
@@ -204,6 +204,334 @@
                 android:background="@drawable/boton_redondo"
                 android:src="@drawable/botonpum" />
         </RelativeLayout>
+    </ScrollView>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@drawable/fondo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <!--tecnica-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textViewTitulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/blanco"
+                    android:background="@color/base"
+                    android:fontFamily="@font/capture_it"
+                    android:paddingLeft="@dimen/margen4"
+                    android:paddingRight="@dimen/margen4"
+                    android:text="Cinturón negro"
+                    android:textSize="@dimen/tamanosubtitulo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />
+
+                <TextView
+                    android:id="@+id/textViewSignificado"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textViewTitulo"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/significadonegro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1"
+                tools:ignore="MissingConstraints">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineVertical1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <!--posicion-->
+                <ImageButton
+                    android:id="@+id/imageButtonPosicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineVertical1"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonposicion" />
+
+                <TextView
+                    android:id="@+id/textViewPosicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imageButtonPosicion"
+                    android:layout_alignRight="@+id/imageButtonPosicion"
+                    android:layout_below="@+id/imageButtonPosicion"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/tituloposicion"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonPosicion"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonPosicion"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonPosicion" />
+
+                <!--ataque-->
+                <ImageButton
+                    android:id="@+id/imageButtonAtaque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageButtonPosicion"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.539"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineVertical1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonataque" />
+
+                <TextView
+                    android:id="@+id/textViewAtaque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imageButtonAtaque"
+                    android:layout_alignRight="@+id/imageButtonAtaque"
+                    android:layout_below="@+id/imageButtonAtaque"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/tituloataque"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonAtaque"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonAtaque"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonAtaque" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout2"
+                tools:ignore="MissingConstraints">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineVertical2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <!--defensa-->
+                <ImageButton
+                    android:id="@+id/imageButtonDefensa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/imageButtonPatada"
+                    android:layout_toStartOf="@+id/imageButtonPatada"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botondefensa" />
+
+                <TextView
+                    android:id="@+id/textViewDefensa"
+                    android:layout_width="67dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/imageButtonDefensa"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/titulodefensa"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonDefensa"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonDefensa"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonDefensa" />
+
+                <!--patada-->
+                <ImageButton
+                    android:id="@+id/imageButtonPatada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineVertical2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonpatada" />
+
+                <TextView
+                    android:id="@+id/textViewPatada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewDefensa"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/titulopatada"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonPatada"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonPatada"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonPatada" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout3"
+                tools:ignore="MissingConstraints">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineVertical3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <!--pumse-->
+                <ImageButton
+                    android:id="@+id/imageButtonPumse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineVertical3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/botonpumse" />
+
+                <TextView
+                    android:id="@+id/textViewPumse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButtonPumse"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/titulopumse"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonPumse"
+                    app:layout_constraintHorizontal_bias="0.545"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonPumse"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonPumse" />
+
+                <!--pum-->
+                <ImageButton
+                    android:id="@+id/imageButtonPum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boton_redondo"
+                    android:src="@drawable/botonpum"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineVertical3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewPum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewPumse"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/titulopum"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButtonPum"
+                    app:layout_constraintStart_toStartOf="@+id/imageButtonPum"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButtonPum" />
+
+            </android.support.constraint.ConstraintLayout>
+            <!--combinacion tecnica-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout4"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/nombrecombinaciontecnicas"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/margen2"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/courier"
+                    android:text="@string/combinaciontecnicasnegro1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
     </ScrollView>
 
     <android.support.design.widget.NavigationView

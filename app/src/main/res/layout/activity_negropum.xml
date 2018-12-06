@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints">
 
-            <!--pums-->
+            <!--pum-->
             <TextView
                 android:id="@+id/textViewTitulo"
                 android:layout_width="0dp"
@@ -31,7 +31,7 @@
                 android:fontFamily="@font/turtles"
                 android:paddingLeft="@dimen/margen4"
                 android:paddingRight="@dimen/margen4"
-                android:text="@string/titulopumnegro"
+                android:text="@string/titulopum"
                 android:textColor="@color/blanco"
                 android:textSize="@dimen/tamanosubtitulo"
                 app:layout_constraintEnd_toEndOf="parent"

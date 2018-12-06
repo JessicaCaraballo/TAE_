@@ -33,7 +33,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/capture_it"
-                    android:text="@string/mapaTitulo"
+                    android:text="@string/mapa"
                     android:textColor="@color/colortitulo"
                     android:textSize="@dimen/tamanotitulo"
                     app:layout_constraintEnd_toEndOf="parent"

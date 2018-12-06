@@ -31,7 +31,7 @@
                 android:fontFamily="@font/turtles"
                 android:paddingLeft="@dimen/margen4"
                 android:paddingRight="@dimen/margen4"
-                android:text="@string/tituloposicionverde"
+                android:text="@string/tituloposicion"
                 android:textColor="@color/colorsubtitulo"
                 android:textSize="@dimen/tamanosubtitulo"
                 app:layout_constraintEnd_toEndOf="parent"

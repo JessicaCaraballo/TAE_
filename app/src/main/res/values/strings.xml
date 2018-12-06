@@ -18,11 +18,12 @@
     <string name="registrarse">Registrarse</string>
     <string name="olvidar">Olvidé mi password</string>
     <string name="recuperar">Recuperar mi cuenta</string>
-
+    <string name="salir">Salir</string>
+    <string name="inicio">Inicio</string>
 
     <string name="email">Email: </string>
     <string name="pass">Contraseña:</string>
-
+    <string name="idioma">Idioma:</string>
 
     <!-- Textos -->
 
@@ -35,15 +36,15 @@
     <string name="federacion">Federaciones</string>
     <string name="federacion1">Taekwondo Mundial</string>
     <string name="federaciontexto1">\n El Taekwondo Mundial es la institución que se dedica a regular las normas del taekwondo a nivel competitivo, así como de celebrar periódicamente competiciones y eventos en cada una
-            de sus disciplinas.\n
-            Es reconocida por el Comité Olímpico Internacional. Tiene su sede en la ciudad de Seúl (Corea del Sur).\n
-            En el último estudio, cobtaba con la afiliación de 206 federaciones nacionales (de los cinco continentes), siendo una de las mayores federaciones del mundo en cuanto a miembros nacionales afiliados.
-            El volumen de practicantes es entorno a los 73 millones.\n\n
+            de sus disciplinas. \n
+            Es reconocido por el Comité Olímpico Internacional. Tiene su sede en la ciudad de Seúl (Corea del Sur). \n
+            En el último estudio, contaba con la afiliación de 206 federaciones nacionales (de los cinco continentes), siendo una de las mayores federaciones del mundo en cuanto a miembros nacionales afiliados. \n
+            El volumen de practicantes es entorno a los 73 millones. \n\n
             Hasta la fecha se conocía como Federación Mundial de Taekwondo, pero debido a que WTF son las siglas en inglés de la expresión "What the fuck?", y cuyo uso se volvió muy popular en redes sociales para expresar
             sorpresa. Debido a tal hecho, la Federación Mundial de Taekwondo decidió cambiar en junio de 2017 sus siglas, pasando a denominarse Taekwondo Mundial, en inglés World Taekwondo (siglas: WT).</string>
 
-    <string name="federacion2">Union Europea Taekwondo</string>
-    <string name="federaciontexto2">\n La Union Europea Taekwondo es la institución que se dedica a regular las normas del taekwondo en Europa, así como de celebrar periódicamente
+    <string name="federacion2">Unión Europea Taekwondo</string>
+    <string name="federaciontexto2">\n La Unión Europea de Taekwondo es la institución que se dedica a regular las normas del taekwondo en Europa, así como de celebrar periódicamente
             competiciones y eventos en cada una de sus disciplinas. \n
             Es una de las cinco organizaciones continentales que componen el Taekwondo Mundial (WT).</string>
 
@@ -78,17 +79,16 @@
 
     <!--Sobre nosotros-->
     <string name="sobrenosotros">Sobre nosotros</string>
-    <string name="sobrenosotros1">Si estás leyendo esto, es porque eres tan entusiasta como nosotros de este arte marcial... :)\n\n
-        Somos Jessi y David, dos estudiantes de 2º grado superior, Desarrollo de Aplicaciones Multiplataformar, también conocido como DAM.\n\n
-        Este proyecto ha sido creado sin ánimo de lucro, con material propio, tanto imágenes y textos, basados en conocimientos adquiridos como deportista desde hace más de 10 años .\n\n
-        Nos hemos dedicido a crear está APP tras encoentrar un agujero en la falta de aplicaciones de este arte marcial, el Taekwondo.
-        Esperemos que os guste, y os sirva de utildad. Tenéis una comunidad a vuestra disposición para poder mejorarla.</string>
+    <string name="sobrenosotros1">Si estás leyendo esto, es porque eres tan amante del taekwondo y entusiasta como nosotros de este arte marcial... :) \n\n
+        Somos Jessi y David, dos estudiantes de 2º grado superior, Desarrollo de Aplicaciones Multiplataforma, también conocido como DAM. \n\n
+        Ha sido creado sin ánimo de lucro, con material propio, tanto imágenes y textos, basados en conocimientos adquiridos como deportista desde hace más de 10 años. \n\n
+        Nos hemos decidido a crear está APP tras encontrar un agujero en la falta de aplicaciones de este arte marcial, el Taekwondo. \n\n
+        Esperemos que os guste, y os sirva de utilidad. Tenéis una comunidad a vuestra disposición para poder mejorarla.</string>
 
-    Amantes del taekwondo y p-->
 
     <!--Saludo-->
     <string name="saludo">Saludo</string>
-    <string name="saludo1">El saludo es una demostración de respeto al maestro y al resto de nuestros compañeros. El saludo no debe ser solo un gesto vacío. A fuerza de repetirlo una y otra vez esta
+    <string name="saludo1">El saludo es una demostración de respeto al maestro y al resto de nuestros compañeros. El saludo no debe ser solo un gesto vacío. A fuerza de repetirlo una y otra vez ésta
      manifestación de respeto se convierte en un gesto espontáneo y sincero que se expresa de corazón y que enriquece la vida tanto de quién lo da como de quien lo recibe.</string>
     <string name="saludo2">Es tal la importancia del saludo y su significado, que en el curso de una sola clase, este ritual se repite un gran número de veces:\n
     - Antes de entrar al Dojang. Se pide permiso para entrar al Maestro o cinturón de mayor grado, y se saluda.\n
@@ -100,15 +100,15 @@
 
     <!--PonerCinturon-->
     <string name="ponercinturon">Colocar cinturón</string>
-    <string name="ponercinturon1">1- Coloque sobre el ombligo una lado de la punta del cinturon.\n\n
-2- Agarre dicha punta del cinturón a nivel del ombligo, y de la vuelta con el otro lado del cinturón alrededor de su cadera.\n\n
-3- Con el cinturon sobrante, envuelvalo alrededor de su cintura.\n\n
-4- Paselo por encima el primer extremo.\n\n
+    <string name="ponercinturon1">1- Coloque sobre el ombligo un lado de la punta del cinturón. \n\n
+2- Agarre dicha punta del cinturón a nivel del ombligo, y de la vuelta con el otro lado del cinturón alrededor de su cintura. \n\n
+3- Con el cinturón sobrante, envuélvalo alrededor de su cintura. \n\n
+4- Páselo por encima el primer extremo. \n\n
 5- La punta del cinturón que queda hacia fuera, la colocamos hacia dentro, por debajo del doblez del cinturón y luego hacia arriba. \n\n
-6- Preparamos dobleada la punta inferior del cintron.\n\n
-7- Colocamos doblada hacia abajo la punta superior del cinturón.\n\n
-8- Con las dos puntas del cinturon, realizamos un nudo, en direccion de arriba hacia abajo. Lo ajustamos.\n\n
-9- Coprobamos que las partes que quedas de las puntas son iguales de largas a ambos lados.\n</string>
+6- Preparamos doblada la punta inferior del cinturón. \n\n
+7- Colocamos doblada hacia abajo la punta superior del cinturón. \n\n
+8- Con las dos puntas del cinturón, realizamos un nudo, en dirección de arriba hacia abajo. Ajustamos el cinturón. \n\n
+9- Coprobamos que las partes que quedan de las puntas son igual de largas a ambos lados. \n</string>
 
 
     <!--NivelCinturon-->
@@ -122,33 +122,33 @@
     <!-- Frases -->
     <string name="frases">Frases</string>
     <string name="frase1">El verdadero cinturón negro es aquel cinturón blanco que jamás se dio por vencido.</string>
-    <string name="frase2">En el Taekwondo, caerse está permitido, levantarse es obligatorio</string>
+    <string name="frase2">En el Taekwondo, caerse está permitido, levantarse es obligatorio.</string>
     <string name="frase3">El Taekwondo no es fuerza y velocidad, es disciplina e inteligencia.</string>
-    <string name="frase4">No importa si pateas mil veces, lo importante es que pateees una sola vez y saber que lo pegaste con la fuerza de mil patadas.</string>
-    <string name="frase5">¿Qué es mi vida? ¿Mi pasión? ¿Mi ser? LA respuesta es muy simple, el Taekwondo.</string>
+    <string name="frase4">No importa si pateas mil veces, lo importante es que pateees una sola vez y saber que le pegaste con la fuerza de mil patadas.</string>
+    <string name="frase5">¿Qué es mi vida? ¿Mi pasión? ¿Mi ser? La respuesta es muy simple, es el Taekwondo.</string>
     <string name="frase6">Morir en el entrenamiento para vivir en el combate.</string>
-    <string name="frase7">Ningún sueño es imposible, miestras sigas manteniendo la ilusión de conseguirlo.</string>
+    <string name="frase7">Ningún sueño es imposible, mientras sigas manteniendo la ilusión de conseguirlo.</string>
     <string name="frase8">La derrota de hoy, es la semilla de la victoria de mañana.</string>
-    <string name="frase9">El caino se hace caminando. Paso firme, cabeza alta, actitud, trabajo y corazón.,</string>
+    <string name="frase9">El camino se hace caminando. Paso firme, cabeza alta, actitud, trabajo y corazón.</string>
     <string name="frase10">Más fuerte, más rápido, más alto.</string>
 
 
     <!-- Partes del cuerpo -->
     <string name="partesdelcuerpo">Partes del cuerpo</string>
-    <string name="partecuerpo1">\n Mori: cabeza\n Mok: cuello \n Nok: nariz\n Bo: boca \n Tok: barbilla \n Pal: brazo\n Palkup: codo \n Palmok: antebrazo \n Kut: dedos \n Chumok: puño \n Jori: cadera \n Dari: pierna \n \n
-            Son: mano \n Son Mok: muñeca \n Sonnal: canto de la mano\n  Son Kut: dedos de la mano\n Me Chumok: canto del puño \n\n
-            Bal: pie \n Bal Kut: dedos del pie \n Bal Mok: tobillo \n  Bal Dung: empeine \n Bal Nal: canto del pie \n Bal Nal dung: canto del pier interior \n Ap Chuck: metatarso del pie \n Ti Chuck: talón \n Bal Badat: plata del pie \n</string>
+    <string name="partecuerpo1">\n Mori: cabeza \n Mok: cuello \n Nok: nariz \n Bo: boca \n Tok: barbilla \n Pal: brazo \n Palkup: codo \n Palmok: antebrazo \n Kut: dedos \n Chumok: puño \n Jori: cadera \n Dari: pierna \n \n
+            Son: mano \n Son Mok: muñeca \n Sonnal: canto de la mano \n  Son Kut: dedos de la mano \n Me Chumok: canto del puño \n \n
+            Bal: pie \n Bal Kut: dedos del pie \n Bal Mok: tobillo \n  Bal Dung: empeine \n Bal Nal: canto del pie \n Bal Nal dung: canto interior del pie \n Ap Chuck: metatarso del pie \n Ti Chuck: talón \n Bal Badat: planta del pie \n</string>
 
 
     <!-- Terminologia -->
     <string name="terminologiabasica">Términos básicos</string>
     <string name="terminologiabasica1">\n Sus 5 principios: Estoicismo, Valentia, Paciencia, Humildad, Cortesia \n\n Sabomin: maestro \n Dochang: lugar de entrenamiento \n Dobok: Traje de Taekwondo \n Ti: cinturon\n
-            Kiorugui: combate \n Chumbi: preparación \n Bon Kiorugui: combate preparado\n Duiro Dora: media vuelta \n Kihap: grito (Ki-Energía/Hap-Aire\n Tea Guk Chag: grandeza y eternidad\n Pumse: defensas y ataques combinados\n
+            Kiorugui: combate \n Chumbi: preparación \n Bon Kiorugui: combate preparado \n Duiro Dora: media vuelta \n Kihap: grito (Ki-Energía/Hap-Aire \n Tea Guk Chag: grandeza y eternidad \n Pumse: defensas y ataques combinados \n
             Are: zona baja del cuerpo \n Momotong: zona media del cuerpo \n Olgul: Zona alta del cuerpo</string>
 
     <string name="terminologiacompeticion">Competición</string>
-    <string name="terminologiacompeticion1">\n Chariot: firmes, posicion de saludo \n Kionye: Saludo \n Chumbi: preparación \n Sichak: empezar \n Kesok: continuar\n Kalio:separarse \n Kumna: final \n Jogu: peto \n
-            Chong: azul \n Hong: rojo \n Sung: vencedor \n Juecho: asalto \n Kiongo: medio punto menos \n Kamchum: un punto menos \n Cha Yan Gu: cara a craççara</string>
+    <string name="terminologiacompeticion1">\n Chariot: firmes, posicion de saludo \n Kionye: Saludo \n Chumbi: preparación \n Sichak: empezar \n Kesok: continuar \n Kalio:separarse \n Kumna: final \n Jogu: peto \n
+            Chong: azul \n Hong: rojo \n Sung: vencedor \n Juecho: asalto \n Kiongo: medio punto menos \n Kamchum: un punto menos \n Cha Yan Gu: cara a cara</string>
 
     <string name="terminologianumeros">Números</string>
     <string name="terminologianumeros1">\n 1 - Jana \n 2 - Dul \n 3 - Set \n 4 - Net \n 5 - Dasot \n 6 - Yosot \n 7 - Ilgop \n 8 - Yodol \n 9 - Ajop \n 10 - Yul \n 11 - Yul Jana \n 12 - Yul Dul \n ... \n 20 - Sumul </string>
@@ -156,32 +156,36 @@
 
 
     <!-- Mapas -->
-    <string name="mapaTitulo">Mapa Gimnasios</string>
-    <string name="mapaTextoInicial">A continuación le mostramos un mapa con los Gimnasios de Taekwondo</string>
-    <string name="mapaTextoFinal">Si desea que su gimnasio aparezca en este mapa puede solicutarlo a traves del siguiente formulario</string>
+    <string name="mapa">Mapa Gimnasios</string>
+    <string name="mapaTextoInicial">A continuación se muestra un mapa con los Gimnasios de Taekwondo</string>
+    <string name="mapaTextoFinal">Si desea que su gimnasio aparezca en este mapa puede solicitarlo a través del siguiente formulario.</string>
     <string name="title_activity_main2">Main2Activity</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <!--Galeria-->
-    <string name="galeria">Galeria</string>
+    <string name="galeria">Galería</string>
     <string name="galeria1">Algo 1 sobre la galeria</string>
     <string name="galeria2">Final de galeria de imagenes</string>
 
 
 
     <!--   C  I  N  T  U  R  O  N  E  S  -->
+    <string name="cinturones">Cinturones</string>
     <string name="tituloposicion">Posiciones</string>
     <string name="tituloataque">Ataques</string>
     <string name="titulodefensa">Defensas</string>
-    <string name="titulopatada">Patadas</string>
+    <string name="titulopatada">Pagistadas</string>
     <string name="titulopumse">Pumse</string>
     <string name="nombrecombinaciontecnicas">Combinación de técnicas</string>
+    <string name="nombrecombinaciontecnicasmismapierna">Combinación de técnicas (con la misma pierna)</string>
+    <string name="nombrecombinaciontecnicasavanzandoregresando">Combinación de técnicas (avanzando y regresando)</string>
     <string name="titulopum">Mov. Especial</string>
 
 
     <!--AMARILLO-->
+    <string name="amarillo">Amarillo</string>
     <string name="significadoamarillo">Simboliza pequeños destellos de luz interior, la cual desea cubrir toda la tierra del mundo dentro del Taekwondo.</string>
 
     <!--Posiciones-->
@@ -192,7 +196,7 @@
 			El peso del cuerpo es proporcionado, el centro de gravedad cae entre los dos pies.</string>
     <string name="nombreposicionamarillo2">Ap Kubi Sogui</string>
     <string name="posicionamarillo2">\n
-            Paso y medio, un paso largo.\n
+            Un paso largo.\n
 			La rodilla delantera debe estar doblada y la pierna trasera recta.\n
 			Los pies forman un ángulo interno de 30º.\n
 			El peso del cuerpo se distribuye 2/3 partes delante y 1/3 parte detrás.</string>
@@ -211,7 +215,7 @@
     <!--Ataques-->
     <string name="nombreataqueamarillo1">Jan Jirugui</string>
     <string name="ataqueamarillo1">\n
-            Un puñetazo, un ataque con la parte frontal del puño.
+            Un puñetazo, un ataque con la parte frontal del puño. \n
             Postura del jinete, sentados a caballo.\n
 			Separación entre los talones de 1 paso.\n
 			Ambas rodillas dobladas y pies paralelos entre sí.\n
@@ -237,7 +241,7 @@
     <string name="defensaamarillo1">\n
             Defensa zona baja, desvía patadas y puñetazos. \n
 			Carga la defensa colocando la base del puño sobre el hombro contrario. \n
-			El brazo se desliza de la zona del hombro hacia abajo, cubriendo la zona que apunta al frente</string>
+			El brazo se desliza de la zona del hombro hacia abajo, cubriendo la zona que apunta al frente.</string>
     <string name="nombredefensaamarillo2">Momtong Maki</string>
     <string name="defensaamarillo2">\n
             Defensa zona media, con el brazo de la pierna adelantada.\n
@@ -245,12 +249,12 @@
 			Al bloquear, la muñeca gira para que la palma de la mano mire hacia dentro.</string>
     <string name="nombredefensaamarillo3">Momtong An Maki</string>
     <string name="defensaamarillo3">\n
-            Defensa parecida a Monton Maki. \n
+            Defensa parecida a Momtong Maki. \n
 			El brazo que defiende es el correspondiente a la pierna atrasada. \n
 			Realiza el bloque desde el exterior hacia el interior. </string>
     <string name="nombredefensaamarillo4">Olgul Maki</string>
     <string name="defensaamarillo4">\n
-            Defensa zona superior\n
+            Defensa zona superior.\n
 			Carga la defensa desde la zona de la cadera.\n
 			El brazo asciende de la zona de la cadera (zona baja) a la zona alta del cuerpo.</string>
     <string name="nombredefensaamarillo5">Momtong Bakat Maki</string>
@@ -261,7 +265,7 @@
     <string name="nombreposicionamarillo5">Kibon Chumbi Sogui</string>
     <string name="posicionamarillo5">\n
             Posición de preparación.\n
-			La distancia entre los puños y el cinturon, es de un puño.</string>
+			La distancia entre los puños y el cinturón, es de un puño.</string>
 
     <!--Patadas-->
     <string name="nombrepatadaamarillo1">Ap Chagui</string>
@@ -276,11 +280,11 @@
     <string name="nombrepatadaamarillo3">Yop Chagui</string>
     <string name="patadaamarillo3">\n
             Patada lateral.\n
-			Se pivota el pie de apoyo, golpeando a su vez con el borde del pie, clavando el talón (Ti Chuk), con el pulgar hacia abajo </string>
+			Se pivota el pie de apoyo, golpeando a su vez con el borde del pie, clavando el talón (Ti Chuk), con el pulgar hacia abajo. </string>
     <string name="nombrepatadaamarillo4">Neryo Chagui</string>
     <string name="patadaamarillo4">\n
             Patada en hacha, descendente.\n
-			Se carga elevando la pierna de modo frontal hacia delante.Se hace descender la pierna, golpeando con la planta del pie (Bal Badat)</string>
+			Se carga elevando la pierna de modo frontal hacia delante. Se hace descender la pierna, golpeando con la planta del pie (Bal Badat)</string>
 
     <!--Pumse-->
     <string name="nombrepumseamarillo1">Taeguk Il Chang</string>
@@ -290,6 +294,7 @@
 
 
     <!--NARANJA-->
+    <string name="naranja">Naranja</string>
     <string name="significadonaranja">Simboliza la tierra fértil, donde se plantará una nueva semilla que brotará como una futura planta.</string>
 
     <!--Posiciones-->
@@ -369,10 +374,10 @@
 			Compuesto de 20 secuencia.</string>
 
     <!--VERDE-->
+    <string name="verde">Verde</string>
     <string name="significadoverde">Simboliza la germinación de la semilla, como una nueva planta. </string>
 
     <!--Posiciones -->
-    <string name="tituloposicionverde">Posiciones</string>
     <string name="nombreposicionverde1">Orun Sogui</string>
     <string name="posicionverde1">\n
         Pies en L, mirando hacia la derecha.\n
@@ -383,7 +388,6 @@
 		    Separación de un pie entre pies.\n</string>
 
     <!--Ataques-->
-    <string name="tituloataqueverde">Ataques</string>
     <string name="nombreataqueverde1">Du Sonnal Momtong Chigui</string>
     <string name="ataqueverde1">\n
             Golpe a la zona media, con las dos manos abiertas y las palmas hacia arriba.\n
@@ -404,7 +408,6 @@
             El codo se encuentra en tensión, ligeramente doblado.</string>
 
     <!--Defensas-->
-    <string name="titulodefensaverde">Defensas</string>
     <string name="nombredefensaverde1">Sonnal Montong Maki</string>
     <string name="defensaverde1">\n
             Defensa de la zona media.\n
@@ -412,7 +415,6 @@
 			Una mano protege a la altura del esternón, la otra gira, terminando en una posición más superior.</string>
 
     <!--Pum-->
-    <string name="titulopumverde">Mov. Especiales</string>
     <string name="nombrepumverde1">Chebipum Mok Chigui</string>
     <string name="pumverde1"> \n
             Movimiento simultáneo de ataque y defensa.\n
@@ -421,7 +423,6 @@
 			Una mano protege a la altura del esternón, la otra gira, terminando en una posición más superior.</string>
 
     <!--Patadas-->
-    <string name="titulopatadaverde">Patadas</string>
     <string name="nombrepatadaverde1">Mom Dollyo Nacko Chagui</string>
     <string name="patadaverde1">\n
             Es una patada giro, que simula un gancho.\n
@@ -436,14 +437,12 @@
             Requiere equilibrio y velocidad.</string>
 
     <!-- Combinación Técnicas -->
-    <string name="nombrecombinaciontecnicasverde">Combinación de técnicas</string>
     <string name="combinaciontecnicasverde1">\n
                                                Bandal Chagui - Mon Dollyo Nacko Chagui (con diferente pie) \n\n
                                                Yop Chagui - Mon Dollyo Yop Chagui - Yop Chagui (con diferente pie)\n\n
                                                Mon Dollyo Nacko Chagui (en 360 grados) - Dollyo Chagui (mismo pie)</string>
 
     <!--Pumse-->
-    <string name="titulopumseverde">Pumse</string>
     <string name="nombrepumseverde1">Taeguk Sa Chang</string>
     <string name="pumseverde1">\n
             Simboliza el trueno, estimulando el miedo, el temor a lo desconocido, la tromenta.\n
@@ -451,10 +450,10 @@
 
 
     <!--AZUL-->
+    <string name="azul">Azul</string>
     <string name="significadoazul">Simboliza el cielo, hacia el cual va creciendo la planta hasta convertirse en un árbol maduro, a medida que los conocimientos en Taekwondo avanzan. </string>
 
     <!--Posiciones-->
-    <string name="tituloposicionazul">Posiciones</string>
     <string name="nombreposicionazul1">Moa Sogui</string>
     <string name="posicionazul1">\n
             Posicion de pies juntos.\n
@@ -480,14 +479,12 @@
             Pie trasero apoya sobre metatarso.</string>
 
     <!--Ataques-->
-    <string name="tituloataqueazul">Ataques</string>
     <string name="nombreataqueazul1">Du Bang Chumok</string>
     <string name="ataqueazul1">\n
             Ataque de la castaña.\n
 		    Parecido a Checho Jirugui, pero golpeando con los nudillos (Bang Chumok) del dedo corazón.</string>
 
     <!--Defensas-->
-    <string name="titulodefensaazul">Defensas</string>
     <string name="nombredefensaazul1">Jan Sonnal Yop Momtong Bakat Maki</string>
     <string name="defensaazul1">\n
             Defensa realizada con el canto de la mano, del interior al exterior.\n
@@ -513,7 +510,6 @@
             Defensa como Batagson Momtong Maki, pero la mano corresponde a la pierna atrasada. </string>
 
     <!--Pum-->
-    <string name="titulopumazul">Mov. Especial</string>
     <string name="nombrepumazul1">Chagun Dol Chogui</string>
     <string name="pumazul1"> \n
             La bisagra.</string>
@@ -528,7 +524,6 @@
             Se lanza el codo del otro brazo, hasta unir palma de la plama de la mano con codo contrario.</string>
 
     <!--Patadas-->
-    <string name="titulopatadaazul">Patadas</string>
     <string name="nombrepatadaazul1">Nacko Chagui</string>
     <string name="patadaazul1">\n
             Patada en gancho.\n
@@ -548,7 +543,6 @@
             Dollyo Chagui en salto.</string>
 
     <!-- Combinación Técnicas -->
-    <string name="nombrecombinaciontecnicasazul">Combinación de técnicas (con la misma pierna)</string>
     <string name="combinaciontecnicasazul1"> \n
                                                 Dollyo Chagui - Culoso Nako Chagui \n\n
                                                 Culoso Dollyo Chagui Doble (Monton y Olgul)\n\n
@@ -556,7 +550,6 @@
                                                 Bal Chagui - Yop Chagui Momtong</string>
 
     <!--Pumse-->
-    <string name="titulopumseazul">Pumse</string>
     <string name="nombrepumseazul1">Taeguk Oh Chang</string>
     <string name="pumseazul1">\n
             Simboliza el viento, el estado humilde la mente, resprestativo de las buenas acciones de la naturaleza.</string>
@@ -565,11 +558,11 @@
             Simboliza el agua, mostrando que podemos superar las dificultades y penas siguiendo hacia delante.</string>
 
     <!--MARRON-->
-    <string name="significadomarron">Simboliza el peligro,  indica a sus oponentes que deben mantenerse alejados, debido a la madurez de sus conocimientos.\n
+    <string name="marron">Marrón</string>
+    <string name="significadomarron">Simboliza el peligro,  indica a sus oponentes que deben mantenerse alejados, debido a la madurez de sus conocimientos. \n
         Es el fruto cosechado del árbol del Taekwondo.</string>
 
     <!--Posiciones-->
-    <string name="tituloposicionmarron">Posiciones</string>
     <string name="nombreposicionmarron1">Bom Sogui</string>
     <string name="posicionmarron1">\n
             Posición del tigre.\n
@@ -578,7 +571,6 @@
             90% del peso atrás, 10% delante.</string>
 
     <!--Ataques-->
-    <string name="tituloataquemarron">Ataques</string>
     <string name="nombreataquemarron1">Dung Chumok Bakat Chigui</string>
     <string name="ataquemarron1">\n
             El puño, desde el hombro contrario, y el reservo hacia abajo, se lanza hacia afuera.\n
@@ -588,7 +580,6 @@
         Lanzamiento lateral del puño.</string>
 
     <!--Defensas-->
-    <string name="titulodefensamarron">Defensas</string>
     <string name="nombredefensamarron1">Sonnal Are Maki</string>
     <string name="defensamarron1">\n
             Defensa similar a Goduro Maki.\n
@@ -614,7 +605,6 @@
             El anto de la mano, desde dentro hacia fuera, bloquea lateralmente nuestroo cuerpo.</string>
 
     <!--Pum-->
-    <string name="titulopummarron">Mov. Especial</string>
     <string name="nombrepummarron1">Bo Chumok Chumbi</string>
     <string name="pummarron1"> \n
             Con el corazón controlamos la mente.\n
@@ -633,38 +623,33 @@
             La palma de la mano se usa de blanco, sobre la plama se lanza un Badal Dung.</string>
 
     <!--Patadas-->
-    <string name="titulopatadamarron">Patadas</string>
     <string name="nombrepatadamarron1">Tuio Dollyo Chagui</string>
     <string name="patadamarron1">\n
             Dollyo Chagui en salto.</string>
 
     <!--Pumse-->
-    <string name="titulopumsemarron">Pumse</string>
     <string name="nombrepumsemarron1">Taeguk Chil Chang</string>
     <string name="pumsemarron1">\n
             Simboliza la montaña, la parada en la cima. \n
             Se estudia la estabilidad de una montaña, el taekwondista nunca actúa de manera temeraria.</string>
 
     <!--NEGRO-->
-    <string name="significadonegro">Simboliza la madurez del practicante en cuanto a su competencia para impartir enseñanza en el Taekwondo. Representa la impermeabilidad de su portador,
-        al miedo y la oscuridad.  Es completamente lo opuesto al color blanco.</string>
+    <string name="negro">Negro</string>
+    <string name="significadonegro">Simboliza la madurez del practicante en cuanto a su competencia para impartir enseñanza en el Taekwondo. Representa la impermeabilidad de su portador, al miedo y la oscuridad. Es completamente lo opuesto al color blanco.</string>
 
     <!--Posiciones NO HAY -->
-    <string name="tituloposicionnegro">Posiciones</string>
     <string name="tituloposicionnegrocoreano">Sogui Kisul</string>
     <string name="textoposicionnegro">Todas las técnicas han sido estudiadas con anterioridad. \n\n
             Las técnicas deben efectuarse en Du Chumok Jori Chumbi (Salvo Chariot Sogui y Moa Sogui)</string>
     <string name="nombreposicionnegro">\n Pionji Sogui\n Moa Sogui\n Ap Sogui\n Ap Kubi Sogui\n ChumChum Sogui\n Bom Sogui\n Tuit Kubi Sogui\n Tuit Koa Sogui\n Naranji Sogui\n Uen Sogui\n Orun Sogui\n  </string>
 
     <!--Ataques-->
-    <string name="tituloataquenegro">Ataques</string>
     <string name="tituloataquenegrocoreano">Son Kisul Gongkiok</string>
     <string name="textoataquenegro">Todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombreataquenegro">\n Momtong Bande Jirugui\n Momtong Baro Jirugui\n Olgul Bande Jirugui\n Momtong Dubon Jirugui\n Sonnal An Chigui\n Pyonson Kut Seuo Chirugui\n Dung Chumok Ape Chigui\n
             Me Chumok Neryo Yop Chigui\n Palkup Dollyo Chigui\n Du Checho Jirugui\n Dung Chumok Bakat Chigui\n Yop Jirugui  </string>
 
     <!--Defensas-->
-    <string name="titulodefensanegro">Defensas</string>
     <string name="titulodefensanegrocoreano">Son Kisul Maki</string>
     <string name="textodefensanegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombredefensanegro">\n Are Maki\n Momtong Maki\n Momtong An Maki\n Olgul Maki\n Jansonnal Momtong Bakat Maki\n Sonnal Momtong Maki\n Momtong Bakat Maki\n Olgul Bakat Maki\n Gechio Are Maki\n
@@ -680,7 +665,6 @@
             Los puños estan orientados al frente. el brazo anterior bloquea lado izquierdo, el otro se coloca en plexo solar.</string>
 
     <!--Pum-->
-    <string name="titulopumnegro">Mov. Especial</string>
     <string name="titulopumnegrocoreano">Pum</string>
     <string name="textopumnegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombrepumnegro">\n Kibon Chumbi Sogui\n Chebipum Mok Chigui\n Momtong Piochok Palkup Chigui\n Bituro Olgul Bakat Maki\n Bo Chumok Chumbi\n Gawi Maki\n Dangkio Ollyo Murup Chigui\n
@@ -697,7 +681,6 @@
             Simulatáneamente, el otro puño ataca a la mandíbula.</string>
 
     <!--Patadas-->
-    <string name="titulopatadanegro">Patadas</string>
     <string name="titulopatadanegrocoreano">Bal Kisul </string>
     <string name="textopatadanegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombrepatadanegro">\n Ap Chagui\n Dollyo Chagui\n Yop Chagui\n Tuit Chagui\n Nacko Chagui\n Furio Chagui\n Neryo Chagui\n Mom Dollyo Yop Chagui\n Mom Dollyo Tuit Chagui\n Mom Dollyo Nacko Chagui\n
@@ -711,18 +694,29 @@
             Mom Dollyo Yop Chagui en salto.</string>
 
     <!-- Combinación Técnicas -->
-    <string name="nombrecombinaciontecnicasnegro">Combinación de técnicas (avanzando y regresando)</string>
     <string name="combinaciontecnicasnegro1"> \n
                                                 Neryo Chagui - Ap Chagui - Yop Chagui \n\n
                                                 Yop Chagui - Dollyo Chagui - Mom Dollyo Tuit Chagui\n\n
                                                 Ap Chagui - Nacko Chagui - Dollyo Chagui\n\n
                                                 Dollyo Chagui - Yop Chagui - Mom Dollyo Nacko Chagui</string>
     <!--Pumse-->
-    <string name="titulopumsenegro">Pumse</string>
     <string name="nombrepumsenegro1">Taeguk Pal Chang</string>
     <string name="pumsenegro1">\n
             Simboliza el origen de la vida.\n
             Es el último grado de este aprendizaje, la pieza que culmina el camino.</string>
+
+
+
+
+    <!--PRUEBA GALERIA-->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="pictureText">Picture!</string>
+    <string name="contentDescriptionImagenSet">This is where the picture is going to assign</string>
+    <string name="contentDescriptionButtonImage">This is a button with an image that open the camera or galery</string>
+    <string name="title_activity_hola">Hola</string>
+
+
 
 
 </resources>
