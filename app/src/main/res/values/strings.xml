@@ -16,7 +16,7 @@
     <string name="entrar">Acceder</string>
     <string name="entrarcomoinvitado">Entrar como invitado</string>
     <string name="registrarse">Registrarse</string>
-    <string name="olvidar">Olvidé mi password</string>
+    <string name="olvidar">Olvidé mi contraseña</string>
     <string name="recuperar">Recuperar mi cuenta</string>
     <string name="salir">Salir</string>
     <string name="inicio">Inicio</string>
@@ -301,36 +301,35 @@
     <string name="nombreposicionnaranja1">Tuit Kubi Sogui</string>
     <string name="posicionnaranja1">\n
             Paso medio, la separación entre talones es de un paso.\n
-			Talones en línea, formando los pies 90ºentre ellos.\n
+			Talones en línea, formando los pies 90º entre ellos.\n
 			Rodilla trasera doblada, centrando el centro de gravedad.\n
 			Pierna trasera soporta el 70% del peso, la pierna delantera soporta el 30% del peso.</string>
 
     <!--Ataques-->
     <string name="nombreataquenaranja1">Sebon Jirugui</string>
     <string name="ataquenaranja1">\n
-            Paso medio, la separación entre talones es de un paso.\n
-			Talones en línea, formando los pies 90ºentre ellos.\n
-			Rodilla trasera doblada, centrando el centro de gravedad.\n
-			Pierna trasera soporta el 70% del peso, la pierna delantera soporta el 30% del peso.</string>
+            Triple puñetazo.\n
+			Los dos primeros puñetazos van dirigidos a la zona media, el tercero a la base de la nariz.\n
+			</string>
     <string name="nombreataquenaranja2">Du Sonnal Mok Chigui</string>
     <string name="ataquenaranja2">\n
             Golpe a la zona del cuello, con las dos manos abiertas y las palmas hacia arriba.\n
-			Se carga con las manos abiertas y los codos cdoblados.\n
-			Se golpea con el canto de la mano, quedando estás hacia arriba.</string>
+			Se carga con las manos abiertas y los codos doblados.\n
+			Se golpea con el canto de la mano, quedando éstas hacia arriba.</string>
     <string name="nombreataquenaranja3">Seuo Jirugui</string>
     <string name="ataquenaranja3">\n
             Lanzamiento con el puño en vertical y el pulgar hacia arriba.</string>
     <string name="nombreataquenaranja4">Sonnal An Mok Chigui</string>
     <string name="ataquenaranja4">\n
-            Ataque a la zona del cuello con el canto de la de mano, correspondiente al pie atrasado. \n
+            Ataque a la zona del cuello con el canto de la mano, correspondiente al pie atrasado. \n
 			Ataque de fuera hacia dentro, con la palma de la mano mirando hacia arriba.</string>
     <string name="nombreataquenaranja5">Jan Sonnal Bakat Mok Chigui</string>
     <string name="ataquenaranja5">\n
             Ataque a la zona del cuello. \n
-			Se ataca con el canto de la mano,  de dentro hacia fuera, con la palma de la mano mirando hacia arriba.</string>
+			Se ataca con el canto de la mano, de dentro hacia fuera, con la palma de la mano mirando hacia arriba.</string>
     <string name="nombreataquenaranja6">Olgul Bande Jirugui</string>
     <string name="ataquenaranja6">\n
-            Como Momoton Bande Jirugui, pero a la zona alta (Olgul).\n
+            Como Momotong Bande Jirugui, pero a la zona alta (Olgul).\n
             Se golpea con el puño de la pierna adelantada, a la zona alta.</string>
 
     <!--Defensas-->
@@ -400,7 +399,7 @@
     <string name="ataqueverde3">\n
             Ataque a la zona de las costillas.\n
             Se golpea con la punta de los dedos (conocidos como Pion Son Kut).
-            La plama de la mano queda en modo vertical al atacar.</string>
+            La palma de la mano queda en modo vertical al atacar.</string>
     <string name="nombreataqueverde4">Dung Chumok Ape Chigui</string>
     <string name="ataqueverde4">\n
             Ataque al labio superior o sien.\n
