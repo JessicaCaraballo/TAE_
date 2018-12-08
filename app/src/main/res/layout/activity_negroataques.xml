@@ -93,7 +93,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/courier"
-                android:text="@string/textoataquenegro"
+                android:text="@string/textonegrotodas"
                 android:textColor="@color/base"
                 android:textSize="@dimen/base"
                 app:layout_constraintEnd_toEndOf="parent"

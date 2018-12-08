@@ -182,6 +182,9 @@
     <string name="nombrecombinaciontecnicasmismapierna">Combinación de técnicas (con la misma pierna)</string>
     <string name="nombrecombinaciontecnicasavanzandoregresando">Combinación de técnicas (avanzando y regresando)</string>
     <string name="titulopum">Mov. Especial</string>
+    <string name="textonegrocasitodas">Casi todas las técnicas han sido estudiadas con anterioridad.</string>
+    <string name="textonegrotodas">Todas las técnicas han sido estudiadas con anterioridad.</string>
+    <string name="textonegrotodas_1">Las técnicas deben efectuarse en Du Chumok Jori Chumbi (Salvo Chariot Sogui y Moa Sogui)</string>
 
 
     <!--AMARILLO-->
@@ -455,27 +458,27 @@
     <!--Posiciones-->
     <string name="nombreposicionazul1">Moa Sogui</string>
     <string name="posicionazul1">\n
-            Posicion de pies juntos.\n
-		    Pies paralelos, punto de contacto entre los talones y los dedos.\n</string>
+            Posición de pies juntos.\n
+		    Pies paralelos, punto de contacto entre los talones y los dedos.</string>
     <string name="nombreposicionazul2">Pionji Sogui</string>
     <string name="posicionazul2">\n
-            Posicion cómoda.\n
-		    Distancia entre pies,la anchura de los hombros.\n
-		    Ángulo entre pies de 45º.\n
-		    Peso se distributye al 50% en cada pierna.\n</string>
+            Posición comoda. \n
+		    Distancia entre pies,la anchura de los hombros. \n
+		    Ángulo entre pies de 45º. \n
+		    Peso se distribuye al 50% en cada pierna.</string>
     <string name="nombreposicionazul3">Naranji Sogui</string>
     <string name="posicionazul3">\n
-            Posicion de los pies paralelos.
-		    Separación entre pies, es la anchura de los hombros.\n</string>
+            Posición de los pies paralelos. \n
+		    Separación entre pies, es la anchura de los hombros.</string>
     <string name="nombreposicionazul4">Ap Koa Sogui</string>
     <string name="posicionazul4">\n
-            Las piernas forman una X, en contacto la espinilla con la pantorrilla.\n
-            La pierna cruza por delante.\n
+            Las piernas forman una X, en contacto la espinilla con la pantorrilla. \n
+            La pierna cruza por delante. \n
             Pie delantero apoya sobre metatarso.</string>
     <string name="nombreposicionazul5">Tuit Koa Sogui</string>
     <string name="posicionazul5">\n
-            Como Ap Koa Sogui, pero la pierna cruza por detrás.\n
-            Pie trasero apoya sobre metatarso.</string>
+            Como Ap Koa Sogui, pero la pierna cruza por detrás. \n
+            El pie trasero apoya sobre metatarso.</string>
 
     <!--Ataques-->
     <string name="nombreataqueazul1">Du Bang Chumok</string>
@@ -486,24 +489,22 @@
     <!--Defensas-->
     <string name="nombredefensaazul1">Jan Sonnal Yop Momtong Bakat Maki</string>
     <string name="defensaazul1">\n
-            Defensa realizada con el canto de la mano, del interior al exterior.\n
+            Defensa realizada con el canto de la mano, del interior al exterior. \n
             Se bloquea lateralmente.</string>
     <string name="nombredefensaazul2">Jan Sonnal Yop Mok Chigui</string>
     <string name="defensaazul2">\n
             Defensa lateral con el canto de la mano.</string>
     <string name="nombredefensaazul3">Olgul Bakat Maki</string>
     <string name="defensaazul3">\n
-            Defensa zona alta.\n
-            Se usa la parte exterior de la muñeca, de dentro hacia fuera.\n
+            Defensa zona alta. \n
+            Se usa la parte exterior de la muñeca, de dentro hacia fuera. \n
             Puño a la altura de la cabeza, hombro parelelo al suelo.</string>
     <string name="nombredefensaazul4">Gechio Are Maki</string>
     <string name="defensaazul4">\n
-            Las muñecas se cruzan en la zona superior, y se desplazan hacia abajo y hacia fuera.\n
+            Las muñecas se cruzan en la zona superior, y se desplazan hacia abajo y hacia fuera. \n
             Defiende dos zonas al mismo tiempo.</string>
     <string name="nombredefensaazul5">Batagson Momtong Maki</string>
-    <string name="defensaazul5">
-            Defensa con la palma de la mano, de fuera hacia dentro.\n
-            La mano que bloquea corresponde a la pierna adelantada, y queda vertical al suelo.\n</string>
+    <string name="defensaazul5">"             Defensa con la palma de la mano, de fuera hacia dentro.              La mano que bloquea corresponde a la pierna adelantada, y queda vertical al suelo. "</string>
     <string name="nombredefensaazul6">Batagson Momtong An Maki</string>
     <string name="defensaazul6">\n
             Defensa como Batagson Momtong Maki, pero la mano corresponde a la pierna atrasada. </string>
@@ -519,14 +520,14 @@
 
     <string name="nombrepumazul3">Montong Piochok Palkup Chigui</string>
     <string name="pumazul3"> \n
-            Una mano extendida se usa como balnco y acerca al oponente.
-            Se lanza el codo del otro brazo, hasta unir palma de la plama de la mano con codo contrario.</string>
+            Una mano extendida se usa como blanco y acerca al oponente.
+            Se lanza el codo del otro brazo, hasta unir palma de la palma de la mano con codo contrario.</string>
 
     <!--Patadas-->
     <string name="nombrepatadaazul1">Nacko Chagui</string>
     <string name="patadaazul1">\n
             Patada en gancho.\n
-            Lanza el pie que golpea en arco, paralelo al suelo. Golpe con el talón del pie. </string>
+            Se  lanza el pie que golpea en arco, paralelo al suelo. Golpe con el talón del pie. </string>
     <string name="nombrepatadaazul2">Furio Chagui</string>
     <string name="patadaazul2">\n
             Se realiza del interior al exterior.\n
@@ -551,7 +552,7 @@
     <!--Pumse-->
     <string name="nombrepumseazul1">Taeguk Oh Chang</string>
     <string name="pumseazul1">\n
-            Simboliza el viento, el estado humilde la mente, resprestativo de las buenas acciones de la naturaleza.</string>
+            Simboliza el viento, el estado humilde la mente, respresentativo de las buenas acciones de la naturaleza.</string>
     <string name="nombrepumseazul2">Taeguk Yuk Chang</string>
     <string name="pumseazul2">\n
             Simboliza el agua, mostrando que podemos superar las dificultades y penas siguiendo hacia delante.</string>
@@ -564,15 +565,15 @@
     <!--Posiciones-->
     <string name="nombreposicionmarron1">Bom Sogui</string>
     <string name="posicionmarron1">\n
-            Posición del tigre.\n
-            El cuerpo descansa en la pierna de atrás.\n
-            Ángulo entre los pies de 30º, con menos de un paso de distancia.\n
+            Posición del tigre. \n
+            El cuerpo descansa en la pierna de atrás. \n
+            Ángulo entre los pies de 30º, con menos de un paso de distancia. \n
             90% del peso atrás, 10% delante.</string>
 
     <!--Ataques-->
     <string name="nombreataquemarron1">Dung Chumok Bakat Chigui</string>
     <string name="ataquemarron1">\n
-            El puño, desde el hombro contrario, y el reservo hacia abajo, se lanza hacia afuera.\n
+            El puño, desde el hombro contrario, y el reverso del puño hacia abajo, se lanza hacia afuera.\n
             Al final, se gira el puño, quedando el anverso hacia dentro.</string>
     <string name="nombreataquemarron2">Yop Jirugui</string>
     <string name="ataquemarron2">\n
@@ -582,8 +583,8 @@
     <string name="nombredefensamarron1">Sonnal Are Maki</string>
     <string name="defensamarron1">\n
             Defensa similar a Goduro Maki.\n
-            Manos están abiertas, dedos extendidos y juntos.
-            La mano que bloquea está al frente, y la que ayuda posee la plama hacia arriba (zona plexo solar).</string>
+            Manos están abiertas, dedos extendidos y juntos. \n
+            La mano que bloquea está al frente, y la que ayuda posee la palma hacia arriba (zona plexo solar).</string>
     <string name="nombredefensamarron2">Goduro Batagson Momtong An Maki</string>
     <string name="defensamarron2">\n
             Defensa parecida a Batagson Momtong An Maki.\n
@@ -591,24 +592,24 @@
     <string name="nombredefensamarron3">Gechio Momtong Maki</string>
     <string name="defensamarron3">\n
             Defensa zona media, con los dos antebrazos, de dentro hacia fuera.\n
-            Muñecas se juntan a la altura del pecho, con las manos hacia dentro, separamos los brazos girándolos.\n
+            Las muñecas se juntan a la altura del pecho, con las manos hacia dentro, separamos los brazos al girarlos.\n
             Puños separados a la altura de los hombros.</string>
     <string name="nombredefensamarron4">Okgoro Are Maki</string>
     <string name="defensamarron4">\n
-            Defensa zon baja.\n
+            Defensa zona baja.\n
             Se cruzan las muñecas, el brazo de la pierna delantera está sobre la otra.\n
             Girando, se extienden los brazos, quedando la muñeca de la pierna delantera, cruzada por debajo de la otra.</string>
     <string name="nombredefensamarron5">Jansonnal Momtong Yop Maki</string>
     <string name="defensamarron5">\n
             Defensa zona media.\n
-            El anto de la mano, desde dentro hacia fuera, bloquea lateralmente nuestroo cuerpo.</string>
+            El canto de la mano, desde dentro hacia fuera, bloquea lateralmente nuestro cuerpo.</string>
 
     <!--Pum-->
     <string name="nombrepummarron1">Bo Chumok Chumbi</string>
     <string name="pummarron1"> \n
             Con el corazón controlamos la mente.\n
             En Moa Sogui, de abajo hasta el pecho.\n
-            Mano izquierda (es el corazon), en forma semicircular.\n
+            Mano izquierda (es el corazón), en forma semicircular.\n
             Mano derecha (es la mente), está cerrada dentro de la otra.</string>
     <string name="nombrepummarron2">Gawi Maki</string>
     <string name="pummarron2">
@@ -619,7 +620,7 @@
     <string name="pummarron3"> \n</string>
     <string name="nombrepummarron4">Piochok Chagui</string>
     <string name="pummarron4"> \n
-            La palma de la mano se usa de blanco, sobre la plama se lanza un Badal Dung.</string>
+            La palma de la mano se usa de blanco, sobre la palma se lanza un Badal Dung.</string>
 
     <!--Patadas-->
     <string name="nombrepatadamarron1">Tuio Dollyo Chagui</string>
@@ -638,59 +639,49 @@
 
     <!--Posiciones NO HAY -->
     <string name="tituloposicionnegrocoreano">Sogui Kisul</string>
-    <string name="textoposicionnegro">Todas las técnicas han sido estudiadas con anterioridad. \n\n
-            Las técnicas deben efectuarse en Du Chumok Jori Chumbi (Salvo Chariot Sogui y Moa Sogui)</string>
     <string name="nombreposicionnegro">\n Pionji Sogui\n Moa Sogui\n Ap Sogui\n Ap Kubi Sogui\n ChumChum Sogui\n Bom Sogui\n Tuit Kubi Sogui\n Tuit Koa Sogui\n Naranji Sogui\n Uen Sogui\n Orun Sogui\n  </string>
 
     <!--Ataques-->
     <string name="tituloataquenegrocoreano">Son Kisul Gongkiok</string>
-    <string name="textoataquenegro">Todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombreataquenegro">\n Momtong Bande Jirugui\n Momtong Baro Jirugui\n Olgul Bande Jirugui\n Momtong Dubon Jirugui\n Sonnal An Chigui\n Pyonson Kut Seuo Chirugui\n Dung Chumok Ape Chigui\n
             Me Chumok Neryo Yop Chigui\n Palkup Dollyo Chigui\n Du Checho Jirugui\n Dung Chumok Bakat Chigui\n Yop Jirugui  </string>
 
     <!--Defensas-->
     <string name="titulodefensanegrocoreano">Son Kisul Maki</string>
-    <string name="textodefensanegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombredefensanegro">\n Are Maki\n Momtong Maki\n Momtong An Maki\n Olgul Maki\n Jansonnal Momtong Bakat Maki\n Sonnal Momtong Maki\n Momtong Bakat Maki\n Olgul Bakat Maki\n Gechio Are Maki\n
         Batagson Momtong Maki\n Batagson Momtong An Maki\n Sonnal Are Maki\n Goduro Batagson Momtong An Maki\n Gechio Momtong Maki\n Okgoro Are Maki\n Jansonnal Momtong Yop Maki\n </string>
-    <string name="textodefensanegro2">Las dos defensas restantes, se explican a continuación. \n</string>
+    <string name="textodefensanegro2">"Las dos defensas restantes, se explican a continuación.  "</string>
     <string name="nombredefensanegro1">Goduro Momtong Maki</string>
     <string name="defensanegro1">\n
             Usa la parte exterior de la muñeca y al frente. El otro brazo protege la posición, en zona del plexo solar.\n
-            Los puños quedan enfrentados entre sí horizontalmente.            </string>
+            Los puños quedan enfrentados entre sí horizontalmente.</string>
     <string name="nombredefensanegro2">Goduro Are Maki</string>
     <string name="defensanegro2">\n
             Se sostienen ambos puños a la altura del hombro, y se mueven a la posición central.\n
-            Los puños estan orientados al frente. el brazo anterior bloquea lado izquierdo, el otro se coloca en plexo solar.</string>
+            Los puños están orientados al frente. El brazo anterior bloquea lado izquierdo, el otro se coloca en plexo solar.</string>
 
     <!--Pum-->
     <string name="titulopumnegrocoreano">Pum</string>
-    <string name="textopumnegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombrepumnegro">\n Kibon Chumbi Sogui\n Chebipum Mok Chigui\n Momtong Piochok Palkup Chigui\n Bituro Olgul Bakat Maki\n Bo Chumok Chumbi\n Gawi Maki\n Dangkio Ollyo Murup Chigui\n
             Piochok Chagui\n </string>
-    <string name="textopumnegro2">Los dos movimientos especiales restantes, se explican a continuación. \n</string>
+    <string name="textopumnegro2">"Los dos movimientos especiales restantes, se explican a continuación.  "</string>
     <string name="nombrepumnegro1">Oe Santul Maki</string>
     <string name="pumnegro1"> \n
             Dos defensas simultáneas.\n
             Defensa inferior: con la zona externa de la muñeca.\n
             Defensa superior: con la parte interior de la muñeca.</string>
     <string name="nombrepumnegro2">Dangkio Tok Jirugui</string>
-    <string name="pumnegro2"> \n
-            Con una mano tiramos del traje del oponente (agarrado por el pecho)\n
-            Simulatáneamente, el otro puño ataca a la mandíbula.</string>
+    <string name="pumnegro2">"  Con una mano tiramos del traje del oponente (agarrado por el pecho)  Simultáneamente, el otro puño ataca a la mandíbula."</string>
 
     <!--Patadas-->
     <string name="titulopatadanegrocoreano">Bal Kisul </string>
-    <string name="textopatadanegro">Casi todas las técnicas han sido estudiadas con anterioridad. \n</string>
     <string name="nombrepatadanegro">\n Ap Chagui\n Dollyo Chagui\n Yop Chagui\n Tuit Chagui\n Nacko Chagui\n Furio Chagui\n Neryo Chagui\n Mom Dollyo Yop Chagui\n Mom Dollyo Tuit Chagui\n Mom Dollyo Nacko Chagui\n
         Mom Dollyo Furio Chagui\n Tuio Ap chagui\n Tuio Yop Chagui\n Tuio Tuit Chagui\n Tuio Dollyo Chagui\n  </string>
-    <string name="textopatadanegro2">Las dos patadas restantes, se explican a continuación. \n</string>
+    <string name="textopatadanegro2">"Las dos patadas restantes, se explican a continuación.  "</string>
     <string name="nombrepatadanegro1">Tuio Mom Dollyo Tuit Chagui</string>
-    <string name="patadanegro1">\n
-            Mom Dollyo Tuit Chagui en salto.</string>
+    <string name="patadanegro1">"  Mom Dollyo Tuit Chagui en salto."</string>
     <string name="nombrepatadanegro2">Tuio Mom Dollyo Yop Chagui</string>
-    <string name="patadanegro2">\n
-            Mom Dollyo Yop Chagui en salto.</string>
+    <string name="patadanegro2">"  Mom Dollyo Yop Chagui en salto."</string>
 
     <!-- Combinación Técnicas -->
     <string name="combinaciontecnicasnegro1"> \n
@@ -700,9 +691,7 @@
                                                 Dollyo Chagui - Yop Chagui - Mom Dollyo Nacko Chagui</string>
     <!--Pumse-->
     <string name="nombrepumsenegro1">Taeguk Pal Chang</string>
-    <string name="pumsenegro1">\n
-            Simboliza el origen de la vida.\n
-            Es el último grado de este aprendizaje, la pieza que culmina el camino.</string>
+    <string name="pumsenegro1">"  Simboliza el origen de la vida.  Es el último grado de este aprendizaje, la pieza que culmina el camino."</string>
 
 
 
