@@ -18,6 +18,7 @@
     <string name="registrarse">Registrarse</string>
     <string name="olvidar">Olvidé mi contraseña</string>
     <string name="recuperar">Recuperar mi cuenta</string>
+    <string name="actualizar">Actualizar mis datos</string>
     <string name="salir">Salir</string>
     <string name="inicio">Inicio</string>
 
@@ -168,6 +169,9 @@
     <string name="galeria">Galería</string>
     <string name="galeria1">Algo 1 sobre la galeria</string>
     <string name="galeria2">Final de galeria de imagenes</string>
+
+    <!--Configuracion-->
+    <string name="configuracion">Ajustes</string>
 
 
 

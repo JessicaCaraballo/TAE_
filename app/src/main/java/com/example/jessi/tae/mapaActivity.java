@@ -4,6 +4,7 @@ import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentActivity;
@@ -28,6 +29,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.Serializable;
+import java.util.Locale;
 
 public class mapaActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -52,6 +54,7 @@ public class mapaActivity extends FragmentActivity implements OnMapReadyCallback
         //super.onCreate(savedInstanceState);
         final Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
+        EstablecerIdioma(usuario.getIdioma());
         //setContentView(R.layout.activity_mapa);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.mapa);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
@@ -153,6 +156,11 @@ public class mapaActivity extends FragmentActivity implements OnMapReadyCallback
                         mapa.putExtra("usuario", (Serializable) usuario);
                         startActivity(mapa);
                         break;
+                    case R.id.ajustes:
+                        Intent ajustes = new Intent(getApplicationContext(), ajustesActivity.class);
+                        ajustes.putExtra("usuario", (Serializable) usuario);
+                        startActivity(ajustes);
+                        break;
                     case R.id.salir:
                         finish();
                         Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -178,6 +186,50 @@ public class mapaActivity extends FragmentActivity implements OnMapReadyCallback
 
     protected boolean isRouteDisplayed() {
         return false;
+    }
+
+    private void EstablecerIdioma(int idioma) {
+        switch (idioma) {
+            case 2:
+                Locale locale2 = new Locale("en");
+                Locale.setDefault(locale2);
+                Configuration config2 = new Configuration();
+                config2.locale = locale2;
+                getBaseContext().getResources().updateConfiguration(config2, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            case 3:
+                Locale locale3 = new Locale("fr");
+                Locale.setDefault(locale3);
+                Configuration config3 = new Configuration();
+                config3.locale = locale3;
+                getBaseContext().getResources().updateConfiguration(config3, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            case 4:
+                Locale locale4 = new Locale("it");
+                Locale.setDefault(locale4);
+                Configuration config4 = new Configuration();
+                config4.locale = locale4;
+                getBaseContext().getResources().updateConfiguration(config4, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            case 5:
+                Locale locale5 = new Locale("pt");
+                Locale.setDefault(locale5);
+                Configuration config5 = new Configuration();
+                config5.locale = locale5;
+                getBaseContext().getResources().updateConfiguration(config5, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            default:
+                Locale locale = new Locale("es");
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                break;
+        }
     }
 
     @Override

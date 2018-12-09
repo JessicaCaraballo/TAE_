@@ -87,6 +87,7 @@
         <activity android:name=".reglamentoActivity" />
         <activity android:name=".mapaActivity" />
         <activity android:name=".galeriaActivity" />
+        <activity android:name=".ajustesActivity" />
     </application>
 
 </manifest>

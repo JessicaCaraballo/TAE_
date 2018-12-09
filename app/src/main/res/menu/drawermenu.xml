@@ -56,6 +56,6 @@
     <item android:id="@+id/mapa" android:title="@string/mapa" android:icon="@drawable/mapa" />
     <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery"  android:visible="false"/>
     <item android:id="@+id/sobrenosotros" android:title="@string/sobrenosotros" android:icon="@drawable/contacto" />
-    <item android:id="@+id/configuracion" android:title="Configuración" android:icon="@drawable/ic_menu_send" android:visible="false"/>
+    <item android:id="@+id/ajustes" android:title="@string/action_settings" android:icon="@drawable/ic_menu_manage"/>
     <item android:id="@+id/salir" android:title="@string/salir" android:icon="@drawable/salir" />
 </menu>

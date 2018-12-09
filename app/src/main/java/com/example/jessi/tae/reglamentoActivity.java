@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.support.v4.app.NotificationCompat;
@@ -39,6 +40,7 @@ import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
+import java.util.Locale;
 
 import okhttp3.OkHttpClient;
 import okhttp3.internal.Util;
@@ -69,6 +71,7 @@ public class reglamentoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         final Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
+        EstablecerIdioma(usuario.getIdioma());
         setContentView(R.layout.activity_reglamento);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.reglamento);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
@@ -240,6 +243,11 @@ public class reglamentoActivity extends AppCompatActivity {
                         mapa.putExtra("usuario", (Serializable) usuario);
                         startActivity(mapa);
                         break;
+                    case R.id.ajustes:
+                        Intent ajustes = new Intent(getApplicationContext(), ajustesActivity.class);
+                        ajustes.putExtra("usuario", (Serializable) usuario);
+                        startActivity(ajustes);
+                        break;
                     case R.id.salir:
                         finish();
                         Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -326,6 +334,50 @@ public class reglamentoActivity extends AppCompatActivity {
         intent.setDataAndType(uri, "application/pdf");
         startActivity(intent);
     }*/
+
+    private void EstablecerIdioma(int idioma) {
+        switch (idioma) {
+            case 2:
+                Locale locale2 = new Locale("en");
+                Locale.setDefault(locale2);
+                Configuration config2 = new Configuration();
+                config2.locale = locale2;
+                getBaseContext().getResources().updateConfiguration(config2, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            case 3:
+                Locale locale3 = new Locale("fr");
+                Locale.setDefault(locale3);
+                Configuration config3 = new Configuration();
+                config3.locale = locale3;
+                getBaseContext().getResources().updateConfiguration(config3, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            case 4:
+                Locale locale4 = new Locale("it");
+                Locale.setDefault(locale4);
+                Configuration config4 = new Configuration();
+                config4.locale = locale4;
+                getBaseContext().getResources().updateConfiguration(config4, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            case 5:
+                Locale locale5 = new Locale("pt");
+                Locale.setDefault(locale5);
+                Configuration config5 = new Configuration();
+                config5.locale = locale5;
+                getBaseContext().getResources().updateConfiguration(config5, getBaseContext().getResources().getDisplayMetrics());
+                break;
+
+            default:
+                Locale locale = new Locale("es");
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                break;
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

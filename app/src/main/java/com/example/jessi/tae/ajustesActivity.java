@@ -7,43 +7,87 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.io.Serializable;
 import java.util.Locale;
 
-public class federacionesActivity extends AppCompatActivity {
+public class ajustesActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private RadioButton botonEspanol;
+    private RadioButton botonIngles;
+    private RadioButton botonFrances;
+    private RadioButton botonItaliano;
+    private RadioButton botonPortugues;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.i("e","e");
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
         EstablecerIdioma(usuario.getIdioma());
-        setContentView(R.layout.activity_federaciones);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.federaciones);
+        setContentView(R.layout.activity_ajustes);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.ajustes);
         mToogle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.abrir,R.string.cerrar);
         mDrawerLayout.addDrawerListener(mToogle);
         mToogle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navFederaciones);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navAjustes);
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
+
+        botonEspanol=(RadioButton) findViewById(R.id.radioButton1);
+        botonEspanol.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                usuario.setIdioma(1);
+            }
+        });
+        botonIngles=(RadioButton) findViewById(R.id.radioButton2);
+        botonIngles.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                usuario.setIdioma(2);
+            }
+        });
+        botonFrances=(RadioButton) findViewById(R.id.radioButton3);
+        botonFrances.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                usuario.setIdioma(3);
+            }
+        });
+        botonItaliano=(RadioButton) findViewById(R.id.radioButton4);
+        botonItaliano.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                usuario.setIdioma(4);
+            }
+        });
+        botonPortugues=(RadioButton) findViewById(R.id.radioButton5);
+        botonPortugues.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                usuario.setIdioma(5);
+            }
+        });
+
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.historia:
-                        Intent historia = new Intent(getApplicationContext(), historiaActivity.class);
+                        Intent historia = new Intent(getApplicationContext(), ajustesActivity.class);
                         historia.putExtra("usuario", (Serializable) usuario);
                         startActivity(historia);
                         break;
@@ -138,6 +182,7 @@ public class federacionesActivity extends AppCompatActivity {
                         intent.addCategory(Intent.CATEGORY_HOME);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
+                        break;
                 }
                 return true;
             }
@@ -203,5 +248,4 @@ public class federacionesActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }
