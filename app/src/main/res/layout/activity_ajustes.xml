@@ -22,7 +22,6 @@
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints">
 
-
             <TextView
                 android:id="@+id/textViewTitulo"
                 android:layout_width="wrap_content"
@@ -208,8 +207,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="8dp"
-                        android:background="@drawable/idioma_espanol"
-                        android:checked="true"/>
+                        android:background="@drawable/idioma_espanol" />
 
                     <RadioButton
                         android:id="@+id/radioButton2"

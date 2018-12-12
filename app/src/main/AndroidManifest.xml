@@ -25,7 +25,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCRyKEAgoSezchqNx1s5m2CozYv4YvQyoA"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,8 +34,8 @@
         </activity>
         <activity android:name=".terminologiaActivity" />
         <activity android:name=".partescuerpoActivity" />
-        <activity android:name=".registrarseActivity" />
-        <activity android:name=".recuperarActivity" />
+        <activity android:name=".registrarseActivity" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".recuperarActivity"  android:windowSoftInputMode="stateHidden" />
         <activity android:name=".principalActivity" />
         <activity android:name=".historiaActivity" />
         <activity android:name=".saludoActivity" />
@@ -87,7 +87,7 @@
         <activity android:name=".reglamentoActivity" />
         <activity android:name=".mapaActivity" />
         <activity android:name=".galeriaActivity" />
-        <activity android:name=".ajustesActivity" />
+        <activity android:name=".ajustesActivity" android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>

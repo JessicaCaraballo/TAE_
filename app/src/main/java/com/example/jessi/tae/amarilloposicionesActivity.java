@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.Serializable;
@@ -20,12 +21,18 @@ public class amarilloposicionesActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private int galeria;
+    private Button boton1;
+    private Button boton2;
+    private Button boton3;
+    private Button boton4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
+       // galeria = (int)bundle.getSerializable("galeria");
         EstablecerIdioma(usuario.getIdioma());
         setContentView(R.layout.activity_amarilloposiciones);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.amarilloposiciones);
@@ -37,6 +44,48 @@ public class amarilloposicionesActivity extends AppCompatActivity {
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
+
+        boton1 = (Button)findViewById(R.id.botongaleria1);
+        boton1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
+                galeria.putExtra("usuario", (Serializable) usuario);
+                galeria.putExtra("galeria", (Serializable) 1);
+                startActivity(galeria);
+            }
+        });
+        boton2 = (Button)findViewById(R.id.botongaleria2);
+        boton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
+                galeria.putExtra("usuario", (Serializable) usuario);
+                galeria.putExtra("galeria", (Serializable) 2);
+                startActivity(galeria);
+            }
+        });
+        boton3 = (Button)findViewById(R.id.botongaleria3);
+        boton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
+                galeria.putExtra("usuario", (Serializable) usuario);
+                galeria.putExtra("galeria", (Serializable) 3);
+                startActivity(galeria);
+            }
+        });
+        boton4 = (Button)findViewById(R.id.botongaleria4);
+        boton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
+                galeria.putExtra("usuario", (Serializable) usuario);
+                galeria.putExtra("galeria", (Serializable) 4);
+                startActivity(galeria);
+            }
+        });
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {

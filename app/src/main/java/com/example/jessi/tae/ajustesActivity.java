@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -25,14 +26,15 @@ public class ajustesActivity extends AppCompatActivity {
     private RadioButton botonFrances;
     private RadioButton botonItaliano;
     private RadioButton botonPortugues;
-
-
+    private int nuevoIdioma;
+    private Button actualizar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
+        nuevoIdioma = usuario.getIdioma();
         EstablecerIdioma(usuario.getIdioma());
         setContentView(R.layout.activity_ajustes);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.ajustes);
@@ -49,37 +51,48 @@ public class ajustesActivity extends AppCompatActivity {
         botonEspanol.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                usuario.setIdioma(1);
-            }
+                //usuario.setIdioma(1);
+                nuevoIdioma=1; }
         });
         botonIngles=(RadioButton) findViewById(R.id.radioButton2);
         botonIngles.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                usuario.setIdioma(2);
-            }
+                //usuario.setIdioma(2);
+                nuevoIdioma=2;}
         });
         botonFrances=(RadioButton) findViewById(R.id.radioButton3);
         botonFrances.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                usuario.setIdioma(3);
-            }
+                //usuario.setIdioma(3);
+                nuevoIdioma=3;}
         });
         botonItaliano=(RadioButton) findViewById(R.id.radioButton4);
         botonItaliano.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                usuario.setIdioma(4);
-            }
+                //usuario.setIdioma(4);
+                nuevoIdioma=4;}
         });
         botonPortugues=(RadioButton) findViewById(R.id.radioButton5);
         botonPortugues.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                usuario.setIdioma(5);
-            }
+                //usuario.setIdioma(5);
+                nuevoIdioma=5;}
         });
+
+
+        actualizar=(Button) findViewById(R.id.buttonActualizar);
+        actualizar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                Intent principal = new Intent(getApplicationContext(), principalActivity.class);
+                usuario.setIdioma(nuevoIdioma);
+                principal.putExtra("usuario", (Serializable) usuario);
+                startActivity(principal);
+          }
+      });
 
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

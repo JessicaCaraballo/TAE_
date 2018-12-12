@@ -32,6 +32,7 @@ public class galeriaActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToogle;
     private Usuario usuario;
+    private int galeria;
     private Button boton1;
     private FrameLayout frame;
 
@@ -48,6 +49,7 @@ public class galeriaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         usuario = (Usuario)bundle.getSerializable("usuario");
+        galeria = (int)bundle.getSerializable("galeria");
         EstablecerIdioma(usuario.getIdioma());
         setContentView(R.layout.activity_galeria);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.galeriaImagenes);
