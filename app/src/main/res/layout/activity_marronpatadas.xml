@@ -107,7 +107,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/guideline1_1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo1"
-                        app:srcCompat="@drawable/patadamarron1" />
+                        app:srcCompat="@drawable/foto_falta" />
 
                     <TextView
                         android:id="@+id/textViewSubtitulo1"

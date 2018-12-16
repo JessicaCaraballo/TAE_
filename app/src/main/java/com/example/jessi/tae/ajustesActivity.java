@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -28,6 +29,10 @@ public class ajustesActivity extends AppCompatActivity {
     private RadioButton botonPortugues;
     private int nuevoIdioma;
     private Button actualizar;
+    private EditText editText;
+    private EditText editText2;
+    private TextView textView2;
+    private TextView textView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,20 @@ public class ajustesActivity extends AppCompatActivity {
         View headerView = navigationView.getHeaderView(0);
         TextView _email = (TextView) headerView.findViewById(R.id.txtemail);
         _email.setText(usuario.getEmail());
+
+        editText=(EditText) findViewById(R.id.editText);
+        editText.setText(usuario.getEmail());
+        editText2=(EditText) findViewById(R.id.editText2);
+        editText.setText(usuario.getPassword());
+        textView2=(TextView) findViewById(R.id.textView2);
+        textView3=(TextView) findViewById(R.id.textView3);
+
+        if(usuario.getId()==0){
+            editText.setVisibility(View.INVISIBLE);
+            editText2.setVisibility(View.INVISIBLE);
+            textView2.setVisibility(View.INVISIBLE);
+            textView3.setVisibility(View.INVISIBLE);
+        }
 
         botonEspanol=(RadioButton) findViewById(R.id.radioButton1);
         botonEspanol.setOnClickListener(new View.OnClickListener(){

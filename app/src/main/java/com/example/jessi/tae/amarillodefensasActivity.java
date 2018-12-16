@@ -57,7 +57,7 @@ public class amarillodefensasActivity extends AppCompatActivity {
                 */
                 Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
                 galeria.putExtra("usuario", (Serializable) usuario);
-                galeria.putExtra("galeria", (Serializable) "9");
+                galeria.putExtra("galeria", (Serializable) 9);
                 startActivity(galeria);
             }
         });
@@ -67,7 +67,7 @@ public class amarillodefensasActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
                 galeria.putExtra("usuario", (Serializable) usuario);
-                galeria.putExtra("galeria", (Serializable) "10");
+                galeria.putExtra("galeria", (Serializable) 10);
                 startActivity(galeria);
             }
         });
@@ -77,7 +77,7 @@ public class amarillodefensasActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
                 galeria.putExtra("usuario", (Serializable) usuario);
-                galeria.putExtra("galeria", (Serializable) "11");
+                galeria.putExtra("galeria", (Serializable) 11);
                 startActivity(galeria);
             }
         });
@@ -87,7 +87,7 @@ public class amarillodefensasActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent galeria = new Intent(getApplicationContext(), galeriaActivity.class);
                 galeria.putExtra("usuario", (Serializable) usuario);
-                galeria.putExtra("galeria", (Serializable) "12");
+                galeria.putExtra("galeria", (Serializable) 12);
                 startActivity(galeria);
             }
         });

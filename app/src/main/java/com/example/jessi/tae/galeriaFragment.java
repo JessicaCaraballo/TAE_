@@ -45,7 +45,7 @@ public class galeriaFragment extends DialogFragment {
         });
 
         recyclerViewGaleria.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        listaMenu = new Menu().listaMenu();
+        listaMenu = new Menu().listaMenu(1);
         adapter = new RecyclerAdapter(listaMenu, new RecyclerAdapter.OnClickRecycler() {
             @Override
             public void OnclickItemRecycler(Menu menu) {

@@ -179,9 +179,36 @@ public class mapaActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Zaragoza.
-        LatLng sydney = new LatLng(41.648823, -0.889085);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marcador en Zaragoza"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng zaragoza = new LatLng(41.648823, -0.889085);
+        mMap.addMarker(new MarkerOptions().position(zaragoza).title("Marcador en Zaragoza"));
+        //Gimnasios https://www.latlong.net/
+        //Eh Kim-Il
+        LatLng kimil = new LatLng(41.651200, -0.902610);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kimil));
+        //Seul
+        LatLng seul = new LatLng(41.669880, -0.883430);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(seul));
+        //Wha Rang
+        LatLng wharang = new LatLng(41.639650, -0.888610);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(wharang));
+        //Federación Aragonesa de Taekwondo
+        LatLng fat = new LatLng(41.672530, 0.898260);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(fat));
+        //Gimnasio Kumgan
+        LatLng kumgan = new LatLng(41.672180, -0.876950);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kumgan));
+        //Taekwondo Garrapinillos
+        LatLng garrapinilllos = new LatLng(41.689410, -1.041120);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(garrapinilllos));
+        //Sad
+        LatLng sad = new LatLng(41.640230, -0.897610);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sad));
+        //Seul Santa Isabel
+        LatLng seulisabel = new LatLng(41.666530, -0.831770);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(seulisabel));
+
+        //Zoom mapa
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(zaragoza,14));
     }
 
     protected boolean isRouteDisplayed() {

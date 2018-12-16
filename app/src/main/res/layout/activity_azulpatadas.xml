@@ -108,7 +108,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/guideline1_1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo1"
-                        app:srcCompat="@drawable/patadaazul1" />
+                        app:srcCompat="@drawable/foto_falta" />
 
                     <TextView
                         android:id="@+id/textViewSubtitulo1"
@@ -261,7 +261,7 @@
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo3"
-                        app:srcCompat="@drawable/patadaazul3" />
+                        app:srcCompat="@drawable/foto_falta" />
 
                     <TextView
                         android:id="@+id/textViewSubtitulo3"
@@ -336,7 +336,7 @@
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo4"
-                        app:srcCompat="@drawable/patadaazul4" />
+                        app:srcCompat="@drawable/foto_falta" />
 
                     <TextView
                         android:id="@+id/textViewSubtitulo4"

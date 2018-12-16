@@ -86,7 +86,7 @@ public class galeriaActivity extends AppCompatActivity {
         });
 */
         recyclerViewGaleria.setLayoutManager(new LinearLayoutManager(frame.getContext(), LinearLayoutManager.HORIZONTAL, false));
-        listaMenu = new com.example.jessi.tae.Menu().listaMenu();
+        listaMenu = new com.example.jessi.tae.Menu().listaMenu(galeria);
         adapter = new RecyclerAdapter(listaMenu, new RecyclerAdapter.OnClickRecycler() {
             @Override
             public void OnclickItemRecycler(com.example.jessi.tae.Menu menu) {
@@ -174,7 +174,7 @@ public class galeriaActivity extends AppCompatActivity {
         });
 */
         recyclerViewGaleria.setLayoutManager(new LinearLayoutManager(frame.getContext(), LinearLayoutManager.HORIZONTAL, false));
-        listaMenu = new com.example.jessi.tae.Menu().listaMenu();
+        listaMenu = new com.example.jessi.tae.Menu().listaMenu(1);
         adapter = new RecyclerAdapter(listaMenu, new RecyclerAdapter.OnClickRecycler() {
             @Override
             public void OnclickItemRecycler(com.example.jessi.tae.Menu menu) {
