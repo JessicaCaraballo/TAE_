@@ -5,6 +5,7 @@
     android:id="@+id/federaciones"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo4_1"
     tools:context="com.example.jessi.tae.federacionesActivity">
 
 
@@ -18,7 +19,6 @@
             <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:background="@drawable/fondo2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:ignore="MissingConstraints">

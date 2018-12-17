@@ -13,6 +13,8 @@
             <item android:id="@+id/reglamento" android:title="@string/reglamento" android:icon="@drawable/reglamento" />
             <item android:id="@+id/partescuerpo" android:title="@string/partesdelcuerpo" android:icon="@drawable/cuerpo" />
             <item android:id="@+id/terminologia" android:title="@string/terminologiabasica" android:icon="@drawable/terminologia" />
+            <item android:id="@+id/mapa" android:title="@string/mapa" android:icon="@drawable/mapa" />
+            <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery"  android:visible="false"/>
         </menu>
     </item>
     <group>
@@ -53,8 +55,6 @@
             </menu>
         </item>
     </group>
-    <item android:id="@+id/mapa" android:title="@string/mapa" android:icon="@drawable/mapa" />
-    <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/ic_menu_gallery"  android:visible="false"/>
     <item android:id="@+id/sobrenosotros" android:title="@string/sobrenosotros" android:icon="@drawable/contacto" />
     <item android:id="@+id/ajustes" android:title="@string/action_settings" android:icon="@drawable/ic_menu_manage"/>
     <item android:id="@+id/salir" android:title="@string/salir" android:icon="@drawable/salir" />

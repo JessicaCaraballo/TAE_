@@ -88,21 +88,11 @@
                             android:visibility="visible"
                             app:layout_constraintGuide_percent="0.8" />
 
-                        <TextView
-                            android:id="@+id/titulo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#000000"
-                            android:text="@string/hello_blank_fragment"
-                            android:textColor="#FFFFFF"
-                            tools:layout_editor_absoluteX="0dp"
-                            tools:layout_editor_absoluteY="36dp" />
-
                     </android.support.constraint.ConstraintLayout>
 
                     <android.support.constraint.ConstraintLayout
                         android:id="@+id/ConstraintLayout2"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1"
                         tools:ignore="MissingConstraints">

@@ -39,7 +39,7 @@ public class mapaActivity extends FragmentActivity implements OnMapReadyCallback
     private Usuario usuario;
     private MapView mapView;
     //private MapController myMapController;
-    private String apikey = "";
+    private String apikey = "AIzaSyAxNitpuAe1bf4fxCguvSZa_olw3KVeItc";
     private GoogleMap mMap;
 
     @Override
@@ -184,28 +184,28 @@ public class mapaActivity extends FragmentActivity implements OnMapReadyCallback
         //Gimnasios https://www.latlong.net/
         //Eh Kim-Il
         LatLng kimil = new LatLng(41.651200, -0.902610);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(kimil));
+        mMap.addMarker(new MarkerOptions().position(kimil).title("Kimil"));
         //Seul
         LatLng seul = new LatLng(41.669880, -0.883430);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(seul));
+        mMap.addMarker(new MarkerOptions().position(seul).title("Seul"));
         //Wha Rang
         LatLng wharang = new LatLng(41.639650, -0.888610);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(wharang));
+        mMap.addMarker(new MarkerOptions().position(wharang).title("Wha rang"));
         //Federación Aragonesa de Taekwondo
         LatLng fat = new LatLng(41.672530, 0.898260);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(fat));
+        mMap.addMarker(new MarkerOptions().position(fat).title("Fat"));
         //Gimnasio Kumgan
         LatLng kumgan = new LatLng(41.672180, -0.876950);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(kumgan));
+        mMap.addMarker(new MarkerOptions().position(kumgan).title("Kumgan"));
         //Taekwondo Garrapinillos
         LatLng garrapinilllos = new LatLng(41.689410, -1.041120);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(garrapinilllos));
+        mMap.addMarker(new MarkerOptions().position(garrapinilllos).title("Garrapinilllos"));
         //Sad
         LatLng sad = new LatLng(41.640230, -0.897610);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sad));
+        mMap.addMarker(new MarkerOptions().position(sad).title("Sad"));
         //Seul Santa Isabel
         LatLng seulisabel = new LatLng(41.666530, -0.831770);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(seulisabel));
+        mMap.addMarker(new MarkerOptions().position(seulisabel).title("Seu santa Isabel"));
 
         //Zoom mapa
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(zaragoza,14));

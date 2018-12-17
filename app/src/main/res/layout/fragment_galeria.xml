@@ -5,12 +5,15 @@
     android:layout_height="match_parent"
     tools:context="com.example.jessi.tae.galeriaFragment">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
+
+
 
         <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -20,7 +23,7 @@
             tools:ignore="MissingConstraints">
 
             <!--galeria-->
-            <TextView
+            <!--<TextView
                 android:id="@+id/textViewTitulo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -34,67 +37,67 @@
                 android:textSize="@dimen/tamanosubtitulo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />
-
-            <!--boton volver superior -->
-            <ImageButton
-                android:id="@+id/botonvolver1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/textViewTitulo"
-                android:layout_marginRight="4dp"
-                android:layout_marginTop="4dp"
-                android:adjustViewBounds="true"
-                android:background="@drawable/boton_redondo"
-                android:cropToPadding="true"
-                android:onClick="Volver"
-                android:text="Volver a amarillo"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="?attr/actionModeCloseDrawable" />
+                app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />-->
 
         <!-- 01 -->
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/ConstraintLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
-            tools:ignore="MissingConstraints">
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guidelineVertical2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:visibility="visible"
-                app:layout_constraintGuide_percent="0.8" />
-
-            <TextView
-                android:id="@+id/titulo"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:background="#000000"
-                android:text="@string/hello_blank_fragment"
-                android:textColor="#FFFFFF"
-                app:layout_constraintTop_toBottomOf="@+id/salir"
-                tools:layout_editor_absoluteX="0dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
 
-            <ImageView
-                android:id="@+id/salir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/salir"
-                android:layout_weight="10"/>
-        </android.support.constraint.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/amarillo"
+                    android:fontFamily="@font/turtles"
+                    android:text="@string/galeria"
+                    android:textColor="@color/colorsubtitulo"
+                    android:textSize="@dimen/tamanosubtitulo"
+                    android:paddingLeft="@dimen/margen4"
+                    android:paddingRight="@dimen/margen4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <!--boton volver superior -->
+                <ImageButton
+                    android:id="@+id/botonvolver1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textViewTitulo"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/boton_redondo"
+                    android:cropToPadding="true"
+                    android:onClick="Volver"
+                    android:text="Volver a amarillo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="?attr/actionModeCloseDrawable" />
+                <!--<ImageView
+                    android:id="@+id/salir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:src="@drawable/salir" />-->
+            </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/ConstraintLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineVertical2"
                 tools:ignore="MissingConstraints">
+
+
 
             <ImageView
                 android:id="@+id/imagen"
