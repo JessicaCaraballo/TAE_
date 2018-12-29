@@ -91,6 +91,9 @@ public class recuperarActivity extends AppCompatActivity {
 
         }
     }
+
+
+
     public void lanzarPrincipalActivity(View view) {
         Intent principal = new Intent(getApplicationContext(), principalActivity.class);
         Usuario usuario = new Usuario();

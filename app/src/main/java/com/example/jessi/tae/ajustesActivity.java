@@ -119,7 +119,7 @@ public class ajustesActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.historia:
-                        Intent historia = new Intent(getApplicationContext(), ajustesActivity.class);
+                        Intent historia = new Intent(getApplicationContext(), historiaActivity.class);
                         historia.putExtra("usuario", (Serializable) usuario);
                         startActivity(historia);
                         break;

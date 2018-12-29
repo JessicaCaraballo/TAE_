@@ -24,7 +24,7 @@
         <uses-library android:name="com.google.android.maps" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAxNitpuAe1bf4fxCguvSZa_olw3KVeItc"/>
+            android:value=""/>
         <activity android:name=".MainActivity" android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

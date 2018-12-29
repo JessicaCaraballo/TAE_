@@ -5,6 +5,7 @@
     android:id="@+id/amarilloataques"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/amarillofondo"
     tools:context="com.example.jessi.tae.amarilloataquesActivity">
 
     <ScrollView

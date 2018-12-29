@@ -34,7 +34,7 @@ public class Menu {
         //Integer[]idImagenes = new Integer[]{R.drawable.foto1, R.drawable.foto2, R.drawable.foto3, R.drawable.foto4};
         switch(idTecnica){
             case 1:
-                idImagenes = new Integer[]{R.drawable.f1_1_3, R.drawable.f1_1_3, R.drawable.foto_falta, R.drawable.foto_falta};
+                idImagenes = new Integer[]{R.drawable.f1_1, R.drawable.foto_falta, R.drawable.foto_falta, R.drawable.foto_falta};
                 break;
             case 2:
                 idImagenes = new Integer[]{R.drawable.f2_1, R.drawable.foto_falta, R.drawable.foto_falta, R.drawable.foto_falta};
@@ -88,7 +88,7 @@ public class Menu {
                 idImagenes = new Integer[]{R.drawable.f8_1, R.drawable.foto_falta, R.drawable.foto_falta, R.drawable.foto_falta};
                 break;
         }
-        String[]titulos = new String[]{"Tecnica 1", "Tecnica 2", "Tecnica 3", "Tecnica 4"};
+        String[]titulos = new String[]{"Foto 1", "Foto 2", "Foto 3", "Foto 4"};
 
         for(int x = 0; x<idImagenes.length; x++){
             menu= new Menu(idImagenes[x], titulos[x]);

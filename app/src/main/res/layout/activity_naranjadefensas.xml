@@ -5,6 +5,7 @@
     android:id="@+id/naranjadefensas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/naranjafondo"
     tools:context="com.example.jessi.tae.naranjadefensasActivity">
 
     <ScrollView

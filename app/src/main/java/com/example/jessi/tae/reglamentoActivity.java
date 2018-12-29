@@ -337,6 +337,13 @@ public class reglamentoActivity extends AppCompatActivity {
 
     private void EstablecerIdioma(int idioma) {
         switch (idioma) {
+            case 1:
+                Locale locale = new Locale("es");
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                break;
             case 2:
                 Locale locale2 = new Locale("en");
                 Locale.setDefault(locale2);
@@ -370,11 +377,11 @@ public class reglamentoActivity extends AppCompatActivity {
                 break;
 
             default:
-                Locale locale = new Locale("es");
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                Locale actual = getResources().getConfiguration().locale;
+                Locale.setDefault(actual);
+                Configuration configActual = new Configuration();
+                configActual.locale = actual;
+                getBaseContext().getResources().updateConfiguration(configActual, getBaseContext().getResources().getDisplayMetrics());
                 break;
         }
     }
